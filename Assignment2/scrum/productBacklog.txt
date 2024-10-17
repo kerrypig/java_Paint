@@ -15,6 +15,7 @@
 #     NotStarted,InProgress, Incomplete,Complete
 # as appropriate.
 
+
 --------------------------------------------------------------------------
 TYPE     : USER STORY US1.002 : UTORID : NotStarted 
 NAME     : Draw Circle Feedback
@@ -48,6 +49,29 @@ AS A     : user
 I WANT   : Similarly to Draw Circle Feedback, display the rectangle in mid construction.
 SO THAT  : I can see the rectangle I am about to build on release of the mouse button.
 --------------------------------------------------------------------------
+--------------------------------------------------------------------------
+TYPE     : USER STORY US1.005 : shenqi23 : NotStarted
+NAME     : Draw Square
+PRIORITY : 2
+ESTIMATE : (2 days)    ACTUAL : ?
+AS A     : user
+I WANT   : To click on one corner of a square, drag, and release to
+           specify two corners of a square to be drawn in the current style.
+SO THAT  : I can see the square I am about to build on release of the mouse
+           button.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+TYPE     : USER STORY US1.006 : zhukai16 : NotStarted
+NAME     : Draw polyline
+PRIORITY : 2
+ESTIMATE : (2 days)    ACTUAL : ?
+AS A     : user
+I WANT   : Click and drag the mouse to specify the vertices of multiple
+line segments one by one
+SO THAT  : After release the mouse button, I can see a Polyline consisting
+of these vertices drawn in the current style.
+--------------------------------------------------------------------------
+
 --------------------------------------------------------------------------
 TYPE     : USER STORY US?.005 : UTORID : NotStarted 
 NAME     : Color selector
@@ -175,15 +199,6 @@ ISSUE    : The first click should specify the center of the circle, with
            a drag for the radius. This is not the case in the current
            implementation.
 --------------------------------------------------------------------------
-TYPE     : USER STORY US1.007 : yourUTORID : liwenyin
-NAME     : Display Starting Point of Rectangle
-PRIORITY : 2
-ESTIMATE : 1 hour    ACTUAL :
-AS A     : user
-I WANT   : When I click to start drawing a rectangle, the initial click point should be highlighted or visually represented.
-SO THAT  : I can easily see where my rectangle is starting, and ensure the starting point is correct before dragging to specify the rectangle's size.
---------------------------------------------------------------------------
-
 # COMPLETED USER STORIES/BUGS BELOW ###########################################
 --------------------------------------------------------------------------
 TYPE     : USER STORY US1.001 : rosenbl6 : Complete

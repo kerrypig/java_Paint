@@ -15,6 +15,7 @@
 #     NotStarted,InProgress, Incomplete,Complete
 # as appropriate.
 
+
 --------------------------------------------------------------------------
 TYPE     : USER STORY US1.002 : UTORID : NotStarted 
 NAME     : Draw Circle Feedback
@@ -48,6 +49,18 @@ AS A     : user
 I WANT   : Similarly to Draw Circle Feedback, display the rectangle in mid construction.
 SO THAT  : I can see the rectangle I am about to build on release of the mouse button.
 --------------------------------------------------------------------------
+--------------------------------------------------------------------------
+TYPE     : USER STORY US1.005 : shenqi23 : NotStarted
+NAME     : Draw Square
+PRIORITY : 2
+ESTIMATE : (2 days)    ACTUAL : ?
+AS A     : user
+I WANT   : To click on one corner of a square, drag, and release to
+           specify two corners of a square to be drawn in the current style.
+SO THAT  : I can see the square I am about to build on release of the mouse
+           button.
+--------------------------------------------------------------------------
+
 --------------------------------------------------------------------------
 TYPE     : USER STORY US?.005 : UTORID : NotStarted 
 NAME     : Color selector

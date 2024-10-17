@@ -175,6 +175,14 @@ ISSUE    : The first click should specify the center of the circle, with
            a drag for the radius. This is not the case in the current
            implementation.
 --------------------------------------------------------------------------
+TYPE     : USER STORY US1.007 : yourUTORID : liwenyin
+NAME     : Display Starting Point of Rectangle
+PRIORITY : 2
+ESTIMATE : 1 hour    ACTUAL :
+AS A     : user
+I WANT   : When I click to start drawing a rectangle, the initial click point should be highlighted or visually represented.
+SO THAT  : I can easily see where my rectangle is starting, and ensure the starting point is correct before dragging to specify the rectangle's size.
+--------------------------------------------------------------------------
 
 # COMPLETED USER STORIES/BUGS BELOW ###########################################
 --------------------------------------------------------------------------

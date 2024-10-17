@@ -18,19 +18,19 @@ public class View implements EventHandler<ActionEvent> {
         private ShapeChooserPanel shapeChooserPanel;
 
         public View(PaintModel model, Stage stage) {
-            this.paintModel = model;
+                this.paintModel = model;
 
-            this.paintPanel = new PaintPanel(this.paintModel);
-            this.shapeChooserPanel = new ShapeChooserPanel(this);
+                this.paintPanel = new PaintPanel(this.paintModel);
+                this.shapeChooserPanel = new ShapeChooserPanel(this);
 
-            BorderPane root = new BorderPane();
-            root.setTop(createMenuBar());
-            root.setCenter(this.paintPanel);
-            root.setLeft(this.shapeChooserPanel);
-            Scene scene = new Scene(root);
-            stage.setScene(scene);
-            stage.setTitle("Paint");
-            stage.show();
+                BorderPane root = new BorderPane();
+                root.setTop(createMenuBar());
+                root.setCenter(this.paintPanel);
+                root.setLeft(this.shapeChooserPanel);
+                Scene scene = new Scene(root);
+                stage.setScene(scene);
+                stage.setTitle("Paint");
+                stage.show();
         }
 
         public PaintModel getPaintModel() {
@@ -39,7 +39,7 @@ public class View implements EventHandler<ActionEvent> {
 
         // ugly way to do this?
         public void setMode(String mode){
-            this.paintPanel.setMode(mode);
+                this.paintPanel.setMode(mode);
         }
         private MenuBar createMenuBar() {
 

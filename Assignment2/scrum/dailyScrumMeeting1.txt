@@ -1,33 +1,33 @@
 # Fill in, commit and push each day.
-Member name:      email:     utorid:   
+Member name: Du Cheng      email: duuu.cheng@mail.utoronto.ca     utorid: chengdu2
 
 Oct 14,2024
-	What I did yesterday:
-	What I will do today:
-	Obstacles I face:
+	What I did yesterday: N/A
+	What I will do today: Find a group and get in.
+	Obstacles I face: I have no group currently.
 
 Oct 15,2024
-	What I did yesterday:
-	What I will do today:
-	Obstacles I face:
+	What I did yesterday: Found a group.
+	What I will do today: Create members.txt, unzip starter codes.
+	Obstacles I face: Understanding the entire project.
 
 Oct 16,2024
-	What I did yesterday:
-	What I will do today:
-	Obstacles I face:
+	What I did yesterday: Create members.txt, unzip starter codes.
+	What I will do today: Review starter codes.
+	Obstacles I face: Understanding the entire project.
 
 Oct 17,2024
-	What I did yesterday:
-	What I will do today:
-	Obstacles I face:
+	What I did yesterday: Review starter codes.
+	What I will do today: Review starter codes.
+	Obstacles I face: Understanding the entire project.
 
 Oct 18,2024
-	What I did yesterday:
-	What I will do today:
-	Obstacles I face:
+	What I did yesterday: Review starter codes.
+	What I will do today: meet my group, fix BUG1.005.
+	Obstacles I face: Understanding the architecture.
 
 Oct 19,2024
-	What I did yesterday:
+	What I did yesterday: Group meeting, BUG1.005 fixed.
 	What I will do today:
 	Obstacles I face:
 

@@ -14,7 +14,8 @@ public class PaintPanel extends Canvas implements EventHandler<MouseEvent>, Obse
     private String mode="Circle";
     private PaintModel model;
 
-    public Circle circle; // This is VERY UGLY, should somehow fix this!!
+    private Circle circle; // This is VERY UGLY, should somehow fix this!!
+    private Squiggle squiggle;
 
     public PaintPanel(PaintModel model) {
         super(300, 300);

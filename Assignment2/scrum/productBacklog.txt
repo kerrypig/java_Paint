@@ -52,7 +52,7 @@ SO THAT  : I can see the rectangle I am about to build on release of the mouse b
 --------------------------------------------------------------------------
 TYPE     : USER STORY US1.005 : shenqi23 : NotStarted
 NAME     : Draw Square
-PRIORITY : 2
+PRIORITY : 3
 ESTIMATE : (2 days)    ACTUAL : ?
 AS A     : user
 I WANT   : To click on one corner of a square, drag, and release to
@@ -63,7 +63,7 @@ SO THAT  : I can see the square I am about to build on release of the mouse
 --------------------------------------------------------------------------
 TYPE     : USER STORY US1.006 : zhukai16 : NotStarted
 NAME     : Draw polyline
-PRIORITY : 2
+PRIORITY : 3
 ESTIMATE : (2 days)    ACTUAL : ?
 AS A     : user
 I WANT   : Click and drag the mouse to specify the vertices of multiple

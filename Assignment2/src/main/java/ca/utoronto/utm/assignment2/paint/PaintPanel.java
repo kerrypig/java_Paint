@@ -15,6 +15,7 @@ public class PaintPanel extends Canvas implements EventHandler<MouseEvent>, Obse
     private PaintModel model;
 
     public Circle circle; // This is VERY UGLY, should somehow fix this!!
+    private Rectangle rectangle;
 
     public PaintPanel(PaintModel model) {
         super(300, 300);
@@ -75,7 +76,27 @@ public class PaintPanel extends Canvas implements EventHandler<MouseEvent>, Obse
                 }
 
                 break;
-            case "Rectangle": break;
+            case "Rectangle":
+                if(mouseEventType.equals(MouseEvent.MOUSE_PRESSED)) {
+                    // first corner
+                    System.out.println("Started Rectangle");
+                    Point corner1 = new Point(mouseEvent.getX(), mouseEvent.getY());
+                    this.rectangle = new Rectangle(corner1,corner1);
+                }else if (mouseEventType.equals(MouseEvent.MOUSE_DRAGGED)) {
+                    Point p2 = new Point(mouseEvent.getX(), mouseEvent.getY());
+                    this.rectangle.setRight_down(p2);
+                    this.model.addRectangle(this.rectangle);
+                } else if (mouseEventType.equals(MouseEvent.MOUSE_MOVED)) {
+
+                } else if (mouseEventType.equals(MouseEvent.MOUSE_RELEASED)) {
+                    if(this.rectangle!=null){
+                        Point p2 = new Point(mouseEvent.getX(), mouseEvent.getY());
+                        this.rectangle.setRight_down(p2);
+                        this.model.addRectangle(this.rectangle);
+                        this.rectangle = null;
+                    }
+                }
+                break;
             case "Square": break;
             case "Squiggle":
                 if (mouseEventType.equals(MouseEvent.MOUSE_DRAGGED)) {
@@ -103,6 +124,8 @@ public class PaintPanel extends Canvas implements EventHandler<MouseEvent>, Obse
 
                 // Draw Circles
                 ArrayList<Circle> circles = this.model.getCircles();
+                // Draw Rectangle
+                ArrayList<Rectangle> rectangles = this.model.getRectangles();
 
                 g2d.setFill(Color.GREEN);
                 for(Circle c: this.model.getCircles()){
@@ -110,6 +133,12 @@ public class PaintPanel extends Canvas implements EventHandler<MouseEvent>, Obse
                         double y = c.getCentre().y;
                         double radius = c.getRadius();
                         g2d.fillOval(x, y, radius, radius);
+                }
+
+                g2d.setFill(Color.BLUE);
+                for(Rectangle r: this.model.getRectangles()){
+                    g2d.fillRect(r.getLeft_up().x,r.getLeft_up().y,
+                            -(r.getLeft_up().x-r.getRight_down().x),-(r.getLeft_up().y-r.getRight_down().y));
                 }
     }
 }

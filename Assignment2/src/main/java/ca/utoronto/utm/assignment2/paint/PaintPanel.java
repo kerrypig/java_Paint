@@ -90,8 +90,8 @@ public class PaintPanel extends Canvas implements EventHandler<MouseEvent>, Obse
 
                 } else if (mouseEventType.equals(MouseEvent.MOUSE_RELEASED)) {
                     if(this.rectangle!=null){
-                        Point p2 = new Point(mouseEvent.getX(), mouseEvent.getY());
-                        this.rectangle.setRight_down(p2);
+                        Point corner2 = new Point(mouseEvent.getX(), mouseEvent.getY());
+                        this.rectangle.setRight_down(corner2);
                         this.model.addRectangle(this.rectangle);
                         this.rectangle = null;
                     }

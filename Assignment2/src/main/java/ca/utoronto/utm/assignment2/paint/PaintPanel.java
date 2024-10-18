@@ -46,23 +46,23 @@ public class PaintPanel extends Canvas implements EventHandler<MouseEvent>, Obse
         // "Circle", "Rectangle", "Square", "Squiggle", "Polyline"
         switch(this.mode){
             case "Circle":
-                if(mouseEventType.equals(MouseEvent.MOUSE_PRESSED)) {
+                if (mouseEventType.equals(MouseEvent.MOUSE_PRESSED)) {
                     System.out.println("Started Circle");
-                     Point centre = new Point(mouseEvent.getX(), mouseEvent.getY());
-                        this.circle=new Circle(centre, 0);
+                    Point centre = new Point(mouseEvent.getX(), mouseEvent.getY());
+                    this.circle = new Circle(centre, 0);
                 } else if (mouseEventType.equals(MouseEvent.MOUSE_DRAGGED)) {
 
                 } else if (mouseEventType.equals(MouseEvent.MOUSE_MOVED)) {
 
                 } else if (mouseEventType.equals(MouseEvent.MOUSE_RELEASED)) {
-                    if(this.circle!=null){
-                                // Problematic notion of radius and centre!!
-                                double radius = Math.abs(this.circle.getCentre().x-mouseEvent.getX());
-                                this.circle.setRadius(radius);
-                                this.model.addCircle(this.circle);
-                                System.out.println("Added Circle");
-                                this.circle=null;
-                        }
+                    if (this.circle != null) {
+                        // Problematic notion of radius and centre!!
+                        double radius = Math.abs(this.circle.getCentre().x - mouseEvent.getX());
+                        this.circle.setRadius(radius);
+                        this.model.addCircle(this.circle);
+                        System.out.println("Added Circle");
+                        this.circle = null;
+                    }
                 }
 
                 break;
@@ -75,6 +75,9 @@ public class PaintPanel extends Canvas implements EventHandler<MouseEvent>, Obse
                     squiggle.addPoint(new Point(mouseEvent.getX(), mouseEvent.getY()));
                 } else if (mouseEventType.equals(MouseEvent.MOUSE_DRAGGED)) {
                     squiggle.addPoint(new Point(mouseEvent.getX(), mouseEvent.getY()));
+                    if(this.squiggle!=null){
+                        this.model.addSquiggle(this.squiggle);
+                    }
                 } else if (mouseEventType.equals(MouseEvent.MOUSE_RELEASED)) {
                     if(this.squiggle!=null){
                         this.model.addSquiggle(this.squiggle);

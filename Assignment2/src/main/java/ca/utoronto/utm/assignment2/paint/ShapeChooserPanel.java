@@ -7,10 +7,13 @@ import javafx.scene.layout.GridPane;
 import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.paint.Color;
 
+import java.util.ArrayList;
+
 
 public class ShapeChooserPanel extends GridPane implements EventHandler<ActionEvent> {
 
         private View view;
+        private ArrayList<Button> buttons = new ArrayList<>();
 
         public ShapeChooserPanel(View view) {
 
@@ -25,9 +28,25 @@ public class ShapeChooserPanel extends GridPane implements EventHandler<ActionEv
                         button.setMinWidth(80);
                         button.setMinHeight(80);
                         this.add(button, 0, row);
+                        this.buttons.add(button);
                         row++;
-                        button.setOnAction(e -> view.setMode(mode) );
+                        button.setOnAction(actionEvent -> {
+                                view.setMode(mode);
+                                highlightSelectedButton(button);
+                        });
                 }
+        }
+
+        private void highlightSelectedButton(Button selectedButton) {
+                for(Button button : buttons){
+                        if(button == selectedButton){
+                               button.setStyle("-fx-background-color: #7f8ff4;");
+                        }
+                        else{
+                                button.setStyle("");
+                        }
+                }
+
         }
 
         private Button createShapeButton(String shape, double width, double height) {

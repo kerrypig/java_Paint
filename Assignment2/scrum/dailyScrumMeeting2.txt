@@ -1,5 +1,5 @@
 # Fill in, commit and push each day.
-Member name:      email:     utorid:   
+Member name: Liwen Yin    email: phoenix.yin@mail.utoronto.ca  utorid:   yinliwen
 
 Oct 14,2024
 	What I did yesterday:
@@ -12,29 +12,29 @@ Oct 15,2024
 	Obstacles I face:
 
 Oct 16,2024
-	What I did yesterday:
-	What I will do today:
-	Obstacles I face:
+	What I did yesterday:  not start yet
+	What I will do today: analyse A2
+	Obstacles I face: how to use git to merge
 
 Oct 17,2024
-	What I did yesterday:
-	What I will do today:
-	Obstacles I face:
+	What I did yesterday: understand a2
+	What I will do today: understand git
+	Obstacles I face: N/A
 
 Oct 18,2024
-	What I did yesterday:
-	What I will do today:
-	Obstacles I face:
+	What I did yesterday: understand git
+	What I will do today:  fix BUG001
+	Obstacles I face: N/A
 
 Oct 19,2024
-	What I did yesterday:
-	What I will do today:
-	Obstacles I face:
+	What I did yesterday: fix BUG001
+	What I will do today: fix BUG002,BUG006
+	Obstacles I face: BUG006,I don't know why the circle I drew doesn't zoom in on the center of the circle.
 
 Oct 20,2024
-	What I did yesterday:
-	What I will do today:
-	Obstacles I face:
+	What I did yesterday: BUG002
+	What I will do today: Found an error in BUG001
+	Obstacles I face: complete BUG001
 
 Oct 21,2024
 	What I did yesterday:

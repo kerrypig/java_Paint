@@ -22,6 +22,8 @@ public class ShapeChooserPanel extends GridPane implements EventHandler<ActionEv
                         row++;
                         button.setOnAction(this);
                 }
+
+
         }
 
         @Override

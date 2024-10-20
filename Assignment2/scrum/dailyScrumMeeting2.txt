@@ -1,5 +1,5 @@
 # Fill in, commit and push each day.
-Member name:      email:     utorid:   
+Member name:  LiwenYin    email: phoenix.yin@mail.utoronto.ca     utorid:   liwenyin
 
 Oct 14,2024
 	What I did yesterday:
@@ -13,8 +13,8 @@ Oct 15,2024
 
 Oct 16,2024
 	What I did yesterday:
-	What I will do today:
-	Obstacles I face:
+	What I will do today: update user story
+	Obstacles I face: no
 
 Oct 17,2024
 	What I did yesterday:

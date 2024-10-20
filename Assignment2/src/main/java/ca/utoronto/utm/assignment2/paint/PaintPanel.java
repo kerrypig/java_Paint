@@ -51,18 +51,29 @@ public class PaintPanel extends Canvas implements EventHandler<MouseEvent>, Obse
                     Point centre = new Point(mouseEvent.getX(), mouseEvent.getY());
                     this.circle = new Circle(centre, 0);
                 } else if (mouseEventType.equals(MouseEvent.MOUSE_DRAGGED)) {
+                    if(this.circle!=null){
+                    double newX=mouseEvent.getX();
+                    double newY=mouseEvent.getY();
+                    double oldx = this.circle.getCentre().x;
+                    double oldy = this.circle.getCentre().y;
+                    double NewRadius = Math.sqrt(Math.pow(newX - oldx,2) + Math.pow(newY - oldy,2));
+                    this.circle.setRadius(NewRadius);
+                    this.model.addCircle(this.circle);}
 
                 } else if (mouseEventType.equals(MouseEvent.MOUSE_MOVED)) {
 
                 } else if (mouseEventType.equals(MouseEvent.MOUSE_RELEASED)) {
-                    if (this.circle != null) {
-                        // Problematic notion of radius and centre!!
-                        double radius = Math.abs(this.circle.getCentre().x - mouseEvent.getX());
+                    if(this.circle!=null){
+                        double newX = mouseEvent.getX();
+                        double newY = mouseEvent.getY();
+                        double oldX = this.circle.getCentre().x;
+                        double oldY = this.circle.getCentre().y;
+                        double radius = Math.sqrt(Math.pow(newX - oldX, 2) + Math.pow(newY - oldY, 2));
                         this.circle.setRadius(radius);
                         this.model.addCircle(this.circle);
                         System.out.println("Added Circle");
                         this.circle = null;
-                    }
+                        }
                 }
 
                 break;
@@ -119,7 +130,7 @@ public class PaintPanel extends Canvas implements EventHandler<MouseEvent>, Obse
             double x = c.getCentre().x;
             double y = c.getCentre().y;
             double radius = c.getRadius();
-            g2d.fillOval(x, y, radius, radius);
+            g2d.fillOval(x, y, 2*radius, 2*radius);
         }
 
         ArrayList<Squiggle> squiggles = this.model.getSquiggles();

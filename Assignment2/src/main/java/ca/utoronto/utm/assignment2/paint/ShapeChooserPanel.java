@@ -51,11 +51,14 @@ public class ShapeChooserPanel extends GridPane implements EventHandler<ActionEv
                                 break;
                         case "Squiggle":
                                 gc.beginPath();
-                                gc.moveTo(padding, 35);
-                                gc.lineTo(20, padding);
-                                gc.lineTo(40, 35);
-                                gc.lineTo(60, 60);
-                                gc.lineTo(70, 35);
+                                gc.moveTo(padding, 30);
+                                //random
+                                for (int i = 0;i < 10;i++) {
+                                        double x_v1 = padding + (Math.random() * 50);
+                                        double y_v2 = padding + (Math.random() * 50);
+                                        gc.lineTo(x_v1, y_v2);
+                                }
+
                                 gc.stroke();
                                 break;
                         case "Polyline":

@@ -17,19 +17,21 @@ Oct 16,2024
 	Obstacles I face: no obstacle
 
 Oct 17,2024
-	What I did yesterday:
-	What I will do today:
-	Obstacles I face:
+	What I did yesterday:update user story
+	What I will do today:update user story 2
+	Obstacles I face:reading the code
 
 Oct 18,2024
-	What I did yesterday:
-	What I will do today:
-	Obstacles I face:
+	What I did yesterday:update user story 2
+	What I will do today:handling the user story
+	US1.004
+	Obstacles I face:a bug causing shape in dim
+	1,2,3 unable to show
 
 Oct 19,2024
-	What I did yesterday:
-	What I will do today:
-	Obstacles I face:
+	What I did yesterday:handling user story
+	What I will do today:complete architecture
+	Obstacles I face:writing mechanics
 
 Oct 20,2024
 	What I did yesterday:

@@ -30,6 +30,15 @@ TODO!!! Add in more architecture and discussion. For example,
 do you do something interesting to fix the association between the 
 ShapeChooser and the PaintPanel? How about the PaintModel, something
 is clearly wrong with it. Can you come up with a better architecture?
+
+The current architecture may cause the ShapeChooserPanel and PaintPanel
+to be tightly coupled. Whenever the ShapeChooserPanel is updated, it
+must directly notify the PaintPanel to change the mode. This tight
+coupling may reduce the maintainability and scalability of the code.
+
+The class PaintPanel in the overall architecture may have too many
+responsibilities (shape logic processing, coordinate calculation, and
+color selection), violating the single responsibility principle
 ---------------------------------------------------------------------
 
 DESIGN PATTERNS USED
@@ -41,9 +50,13 @@ DESIGN PATTERNS USED
 	Command: 
 	Singleton:
 	Composite:
-	Factory:
+	Factory:Further refine the responsibilities of the view, model, and
+	controller. For example, separate the data processing of the model
+	from the business logic, and assign the view update logic to a dedicated
+	rendering class.
 	Builder:
-	Observer/Observable:
+	Observer/Observable: When the user selects a different shape, notify the
+	PaintPanel to update the view
 	... (any others you find useful) ...
 
 OTHER ARCHITECTURE DISCUSSIONS

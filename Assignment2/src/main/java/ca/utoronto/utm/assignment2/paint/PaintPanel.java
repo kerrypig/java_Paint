@@ -109,7 +109,7 @@ public class PaintPanel extends Canvas implements EventHandler<MouseEvent>, Obse
                         double x = c.getCentre().x;
                         double y = c.getCentre().y;
                         double radius = c.getRadius();
-                        g2d.fillOval(x, y, 2*radius, 2*radius);
+                        g2d.fillOval(x - radius, y - radius, 2*radius, 2*radius);
                 }
     }
 }

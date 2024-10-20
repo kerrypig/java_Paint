@@ -96,9 +96,9 @@ public class PaintPanel extends Canvas implements EventHandler<MouseEvent>, Obse
                         this.squiggle=null;
                     }
                 }
-////                if (mouseEventType.equals(MouseEvent.MOUSE_DRAGGED)) {
-////                    this.model.addPoint(new Point(mouseEvent.getX(), mouseEvent.getY()));
-////                }
+//                if (mouseEventType.equals(MouseEvent.MOUSE_DRAGGED)) {
+//                   this.model.addPoint(new Point(mouseEvent.getX(), mouseEvent.getY()));
+//                }
 //                squiggle = new Squiggle();
 //                squiggle.addPoint(new Point(mouseEvent.getX(), mouseEvent.getY()));
 

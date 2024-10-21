@@ -11,15 +11,16 @@ import java.util.Observable;
 import java.util.Observer;
 
 public class PaintPanel extends Canvas implements EventHandler<MouseEvent>, Observer {
-    private String mode="Circle";
+    private String mode = "Circle";
     private PaintModel model;
 
     public Circle circle; // This is VERY UGLY, should somehow fix this!!
     private Rectangle rectangle;
+    private Squiggle squiggle;
 
     public PaintPanel(PaintModel model) {
         super(300, 300);
-        this.model=model;
+        this.model = model;
         this.model.addObserver(this);
 
         this.addEventHandler(MouseEvent.MOUSE_PRESSED, this);
@@ -44,35 +45,25 @@ public class PaintPanel extends Canvas implements EventHandler<MouseEvent>, Obse
         EventType<MouseEvent> mouseEventType = (EventType<MouseEvent>) mouseEvent.getEventType();
 
         // "Circle", "Rectangle", "Square", "Squiggle", "Polyline"
-        switch(this.mode){
+        switch (this.mode) {
             case "Circle":
-                if(mouseEventType.equals(MouseEvent.MOUSE_PRESSED)) {
+                if (mouseEventType.equals(MouseEvent.MOUSE_PRESSED)) {
                     System.out.println("Started Circle");
-                     Point centre = new Point(mouseEvent.getX(), mouseEvent.getY());
-                        this.circle=new Circle(centre, 0);
+                    Point centre = new Point(mouseEvent.getX(), mouseEvent.getY());
+                    this.circle = new Circle(centre, 0);
                 } else if (mouseEventType.equals(MouseEvent.MOUSE_DRAGGED)) {
-                    if(this.circle!=null){
-                    double newX=mouseEvent.getX();
-                    double newY=mouseEvent.getY();
-                    double oldx = this.circle.getCentre().x;
-                    double oldy = this.circle.getCentre().y;
-                    double NewRadius = Math.sqrt(Math.pow(newX - oldx,2) + Math.pow(newY - oldy,2));
-                    this.circle.setRadius(NewRadius);
-                    this.model.addCircle(this.circle);}
+                    if (this.circle != null) {
+                        findCircle(mouseEvent);
+                    }
 
                 } else if (mouseEventType.equals(MouseEvent.MOUSE_MOVED)) {
 
                 } else if (mouseEventType.equals(MouseEvent.MOUSE_RELEASED)) {
-                    if(this.circle!=null){
-                        double newX = mouseEvent.getX();
-                        double newY = mouseEvent.getY();
-                        double oldX = this.circle.getCentre().x;
-                        double oldY = this.circle.getCentre().y;
-                        double radius = Math.sqrt(Math.pow(newX - oldX, 2) + Math.pow(newY - oldY, 2));
-                        this.circle.setRadius(radius);
-                        this.model.addCircle(this.circle);
+                    if (this.circle != null) {
+                        findCircle(mouseEvent);
+                        System.out.println("Added Circle");
                         this.circle = null;
-                        }
+                    }
                 }
 
                 break;
@@ -99,14 +90,42 @@ public class PaintPanel extends Canvas implements EventHandler<MouseEvent>, Obse
                 break;
             case "Square": break;
             case "Squiggle":
-                if (mouseEventType.equals(MouseEvent.MOUSE_DRAGGED)) {
-                    this.model.addPoint(new Point(mouseEvent.getX(), mouseEvent.getY()));
+                if (mouseEventType.equals(MouseEvent.MOUSE_PRESSED)) {
+                    System.out.println("Started Squiggle");
+                    this.squiggle = new Squiggle();
+                    squiggle.addPoint(new Point(mouseEvent.getX(), mouseEvent.getY()));
+                } else if (mouseEventType.equals(MouseEvent.MOUSE_DRAGGED)) {
+                    squiggle.addPoint(new Point(mouseEvent.getX(), mouseEvent.getY()));
+                    if (this.squiggle != null) {
+                        this.model.addSquiggle(this.squiggle);
+                    }
+                } else if (mouseEventType.equals(MouseEvent.MOUSE_RELEASED)) {
+                    if (this.squiggle != null) {
+                        this.model.addSquiggle(this.squiggle);
+                        System.out.println("Added Squiggle");
+                        this.squiggle = null;
+                    }
                 }
                 break;
             case "Polyline": break;
             default: break;
         }
     }
+
+    /**
+     * This method finds the current circle.
+     * @param mouseEvent
+     */
+    private void findCircle(MouseEvent mouseEvent) {
+        double newX = mouseEvent.getX();
+        double newY = mouseEvent.getY();
+        double oldx = this.circle.getCentre().x;
+        double oldy = this.circle.getCentre().y;
+        double NewRadius = Math.sqrt(Math.pow(newX - oldx, 2) + Math.pow(newY - oldy, 2));
+        this.circle.setRadius(NewRadius);
+        this.model.addCircle(this.circle);
+    }
+
     @Override
     public void update(Observable o, Object arg) {
 
@@ -140,5 +159,23 @@ public class PaintPanel extends Canvas implements EventHandler<MouseEvent>, Obse
                     g2d.fillRect(r.getLeft_up().x,r.getLeft_up().y,
                             -(r.getLeft_up().x-r.getRight_down().x),-(r.getLeft_up().y-r.getRight_down().y));
                 }
+        g2d.setFill(Color.GREEN);
+        for (Circle c : this.model.getCircles()) {
+            double x = c.getCentre().x;
+            double y = c.getCentre().y;
+            double radius = c.getRadius();
+            g2d.fillOval(x - radius, y - radius, 2 * radius, 2 * radius);
+        }
+
+        // Draw Squiggles
+        ArrayList<Squiggle> squiggles = this.model.getSquiggles();
+        for (Squiggle s : model.getSquiggles()) {
+            ArrayList<Point> squigglePoints = s.getPoints();
+            for (int i = 0; i < squigglePoints.size() - 1; i++) {
+                Point p1 = squigglePoints.get(i);
+                Point p2 = squigglePoints.get(i + 1);
+                g2d.strokeLine(p1.x, p1.y, p2.x, p2.y);
+            }
+        }
     }
 }

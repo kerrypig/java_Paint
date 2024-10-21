@@ -2,39 +2,39 @@
 Member name:      email:     utorid:
 
 Oct 14,2024
-	What I did yesterday:
-	What I will do today:
-	Obstacles I face:
+	What I did yesterday: N/A
+	What I will do today: N/A
+	Obstacles I face: Find a group
 
 Oct 15,2024
-	What I did yesterday:
-	What I will do today:
-	Obstacles I face:
+	What I did yesterday: N/A
+	What I will do today: Find a group
+	Obstacles I face: N/A
 
 Oct 16,2024
-	What I did yesterday:
-	What I will do today:
-	Obstacles I face:
+	What I did yesterday: Found a group
+	What I will do today: Read through the starter codes
+	Obstacles I face: Understanding the entire project
 
 Oct 17,2024
 	What I did yesterday:
-	What I will do today:
-	Obstacles I face:
+	What I will do today: Read through the starter codes
+	Obstacles I face: Understanding the entire project
 
 Oct 18,2024
-	What I did yesterday:
-	What I will do today:
-	Obstacles I face:
+	What I did yesterday: Read through the starter codes
+	What I will do today: Read through the starter codes
+	Obstacles I face: Understanding the entire project
 
 Oct 19,2024
-	What I did yesterday:
-	What I will do today:
-	Obstacles I face:
+	What I did yesterday: Read through the starter codes, met team members, fixed US1.002
+	What I will do today: Fixed BUG1.005
+	Obstacles I face: N/A
 
 Oct 20,2024
-	What I did yesterday:
-	What I will do today:
-	Obstacles I face:
+	What I did yesterday: Fixed BUG1.005
+	What I will do today: Group meeting, check for sprint 1, merge
+	Obstacles I face: Merging
 
 Oct 21,2024
 	What I did yesterday:

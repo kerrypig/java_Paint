@@ -1,4 +1,5 @@
 package ca.utoronto.utm.assignment2.paint;
+
 import javafx.scene.canvas.Canvas;
 import javafx.event.EventHandler;
 import javafx.event.EventType;
@@ -29,11 +30,12 @@ public class PaintPanel extends Canvas implements EventHandler<MouseEvent>, Obse
         this.addEventHandler(MouseEvent.MOUSE_CLICKED, this);
         this.addEventHandler(MouseEvent.MOUSE_DRAGGED, this);
     }
+
     /**
-     *  Controller aspect of this
+     * Controller aspect of this
      */
-    public void setMode(String mode){
-        this.mode=mode;
+    public void setMode(String mode) {
+        this.mode = mode;
         System.out.println(this.mode);
     }
 
@@ -68,19 +70,19 @@ public class PaintPanel extends Canvas implements EventHandler<MouseEvent>, Obse
 
                 break;
             case "Rectangle":
-                if(mouseEventType.equals(MouseEvent.MOUSE_PRESSED)) {
+                if (mouseEventType.equals(MouseEvent.MOUSE_PRESSED)) {
                     // first corner
                     System.out.println("Started Rectangle");
                     Point corner1 = new Point(mouseEvent.getX(), mouseEvent.getY());
-                    this.rectangle = new Rectangle(corner1,corner1);
-                }else if (mouseEventType.equals(MouseEvent.MOUSE_DRAGGED)) {
+                    this.rectangle = new Rectangle(corner1, corner1);
+                } else if (mouseEventType.equals(MouseEvent.MOUSE_DRAGGED)) {
                     Point corner2 = new Point(mouseEvent.getX(), mouseEvent.getY());
                     this.rectangle.setRight_down(corner2);
                     this.model.addRectangle(this.rectangle);
                 } else if (mouseEventType.equals(MouseEvent.MOUSE_MOVED)) {
 
                 } else if (mouseEventType.equals(MouseEvent.MOUSE_RELEASED)) {
-                    if(this.rectangle!=null){
+                    if (this.rectangle != null) {
                         Point corner2 = new Point(mouseEvent.getX(), mouseEvent.getY());
                         this.rectangle.setRight_down(corner2);
                         this.model.addRectangle(this.rectangle);
@@ -88,7 +90,8 @@ public class PaintPanel extends Canvas implements EventHandler<MouseEvent>, Obse
                     }
                 }
                 break;
-            case "Square": break;
+            case "Square":
+                break;
             case "Squiggle":
                 if (mouseEventType.equals(MouseEvent.MOUSE_PRESSED)) {
                     System.out.println("Started Squiggle");
@@ -107,13 +110,16 @@ public class PaintPanel extends Canvas implements EventHandler<MouseEvent>, Obse
                     }
                 }
                 break;
-            case "Polyline": break;
-            default: break;
+            case "Polyline":
+                break;
+            default:
+                break;
         }
     }
 
     /**
      * This method finds the current circle.
+     *
      * @param mouseEvent
      */
     private void findCircle(MouseEvent mouseEvent) {
@@ -126,39 +132,32 @@ public class PaintPanel extends Canvas implements EventHandler<MouseEvent>, Obse
         this.model.addCircle(this.circle);
     }
 
+    /**
+     * This method draw lines based on give points list.
+     * @param g2d
+     * @param squigglePoints
+     */
+    private void paintPoints(GraphicsContext g2d, ArrayList<Point> squigglePoints) {
+        for (int i = 0; i < squigglePoints.size() - 1; i++) {
+            Point p1 = squigglePoints.get(i);
+            Point p2 = squigglePoints.get(i + 1);
+            g2d.strokeLine(p1.x, p1.y, p2.x, p2.y);
+        }
+    }
+
     @Override
     public void update(Observable o, Object arg) {
 
-                GraphicsContext g2d = this.getGraphicsContext2D();
-                g2d.clearRect(0, 0, this.getWidth(), this.getHeight());
-                // Draw Lines
-                ArrayList<Point> points = this.model.getPoints();
+        GraphicsContext g2d = this.getGraphicsContext2D();
+        g2d.clearRect(0, 0, this.getWidth(), this.getHeight());
 
-                g2d.setFill(Color.RED);
-                for(int i=0;i<points.size()-1; i++){
-                        Point p1=points.get(i);
-                        Point p2=points.get(i+1);
-                        g2d.strokeLine(p1.x,p1.y,p2.x,p2.y);
-                }
+        // Draw Lines
+        ArrayList<Point> points = this.model.getPoints();
+        g2d.setFill(Color.RED);
+        paintPoints(g2d, points);
 
-                // Draw Circles
-                ArrayList<Circle> circles = this.model.getCircles();
-                // Draw Rectangle
-                ArrayList<Rectangle> rectangles = this.model.getRectangles();
-
-                g2d.setFill(Color.GREEN);
-                for(Circle c: this.model.getCircles()){
-                        double x = c.getCentre().x;
-                        double y = c.getCentre().y;
-                        double radius = c.getRadius();
-                        g2d.fillOval(x, y, radius, radius);
-                }
-
-                g2d.setFill(Color.BLUE);
-                for(Rectangle r: this.model.getRectangles()){
-                    g2d.fillRect(r.getLeft_up().x,r.getLeft_up().y,
-                            -(r.getLeft_up().x-r.getRight_down().x),-(r.getLeft_up().y-r.getRight_down().y));
-                }
+        // Draw Circles
+        ArrayList<Circle> circles = this.model.getCircles();
         g2d.setFill(Color.GREEN);
         for (Circle c : this.model.getCircles()) {
             double x = c.getCentre().x;
@@ -167,15 +166,21 @@ public class PaintPanel extends Canvas implements EventHandler<MouseEvent>, Obse
             g2d.fillOval(x - radius, y - radius, 2 * radius, 2 * radius);
         }
 
+        // Draw Rectangle
+        ArrayList<Rectangle> rectangles = this.model.getRectangles();
+        g2d.setFill(Color.BLUE);
+        for (Rectangle r : this.model.getRectangles()) {
+            g2d.fillRect(r.getLeft_up().x, r.getLeft_up().y,
+                    -(r.getLeft_up().x - r.getRight_down().x), -(r.getLeft_up().y - r.getRight_down().y));
+        }
+
         // Draw Squiggles
         ArrayList<Squiggle> squiggles = this.model.getSquiggles();
-        for (Squiggle s : model.getSquiggles()) {
+        g2d.setFill(Color.YELLOW);
+        for (Squiggle s : this.model.getSquiggles()) {
             ArrayList<Point> squigglePoints = s.getPoints();
-            for (int i = 0; i < squigglePoints.size() - 1; i++) {
-                Point p1 = squigglePoints.get(i);
-                Point p2 = squigglePoints.get(i + 1);
-                g2d.strokeLine(p1.x, p1.y, p2.x, p2.y);
-            }
+            paintPoints(g2d, squigglePoints);
         }
     }
+
 }

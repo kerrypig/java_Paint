@@ -71,6 +71,15 @@ line segments one by one
 SO THAT  : After release the mouse button, I can see a Polyline consisting
 of these vertices drawn in the current style.
 --------------------------------------------------------------------------
+--------------------------------------------------------------------------
+TYPE     : USER STORY US1.007 : zhukai16 : NotStarted
+NAME     : Draw polyline Feedback
+PRIORITY : 2
+ESTIMATE : (2 days)    ACTUAL : ?
+AS A     : user
+I WANT   : Similarly to Draw Circle Feedback, display the polyline in mid construction.
+SO THAT  : I can see the polyline I am about to build on release of the mouse button.
+--------------------------------------------------------------------------
 
 --------------------------------------------------------------------------
 TYPE     : USER STORY US?.005 : UTORID : NotStarted 

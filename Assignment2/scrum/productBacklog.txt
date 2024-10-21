@@ -17,9 +17,9 @@
 
 
 --------------------------------------------------------------------------
-TYPE     : USER STORY US1.002 : UTORID : NotStarted
+TYPE     : USER STORY US1.002 : UTORID : NotStarted 
 NAME     : Draw Circle Feedback
-PRIORITY : 2
+PRIORITY : 2 
 ESTIMATE : (1 hour, 2 hours, 4 hours, 1 day, 2 days, 4 days)    ACTUAL :
 AS A     : user
 I WANT   : As a user is specifying a Circle, during the drag, a 'current'
@@ -31,17 +31,17 @@ SO THAT  : I can see the circle I am about to build on release of the mouse
            button.
 --------------------------------------------------------------------------
 --------------------------------------------------------------------------
-TYPE     : USER STORY US1.003 : UTORID : NotStarted
+TYPE     : USER STORY US1.003 : UTORID : NotStarted 
 NAME     : Draw Rectangle
 PRIORITY : 2
 ESTIMATE : (1 hour, 2 hours, 4 hours, 1 day, 2 days, 4 days)    ACTUAL :
 AS A     : user
-I WANT   : To click on one corner of a rectangle, drag, and release to
+I WANT   : To click on one corner of a rectangle, drag, and release to 
 		   specify two corners of a rectangle to be drawn in the current style.
 SO THAT  : I can add rectangles to my canvas
 --------------------------------------------------------------------------
 --------------------------------------------------------------------------
-TYPE     : USER STORY US1.004 : UTORID : NotStarted
+TYPE     : USER STORY US1.004 : UTORID : NotStarted 
 NAME     : Draw Rectangle Feedback
 PRIORITY : 2
 ESTIMATE : (1 hour, 2 hours, 4 hours, 1 day, 2 days, 4 days)    ACTUAL :
@@ -52,7 +52,7 @@ SO THAT  : I can see the rectangle I am about to build on release of the mouse b
 --------------------------------------------------------------------------
 TYPE     : USER STORY US1.005 : shenqi23 : NotStarted
 NAME     : Draw Square
-PRIORITY : 3
+PRIORITY : 2
 ESTIMATE : (2 days)    ACTUAL : ?
 AS A     : user
 I WANT   : To click on one corner of a square, drag, and release to
@@ -63,7 +63,7 @@ SO THAT  : I can see the square I am about to build on release of the mouse
 --------------------------------------------------------------------------
 TYPE     : USER STORY US1.006 : zhukai16 : NotStarted
 NAME     : Draw polyline
-PRIORITY : 3
+PRIORITY : 2
 ESTIMATE : (2 days)    ACTUAL : ?
 AS A     : user
 I WANT   : Click and drag the mouse to specify the vertices of multiple
@@ -71,25 +71,16 @@ line segments one by one
 SO THAT  : After release the mouse button, I can see a Polyline consisting
 of these vertices drawn in the current style.
 --------------------------------------------------------------------------
---------------------------------------------------------------------------
-TYPE     : USER STORY US1.007 : zhukai16 : NotStarted
-NAME     : Draw polyline Feedback
-PRIORITY : 3
-ESTIMATE : (2 days)    ACTUAL : ?
-AS A     : user
-I WANT   : Similarly to Draw Circle Feedback, display the polyline in mid construction.
-SO THAT  : I can see the polyline I am about to build on release of the mouse button.
---------------------------------------------------------------------------
 
 --------------------------------------------------------------------------
-TYPE     : USER STORY US?.005 : UTORID : NotStarted
+TYPE     : USER STORY US?.005 : UTORID : NotStarted 
 NAME     : Color selector
 PRIORITY : 3
 ESTIMATE : (1 hour, 2 hours, 4 hours, 1 day, 2 days, 4 days)    ACTUAL :
 AS A     : user
 I WANT   : To be able to select the current drawing color, to be applied
-           to subsequent shapes. Example:
-           		selects color red
+           to subsequent shapes. Example: 
+           		selects color red 
            		mode circle
            		draw a circle
            		draw a circle
@@ -102,16 +93,16 @@ I WANT   : To be able to select the current drawing color, to be applied
            		draw a squiggle
            	results in two red circles and a red rectangle as well as
            	two green rectangles and a green squiggle
-SO THAT  :
+SO THAT  : 
 --------------------------------------------------------------------------
 --------------------------------------------------------------------------
-TYPE     : USER STORY US?.006 : UTORID : NotStarted
+TYPE     : USER STORY US?.006 : UTORID : NotStarted 
 NAME     : Fill style selector
 PRIORITY : 3
 ESTIMATE : (1 hour, 2 hours, 4 hours, 1 day, 2 days, 4 days)    ACTUAL :
 AS A     : user
 I WANT   : To be able to select the current drawing style (filled or outline), to be applied
-           to subsequent shapes. Example:
+           to subsequent shapes. Example: 
            		selects fill style solid
            		mode circle
            		draw a circle
@@ -125,18 +116,17 @@ I WANT   : To be able to select the current drawing style (filled or outline), t
            		draw a squiggle
            	results in two solid circles and a solid rectangle as well as
            	two outlined rectangles and a squiggle
-SO THAT  :
+SO THAT  : 
 --------------------------------------------------------------------------
 --------------------------------------------------------------------------
-// create a new user story
-TYPE     : USER STORY US?.007 : UTORID : yinliwen
+TYPE     : USER STORY US?.007 : UTORID : NotStarted 
 NAME     : Line thickness selector
 PRIORITY : 3
 ESTIMATE : (1 hour, 2 hours, 4 hours, 1 day, 2 days, 4 days)    ACTUAL :
 AS A     : user
 I WANT   : To be able to select the current line thickness, to be applied
            to subsequent shapes. Example:
-           		select fill style outline
+           		select fill style outline 
            		selects line thickness 1
            		mode circle
            		draw a circle
@@ -148,37 +138,19 @@ I WANT   : To be able to select the current line thickness, to be applied
            		draw a rectangle
            		select mode squiggle
            		draw a squiggle
-           	results in two thinly outlined circles and a thinly outlined
+           	results in two thinly outlined circles and a thinly outlined 
            	rectangle as well as two thickly outlined rectangles and a thick squiggle
-SO THAT  :
+SO THAT  : 
 --------------------------------------------------------------------------
-// create a new user story
-TYPE: USER STORY US?.008 : UTORID : yinliwen
-NAME: Shape Rotation Feature
-PRIORITY: 2
-ESTIMATE: (1 hour, 2 hours, 4 hours, 1 day, 2 days, 4 days)
-ACTUAL:
-AS A: user
-I WANT: To be able to select a drawn shape and rotate it by dragging around its center point or using a slider to adjust the rotation angle.
-SO THAT: I can precisely rotate shapes on the canvas to better fit my design.
-
-TYPE: USER STORY US?.009 : UTORID : NotStarted
-NAME: Shape Copy & Paste
-PRIORITY: 3
-ESTIMATE: (1 hour, 2 hours, 4 hours, 1 day, 2 days, 4 days)
-ACTUAL:
-AS A: user
-I WANT: To be able to select an existing shape and copy it, then paste the duplicated shape onto another location on the canvas.
-SO THAT: I can easily replicate shapes without having to manually redraw them, making the design process faster and more efficient.
 --------------------------------------------------------------------------
-TYPE     : BUG BUG1.001 : UTORID : NotStarted
+TYPE     : BUG BUG1.001 : UTORID : yinliwen
 NAME     : Icons instead of text for drawing mode selection
 PRIORITY : 1
 ESTIMATE : (1 hour, 2 hours, 4 hours, 1 day, 2 days, 4 days)    ACTUAL :
 ISSUE    : Would be nice to have icons instead of "Circle", "Rectangle", ...
 --------------------------------------------------------------------------
 --------------------------------------------------------------------------
-TYPE     : BUG BUG1.002 : UTORID : NotStarted
+TYPE     : BUG BUG1.002 : UTORID : yinliwen
 NAME     : Drawing selection mode not indicated
 PRIORITY : 1
 ESTIMATE : (1 hour, 2 hours, 4 hours, 1 day, 2 days, 4 days)    ACTUAL :
@@ -187,7 +159,7 @@ ISSUE    : Currently, you can't tell which mode "Circle", "Rectangle", ...
            to highlight the currently selected mode?
 --------------------------------------------------------------------------
 --------------------------------------------------------------------------
-TYPE     : BUG BUG?.003 : UTORID : NotStarted
+TYPE     : BUG BUG?.003 : UTORID : NotStarted 
 NAME     : Architecture behind choosing selection mode is poor
 PRIORITY : 3
 ESTIMATE : (1 hour, 2 hours, 4 hours, 1 day, 2 days, 4 days)    ACTUAL :
@@ -198,7 +170,7 @@ ISSUE    : Code is not modular and is difficult to expand. Need a better
            'if' blocks in the PaintPanel mouse event code.
 --------------------------------------------------------------------------
 --------------------------------------------------------------------------
-TYPE     : BUG BUG?.004 : UTORID : NotStarted
+TYPE     : BUG BUG?.004 : UTORID : NotStarted 
 NAME     : Architecture behind Model is poor
 PRIORITY : 3
 ESTIMATE : (1 hour, 2 hours, 4 hours, 1 day, 2 days, 4 days)    ACTUAL :
@@ -210,16 +182,16 @@ ISSUE    : Having a list of different types of drawable things in the
            here.
 --------------------------------------------------------------------------
 --------------------------------------------------------------------------
-TYPE     : BUG BUG1.005 : chengdu2 : Complete
+TYPE     : BUG BUG1.005 : UTORID : NotStarted 
 NAME     : Squiggle is broken
 PRIORITY : 1
-ESTIMATE : 2 hours    ACTUAL : 1 hour
+ESTIMATE : (1 hour, 2 hours, 4 hours, 1 day, 2 days, 4 days)    ACTUAL :
 ISSUE    : Squiggles are connected to each other by a straight line. Each drag
 		   of the mouse should be a separate squiggle. Possibly
            the issue is with the representation of the squiggles in the Model.
 --------------------------------------------------------------------------
 --------------------------------------------------------------------------
-TYPE     : BUG BUG1.006 : UTORID : NotStarted
+TYPE     : BUG BUG1.006 : UTORID : NotStarted 
 NAME     : Circle drawing is broken
 PRIORITY : 1
 ESTIMATE : (1 hour, 2 hours, 4 hours, 1 day, 2 days, 4 days)    ACTUAL :
@@ -227,7 +199,6 @@ ISSUE    : The first click should specify the center of the circle, with
            a drag for the radius. This is not the case in the current
            implementation.
 --------------------------------------------------------------------------
-
 # COMPLETED USER STORIES/BUGS BELOW ###########################################
 --------------------------------------------------------------------------
 TYPE     : USER STORY US1.001 : rosenbl6 : Complete

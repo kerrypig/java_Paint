@@ -52,7 +52,7 @@ SO THAT  : I can see the rectangle I am about to build on release of the mouse b
 --------------------------------------------------------------------------
 TYPE     : USER STORY US1.005 : shenqi23 : NotStarted
 NAME     : Draw Square
-PRIORITY : 2
+PRIORITY : 3
 ESTIMATE : (2 days)    ACTUAL : ?
 AS A     : user
 I WANT   : To click on one corner of a square, drag, and release to
@@ -61,9 +61,22 @@ SO THAT  : I can see the square I am about to build on release of the mouse
            button.
 --------------------------------------------------------------------------
 --------------------------------------------------------------------------
-TYPE     : USER STORY US1.006 : zhukai16 : NotStarted
+TYPE     : USER STORY US1.006 : shenqi23 : NotStarted
+NAME     : Draw Square Feedback
+PRIORITY : 3
+ESTIMATE : (2 days)    ACTUAL : ?
+AS A     : user
+I WANT   : As a user is specifying a Circle, during the drag, a 'current'
+           square should be on display. As the user drags, the 'current'
+           square changes in real time so that a square is drawn with
+           corner at users initial square click, with diagonal line out to
+          the current dragged mouse position.
+SO THAT  : I can see the square I am about to build on release of the mouse button.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+TYPE     : USER STORY US1.007 : zhukai16 : NotStarted
 NAME     : Draw polyline
-PRIORITY : 2
+PRIORITY : 3
 ESTIMATE : (2 days)    ACTUAL : ?
 AS A     : user
 I WANT   : Click and drag the mouse to specify the vertices of multiple
@@ -72,9 +85,9 @@ SO THAT  : After release the mouse button, I can see a Polyline consisting
 of these vertices drawn in the current style.
 --------------------------------------------------------------------------
 --------------------------------------------------------------------------
-TYPE     : USER STORY US1.007 : zhukai16 : NotStarted
+TYPE     : USER STORY US1.008 : zhukai16 : NotStarted
 NAME     : Draw polyline Feedback
-PRIORITY : 2
+PRIORITY : 3
 ESTIMATE : (2 days)    ACTUAL : ?
 AS A     : user
 I WANT   : Similarly to Draw Circle Feedback, display the polyline in mid construction.

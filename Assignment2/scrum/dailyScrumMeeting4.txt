@@ -2,42 +2,42 @@
 Member name: Qianhe Shen     email: qianhe.shen@mail.utoronto.ca    utorid: shenqi23
 
 Oct 14,2024
-	What I did yesterday:
-	What I will do today:
-	Obstacles I face:
+	What I did yesterday:N/A
+	What I will do today: read a2 requirements
+	Obstacles I face: N/A
 
 Oct 15,2024
-	What I did yesterday:
-	What I will do today:
-	Obstacles I face:
+	What I did yesterday: read a2 requirements
+	What I will do today: checking environments
+	Obstacles I face: N/A
 
 Oct 16,2024
-	What I did yesterday:
+	What I did yesterday: checking environments
 	What I will do today: Complete user story
 	Obstacles I face: Understanding the whole Assignment2
 
 Oct 17,2024
 	What I did yesterday: Complete user story writing for lab6
-	What I will do today: ----
-	Obstacles I face:
+	What I will do today: discuss architecture with teammates
+	Obstacles I face: N/A
 
 Oct 18,2024
-	What I did yesterday: -----
+	What I did yesterday: discuss architecture with teammates
 	What I will do today: Meeting with team members/complete US.003
-	Obstacles I face:
+	Obstacles I face: No obstacles
 
 Oct 19,2024
-	What I did yesterday:
-	What I will do today:
-	Obstacles I face:
+	What I did yesterday: Meeting with team members/ starting US.004
+	What I will do today: complete US.004
+	Obstacles I face: fixing bugs for US.004
 
 Oct 20,2024
-	What I did yesterday:
-	What I will do today:
-	Obstacles I face:
+	What I did yesterday: complete US.003
+	What I will do today: merge branches
+	Obstacles I face: solve conflicts when merging
 
 Oct 21,2024
-	What I did yesterday:
+	What I did yesterday: merge branches
 	What I will do today:
 	Obstacles I face:
 

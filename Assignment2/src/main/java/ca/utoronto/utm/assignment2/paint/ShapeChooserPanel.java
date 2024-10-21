@@ -61,14 +61,14 @@ public class ShapeChooserPanel extends GridPane implements EventHandler<ActionEv
                 switch (shape) {
                         case "Circle":
                                 gc.getFillRule();
-                                gc.strokeOval(padding, padding, 50, 50);  // 绘制较小的圆形
+                                gc.strokeOval(padding, padding, 50, 50);
 
                                 break;
                         case "Rectangle":
-                                gc.strokeRect(padding, padding, 50, 30);  // 绘制较小的矩形
+                                gc.strokeRect(padding, padding, 50, 30);
                                 break;
                         case "Square":
-                                gc.strokeRect(padding, padding, 50, 50);  // 绘制较小的正方形
+                                gc.strokeRect(padding, padding, 50, 50);
                                 break;
                         case "Squiggle":
                                 gc.beginPath();

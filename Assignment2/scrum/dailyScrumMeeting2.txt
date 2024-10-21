@@ -2,39 +2,39 @@
 Member name:  LiwenYin    email: phoenix.yin@mail.utoronto.ca     utorid:   liwenyin
 
 Oct 14,2024
-	What I did yesterday:
+	What I did yesterday: not start yet
 	What I will do today:
 	Obstacles I face:
 
 Oct 15,2024
-	What I did yesterday: 
-	What I will do today:
-	Obstacles I face:
+	What I did yesterday:
+	What I will do today: update 2 new userstory, member.txt
+	Obstacles I face: how to use git command
 
 Oct 16,2024
-	What I did yesterday:
-	What I will do today: update user story
-	Obstacles I face: no
+	What I did yesterday: learn git commands
+	What I will do today:  learn git commands, try to fix BUG001
+	Obstacles I face: BUG001, how to draw graph in JavaFX
 
 Oct 17,2024
-	What I did yesterday:
-	What I will do today:
-	Obstacles I face:
+	What I did yesterday: Do BUG001
+	What I will do today: Do BUG002
+	Obstacles I face: N/A
 
 Oct 18,2024
-	What I did yesterday:
-	What I will do today:
-	Obstacles I face:
+	What I did yesterday: BUG002
+	What I will do today: BUG006
+	Obstacles I face:N/A
 
 Oct 19,2024
-	What I did yesterday:
-	What I will do today:
-	Obstacles I face:
+	What I did yesterday: BUG006
+	What I will do today: meeting with group members to discuss about the progress now.
+	Obstacles I face: how to let the radius increase with the mouse moved
 
 Oct 20,2024
-	What I did yesterday:
-	What I will do today:
-	Obstacles I face:
+	What I did yesterday: Fix BUG006
+	What I will do today: Fix BUG006,meeting with group members to discuss about merging all branches.
+	Obstacles I face: N/A
 
 Oct 21,2024
 	What I did yesterday:

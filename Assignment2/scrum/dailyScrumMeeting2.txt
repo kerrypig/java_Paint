@@ -37,39 +37,39 @@ Oct 20,2024
 	Obstacles I face: N/A
 
 Oct 21,2024
-	What I did yesterday:
-	What I will do today:
-	Obstacles I face:
+	What I did yesterday: complete Sprint1
+	What I will do today: Discuss the product backlog with the group and assign tasks to each person.
+	Obstacles I face: N/A
 
 Oct 22,2024
-	What I did yesterday:
-	What I will do today:
-	Obstacles I face:
+	What I did yesterday:  Group Meeting to assign tasks.
+	What I will do today:  Do US?.006
+	Obstacles I face: N/A
 
 Oct 23,2024
-	What I did yesterday:
-	What I will do today:
-	Obstacles I face:
+	What I did yesterday: Completed US?.006
+	What I will do today: try to figure out how to build a better architecture.
+	Obstacles I face: which pattern should we use to fix BUG?.003
 
 Oct 24,2024
-	What I did yesterday:
-	What I will do today:
-	Obstacles I face:
+	What I did yesterday: Do BUG?.003
+	What I will do today: discuss with group members about the architecture.
+	Obstacles I face:  N/A
 
 Oct 25,2024
-	What I did yesterday:
-	What I will do today:
-	Obstacles I face:
+	What I did yesterday: discuss with group members about the architecture.
+	What I will do today:  review all the design patterns we learned in class.
+	Obstacles I face: N/A
 
 Oct 26,2024
-	What I did yesterday:
-	What I will do today:
-	Obstacles I face:
+	What I did yesterday: review design patterns
+	What I will do today: First attempt to optimize the framework
+	Obstacles I face: N/A
 
 Oct 27,2024
-	What I did yesterday:
-	What I will do today:
-	Obstacles I face:
+	What I did yesterday: First attempt to optimize the framework
+	What I will do today:  complete sprint2
+	Obstacles I face: N/A
 
 Oct 28,2024
 	What I did yesterday:

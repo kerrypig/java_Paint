@@ -8,7 +8,6 @@ import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.Region;
 import javafx.scene.paint.Color;
 
-import java.awt.*;
 import java.util.ArrayList;
 import java.util.Observable;
 import java.util.Observer;

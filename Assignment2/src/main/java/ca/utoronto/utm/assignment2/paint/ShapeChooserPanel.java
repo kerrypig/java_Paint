@@ -24,7 +24,7 @@ public class ShapeChooserPanel extends GridPane implements EventHandler<ActionEv
 
                 this.view = view;
 
-                String[] models = { "Circle", "Rectangle", "Square", "Squiggle", "Polyline" };
+                String[] models = { "Circle", "Rectangle", "Square", "Squiggle", "Polyline","Oval" };
 
                 int row = 0;
                 for (String mode : models) {
@@ -115,6 +115,10 @@ public class ShapeChooserPanel extends GridPane implements EventHandler<ActionEv
                                 gc.lineTo(70, padding);
                                 gc.stroke();
                                 break;
+                                case "Oval":
+                                        gc.getFillRule();
+                                        gc.strokeOval(padding, padding, 50, 25);
+                                        break;
                         default:
                                 break;
                 }

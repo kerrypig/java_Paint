@@ -32,5 +32,6 @@ public abstract class Shape {
     public void setColor(Color color) {
         this.color = color;
     }
+    // override
     public void draw(GraphicsContext g) {}
 }

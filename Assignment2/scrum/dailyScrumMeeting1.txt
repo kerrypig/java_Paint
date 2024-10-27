@@ -37,34 +37,34 @@ Oct 20,2024
 	Obstacles I face: Merging
 
 Oct 21,2024
-	What I did yesterday:
-	What I will do today:
-	Obstacles I face:
+	What I did yesterday: Nothing
+	What I will do today: Nothing
+	Obstacles I face: Time is limited
 
 Oct 22,2024
-	What I did yesterday:
-	What I will do today:
-	Obstacles I face:
+	What I did yesterday: Nothing
+	What I will do today: Nothing
+	Obstacles I face: Time is limited
 
 Oct 23,2024
-	What I did yesterday:
-	What I will do today:
-	Obstacles I face:
+	What I did yesterday: Nothing
+	What I will do today: Nothing
+	Obstacles I face: Time is limited
 
 Oct 24,2024
-	What I did yesterday:
-	What I will do today:
-	Obstacles I face:
+	What I did yesterday: Check product backlog for priorities
+	What I will do today: A math term test
+	Obstacles I face: Time is limited
 
 Oct 25,2024
-	What I did yesterday:
-	What I will do today:
-	Obstacles I face:
+	What I did yesterday: A math term test
+	What I will do today: US2.005
+	Obstacles I face: Set color for each shape drawn is complicated.
 
 Oct 26,2024
-	What I did yesterday:
-	What I will do today:
-	Obstacles I face:
+	What I did yesterday: Work on US2.005
+	What I will do today: CSC207 Midterm
+	Obstacles I face: Time is limited
 
 Oct 27,2024
 	What I did yesterday:

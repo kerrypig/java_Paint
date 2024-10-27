@@ -21,6 +21,9 @@ public class PaintPanel extends Canvas implements EventHandler<MouseEvent>, Obse
 	private Squiggle squiggle;
 	private Oval oval;
 
+	private ShapeStrategy currentStrategy;
+
+
 	public PaintPanel(PaintModel model) {
 		super(300, 300);
 		this.model = model;
@@ -36,107 +39,136 @@ public class PaintPanel extends Canvas implements EventHandler<MouseEvent>, Obse
 	/**
 	 * Controller aspect of this
 	 */
+//	public void setMode(String mode) {
+//		this.mode = mode;
+//		System.out.println(this.mode);
+//	}
 	public void setMode(String mode) {
 		this.mode = mode;
-		System.out.println(this.mode);
-	}
-
-	@Override
-	public void handle(MouseEvent mouseEvent) {
-		// Later when we learn about inner classes...
-		// https://docs.oracle.com/javafx/2/events/DraggablePanelsExample.java.htm
-
-		EventType<MouseEvent> mouseEventType = (EventType<MouseEvent>) mouseEvent.getEventType();
-
-		// "Circle", "Rectangle", "Square", "Squiggle", "Polyline"
-		switch (this.mode) {
+		switch (mode) {
 			case "Circle":
-				if (mouseEventType.equals(MouseEvent.MOUSE_PRESSED)) {
-					System.out.println("Started Circle");
-					Point centre = new Point(mouseEvent.getX(), mouseEvent.getY());
-					this.circle = new Circle(centre, 0, model.geIsSolid(), model.getThickness(), model.getCurrentColor());
-				} else if (mouseEventType.equals(MouseEvent.MOUSE_DRAGGED)) {
-					if (this.circle != null) {
-						findCircle(mouseEvent);
-					}
-
-				} else if (mouseEventType.equals(MouseEvent.MOUSE_MOVED)) {
-
-				} else if (mouseEventType.equals(MouseEvent.MOUSE_RELEASED)) {
-					if (this.circle != null) {
-						findCircle(mouseEvent);
-						System.out.println("Added Circle");
-						this.circle = null;
-					}
-				}
-
+				currentStrategy = new CircleStrategy();
 				break;
 			case "Rectangle":
-				if (mouseEventType.equals(MouseEvent.MOUSE_PRESSED)) {
-					// first corner
-					System.out.println("Started Rectangle");
-					Point corner1 = new Point(mouseEvent.getX(), mouseEvent.getY());
-					this.rectangle = new Rectangle(corner1, corner1, model.geIsSolid(), model.getThickness(), model.getCurrentColor());
-				} else if (mouseEventType.equals(MouseEvent.MOUSE_DRAGGED)) {
-					Point corner2 = new Point(mouseEvent.getX(), mouseEvent.getY());
-					this.rectangle.setRight_down(corner2);
-					this.model.addShape(this.rectangle);
-				} else if (mouseEventType.equals(MouseEvent.MOUSE_MOVED)) {
-
-				} else if (mouseEventType.equals(MouseEvent.MOUSE_RELEASED)) {
-					if (this.rectangle != null) {
-						Point corner2 = new Point(mouseEvent.getX(), mouseEvent.getY());
-						this.rectangle.setRight_down(corner2);
-						this.model.addShape(this.rectangle);
-						this.rectangle = null;
-					}
-				}
+				currentStrategy = new RectangleStrategy();
 				break;
-			case "Square":
-				break;
-			case "Squiggle":
-				if (mouseEventType.equals(MouseEvent.MOUSE_PRESSED)) {
-					System.out.println("Started Squiggle");
-					this.squiggle = new Squiggle(model.geIsSolid(), model.getThickness(), model.getCurrentColor());
-					squiggle.addPoint(new Point(mouseEvent.getX(), mouseEvent.getY()));
-				} else if (mouseEventType.equals(MouseEvent.MOUSE_DRAGGED)) {
-					squiggle.addPoint(new Point(mouseEvent.getX(), mouseEvent.getY()));
-					if (this.squiggle != null) {
-						this.model.addShape(this.squiggle);
-					}
-
-				} else if (mouseEventType.equals(MouseEvent.MOUSE_RELEASED)) {
-					if (this.squiggle != null) {
-						this.model.addShape(this.squiggle);
-						System.out.println("Added Squiggle");
-						this.squiggle = null;
-					}
-				}
-				break;
-			case "Polyline":
-				break;
+			// 可以添加其他模式策略
 			case "Oval":
-				if (mouseEventType.equals(MouseEvent.MOUSE_PRESSED)) {
-					// first corner
-					System.out.println("Started Oval");
-					Point corner1 = new Point(mouseEvent.getX(), mouseEvent.getY());
-					this.oval = new Oval(corner1, corner1, model.geIsSolid(), model.getThickness(), model.getCurrentColor());
-				} else if (mouseEventType.equals(MouseEvent.MOUSE_DRAGGED)) {
-					Point corner2 = new Point(mouseEvent.getX(), mouseEvent.getY());
-					this.oval.setRight_down(corner2);
-					this.model.addShape(this.oval);
-				} else if (mouseEventType.equals(MouseEvent.MOUSE_MOVED)) {
+				currentStrategy = new OvalStrategy();
+		}
+	}
 
-				} else if (mouseEventType.equals(MouseEvent.MOUSE_RELEASED)) {
-					if (this.oval != null) {
-						Point corner2 = new Point(mouseEvent.getX(), mouseEvent.getY());
-						this.oval.setRight_down(corner2);
-						this.model.addShape(this.oval);
-						this.oval = null;
-					}
-				}
-			default:
-				break;
+//	@Override
+//	public void handle(MouseEvent mouseEvent) {
+//		// Later when we learn about inner classes...
+//		// https://docs.oracle.com/javafx/2/events/DraggablePanelsExample.java.htm
+//
+//		EventType<MouseEvent> mouseEventType = (EventType<MouseEvent>) mouseEvent.getEventType();
+//
+//		// "Circle", "Rectangle", "Square", "Squiggle", "Polyline"
+//		switch (this.mode) {
+//			case "Circle":
+//				if (mouseEventType.equals(MouseEvent.MOUSE_PRESSED)) {
+//					currentStrategy.mousePressed(model, mouseEvent);
+//
+//				} else if (mouseEventType.equals(MouseEvent.MOUSE_DRAGGED)) {
+//					if (this.circle != null) {
+//						findCircle(mouseEvent);
+//					}
+//
+//				} else if (mouseEventType.equals(MouseEvent.MOUSE_MOVED)) {
+//
+//				} else if (mouseEventType.equals(MouseEvent.MOUSE_RELEASED)) {
+//					if (this.circle != null) {
+//						findCircle(mouseEvent);
+//						System.out.println("Added Circle");
+//						this.circle = null;
+//					}
+//				}
+//
+//				break;
+//			case "Rectangle":
+//				if (mouseEventType.equals(MouseEvent.MOUSE_PRESSED)) {
+//					// first corner
+//					System.out.println("Started Rectangle");
+//					Point corner1 = new Point(mouseEvent.getX(), mouseEvent.getY());
+//					this.rectangle = new Rectangle(corner1, corner1, model.geIsSolid(), model.getThickness(), model.getCurrentColor());
+//				} else if (mouseEventType.equals(MouseEvent.MOUSE_DRAGGED)) {
+//					Point corner2 = new Point(mouseEvent.getX(), mouseEvent.getY());
+//					this.rectangle.setRight_down(corner2);
+//					this.model.addShape(this.rectangle);
+//				} else if (mouseEventType.equals(MouseEvent.MOUSE_MOVED)) {
+//
+//				} else if (mouseEventType.equals(MouseEvent.MOUSE_RELEASED)) {
+//					if (this.rectangle != null) {
+//						Point corner2 = new Point(mouseEvent.getX(), mouseEvent.getY());
+//						this.rectangle.setRight_down(corner2);
+//						this.model.addShape(this.rectangle);
+//						this.rectangle = null;
+//					}
+//				}
+//				break;
+//			case "Square":
+//				break;
+//			case "Squiggle":
+//				if (mouseEventType.equals(MouseEvent.MOUSE_PRESSED)) {
+//					System.out.println("Started Squiggle");
+//					this.squiggle = new Squiggle(model.geIsSolid(), model.getThickness(), model.getCurrentColor());
+//					squiggle.addPoint(new Point(mouseEvent.getX(), mouseEvent.getY()));
+//				} else if (mouseEventType.equals(MouseEvent.MOUSE_DRAGGED)) {
+//					squiggle.addPoint(new Point(mouseEvent.getX(), mouseEvent.getY()));
+//					if (this.squiggle != null) {
+//						this.model.addShape(this.squiggle);
+//					}
+//
+//				} else if (mouseEventType.equals(MouseEvent.MOUSE_RELEASED)) {
+//					if (this.squiggle != null) {
+//						this.model.addShape(this.squiggle);
+//						System.out.println("Added Squiggle");
+//						this.squiggle = null;
+//					}
+//				}
+//				break;
+//			case "Polyline":
+//				break;
+//			case "Oval":
+//				if (mouseEventType.equals(MouseEvent.MOUSE_PRESSED)) {
+//					// first corner
+//					System.out.println("Started Oval");
+//					Point corner1 = new Point(mouseEvent.getX(), mouseEvent.getY());
+//					this.oval = new Oval(corner1, corner1, model.geIsSolid(), model.getThickness(), model.getCurrentColor());
+//				} else if (mouseEventType.equals(MouseEvent.MOUSE_DRAGGED)) {
+//					Point corner2 = new Point(mouseEvent.getX(), mouseEvent.getY());
+//					this.oval.setRight_down(corner2);
+//					this.model.addShape(this.oval);
+//				} else if (mouseEventType.equals(MouseEvent.MOUSE_MOVED)) {
+//
+//				} else if (mouseEventType.equals(MouseEvent.MOUSE_RELEASED)) {
+//					if (this.oval != null) {
+//						Point corner2 = new Point(mouseEvent.getX(), mouseEvent.getY());
+//						this.oval.setRight_down(corner2);
+//						this.model.addShape(this.oval);
+//						this.oval = null;
+//					}
+//				}
+//			default:
+//				break;
+//		}
+//	}
+	@Override
+	public void handle(MouseEvent mouseEvent) {
+		if (currentStrategy != null) {
+			switch (mouseEvent.getEventType().getName()) {
+				case "MOUSE_PRESSED":
+					currentStrategy.mousePressed(model, mouseEvent);
+					break;
+				case "MOUSE_DRAGGED":
+					currentStrategy.mouseDragged(model, mouseEvent);
+					break;
+				case "MOUSE_RELEASED":
+					currentStrategy.mouseReleased(model, mouseEvent);
+					break;
+			}
 		}
 	}
 

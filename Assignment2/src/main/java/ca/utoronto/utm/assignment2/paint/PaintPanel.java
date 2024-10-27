@@ -5,6 +5,7 @@ import javafx.event.EventHandler;
 import javafx.event.EventType;
 import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.input.MouseEvent;
+import javafx.scene.layout.Region;
 import javafx.scene.paint.Color;
 
 import java.awt.*;
@@ -22,7 +23,7 @@ public class PaintPanel extends Canvas implements EventHandler<MouseEvent>, Obse
     private Oval oval;
 
     public PaintPanel(PaintModel model) {
-        super(300, 300);
+        super(300,300);
         this.model = model;
         this.model.addObserver(this);
 

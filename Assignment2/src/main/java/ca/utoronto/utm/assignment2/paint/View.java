@@ -32,6 +32,15 @@ public class View implements EventHandler<ActionEvent> {
                 stage.setScene(scene);
                 stage.setTitle("Paint");
                 stage.show();
+
+                // 动态调整 Canvas 尺寸
+                stage.widthProperty().addListener((obs, oldVal, newVal) -> {
+                        paintPanel.setWidth(newVal.doubleValue());
+                });
+
+                stage.heightProperty().addListener((obs, oldVal, newVal) -> {
+                        paintPanel.setHeight(newVal.doubleValue());
+                });
         }
 
         public PaintModel getPaintModel() {

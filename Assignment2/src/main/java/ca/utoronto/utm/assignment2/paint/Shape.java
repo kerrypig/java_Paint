@@ -6,7 +6,7 @@ import java.awt.*;
 
 public abstract class Shape {
     private boolean isSolid;
-    private double thickness;
+    private double thickness = 1.0;
     private Color color;
 
     public Shape(boolean isSolid, double thickness) {

@@ -118,12 +118,23 @@ public class ShapeChooserPanel extends GridPane implements EventHandler<ActionEv
 		}
 
 	}
+	private void drawWaveLine(GraphicsContext gc, double startX, double startY, double endX, double endY, double amplitude, double frequency) {
+		gc.beginPath();
+		gc.moveTo(startX, startY);
+
+		for (double x = startX; x <= endX; x += frequency) {
+			double y = startY + amplitude * Math.sin((x - startX) * Math.PI / frequency);
+			gc.lineTo(x, y);
+		}
+
+		gc.stroke();
+	}
 
 	private Button createShapeButton(String shape, double width, double height) {
 		Canvas canvas = new Canvas(70, 70);
 		GraphicsContext gc = canvas.getGraphicsContext2D();
 		gc.setStroke(Color.BLACK);
-		gc.setLineWidth(2);
+		gc.setLineWidth(3);
 		double padding = 10;
 
 		switch (shape) {
@@ -138,13 +149,12 @@ public class ShapeChooserPanel extends GridPane implements EventHandler<ActionEv
 			case "Square":
 				gc.strokeRect(padding, padding, 50, 50);
 				break;
+
 			case "Squiggle":
 				gc.beginPath();
-				gc.moveTo(padding, 35);
-				gc.lineTo(20, padding);
-				gc.lineTo(40, 35);
-				gc.lineTo(60, 60);
-				gc.lineTo(70, 35);
+				gc.moveTo(padding, 40);
+				gc.quadraticCurveTo(padding + 15, 20, padding + 30, 40);
+				gc.quadraticCurveTo(padding + 45, 60, padding + 60, 40);
 				gc.stroke();
 				break;
 			case "Polyline":

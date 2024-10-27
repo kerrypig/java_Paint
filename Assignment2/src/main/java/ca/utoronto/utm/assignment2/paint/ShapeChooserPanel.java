@@ -1,8 +1,11 @@
 package ca.utoronto.utm.assignment2.paint;
+import javafx.beans.value.ChangeListener;
+import javafx.beans.value.ObservableValue;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.scene.canvas.Canvas;
 import javafx.scene.control.Button;
+import javafx.scene.control.TextField;
 import javafx.scene.layout.GridPane;
 import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.paint.Color;
@@ -18,6 +21,7 @@ public class ShapeChooserPanel extends GridPane implements EventHandler<ActionEv
         private Button solidButton;
         //
         private Button outlineButton;
+        private TextField thicknessTextField;
 
 
         public ShapeChooserPanel(View view) {
@@ -49,6 +53,13 @@ public class ShapeChooserPanel extends GridPane implements EventHandler<ActionEv
 
                 this.add(solidButton, 0, 8);
                 this.add(outlineButton, 0, 7);
+
+                thicknessTextField = new TextField();
+                thicknessTextField.setMaxWidth(85);
+                thicknessTextField.setMinWidth(85);
+                thicknessTextField.setPromptText("Thickness");
+                this.add(thicknessTextField, 0, 9);
+
                 //
                 solidButton.setOnAction(actionEvent -> {
                         view.getPaintModel().setIsSolid(true);
@@ -62,6 +73,25 @@ public class ShapeChooserPanel extends GridPane implements EventHandler<ActionEv
                         solidButton.setStyle("");
                 });
                 //
+                thicknessTextField.focusedProperty().addListener(new ChangeListener<Boolean>() {
+
+                        @Override
+                        public void changed(ObservableValue<? extends Boolean> observable, Boolean Old, Boolean newValue) {
+//                                System.out.println(thicknessTextField.getText()+" old");
+//                                boolean changed = false;
+//                                if(!newValue){
+//                                        changed = true;
+//                                }
+//                                if (changed&&newValue){
+                                        try {
+//                                                System.out.println(thicknessTextField.getText()+" new");
+                                                view.getPaintModel().setThickness(Float.parseFloat(thicknessTextField.getText()));
+                                        }catch (NumberFormatException e){
+                                                thicknessTextField.setText("1.0");
+                                        }
+//                                }
+                        }
+                });
 
 
 

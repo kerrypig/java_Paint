@@ -17,6 +17,7 @@ public class View implements EventHandler<ActionEvent> {
         private PaintPanel paintPanel;
         private ShapeChooserPanel shapeChooserPanel;
 
+
         public View(PaintModel model, Stage stage) {
                 this.paintModel = model;
 

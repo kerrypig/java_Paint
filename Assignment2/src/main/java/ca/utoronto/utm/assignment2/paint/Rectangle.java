@@ -1,22 +1,21 @@
 package ca.utoronto.utm.assignment2.paint;
 
-public class Rectangle {
+import javafx.scene.canvas.GraphicsContext;
+import javafx.scene.paint.Color;
+
+public class Rectangle extends Shape{
     private Point left_up,right_down, constant_corner;
-    private boolean isSolid;
 
 
-    public Rectangle(Point p1, Point p2, boolean isSolid) {
+    public Rectangle(Point p1, Point p2, boolean isSolid, double thickness) {
         //p1: corner 1, p2: corner 2
+        super(isSolid, thickness);
         this.left_up = p1;
         this.right_down = p2;
         this.constant_corner = p1;
-        this.isSolid = isSolid;
     }
 
 
-    public boolean getIsSolid() {
-        return isSolid;
-    }
 
     private Point getMax(Point num1, Point num2) {
         double x1 = num1.x;
@@ -50,5 +49,19 @@ public class Rectangle {
     }
     public Point getLeft_up() {
         return this.left_up;
+    }
+
+    @Override
+    public void draw(GraphicsContext g2d) {
+        g2d.setFill(Color.BLUE);
+            if(this.isSolid()){
+                g2d.fillRect(this.getLeft_up().x, this.getLeft_up().y,
+                        -(this.getLeft_up().x - this.getRight_down().x), -(this.getLeft_up().y - this.getRight_down().y));
+            }   else{
+                g2d.setLineWidth(this.getThickness());
+                g2d.strokeRect(this.getLeft_up().x, this.getLeft_up().y,
+                        -(this.getLeft_up().x - this.getRight_down().x), -(this.getLeft_up().y - this.getRight_down().y));
+            }
+
     }
 }

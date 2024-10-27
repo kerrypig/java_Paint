@@ -7,6 +7,7 @@ import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.paint.Color;
 
+import java.awt.*;
 import java.util.ArrayList;
 import java.util.Observable;
 import java.util.Observer;
@@ -53,7 +54,7 @@ public class PaintPanel extends Canvas implements EventHandler<MouseEvent>, Obse
                 if (mouseEventType.equals(MouseEvent.MOUSE_PRESSED)) {
                     System.out.println("Started Circle");
                     Point centre = new Point(mouseEvent.getX(), mouseEvent.getY());
-                    this.circle = new Circle(centre, 0, model.geIsSolid());
+                    this.circle = new Circle(centre, 0, model.geIsSolid(),model.getThickness());
                 } else if (mouseEventType.equals(MouseEvent.MOUSE_DRAGGED)) {
                     if (this.circle != null) {
                         findCircle(mouseEvent);
@@ -75,18 +76,18 @@ public class PaintPanel extends Canvas implements EventHandler<MouseEvent>, Obse
                     // first corner
                     System.out.println("Started Rectangle");
                     Point corner1 = new Point(mouseEvent.getX(), mouseEvent.getY());
-                    this.rectangle = new Rectangle(corner1, corner1, model.geIsSolid());
+                    this.rectangle = new Rectangle(corner1, corner1, model.geIsSolid(), model.getThickness());
                 } else if (mouseEventType.equals(MouseEvent.MOUSE_DRAGGED)) {
                     Point corner2 = new Point(mouseEvent.getX(), mouseEvent.getY());
                     this.rectangle.setRight_down(corner2);
-                    this.model.addRectangle(this.rectangle);
+                    this.model.addShape(this.rectangle);
                 } else if (mouseEventType.equals(MouseEvent.MOUSE_MOVED)) {
 
                 } else if (mouseEventType.equals(MouseEvent.MOUSE_RELEASED)) {
                     if (this.rectangle != null) {
                         Point corner2 = new Point(mouseEvent.getX(), mouseEvent.getY());
                         this.rectangle.setRight_down(corner2);
-                        this.model.addRectangle(this.rectangle);
+                        this.model.addShape(this.rectangle);
                         this.rectangle = null;
                     }
                 }
@@ -118,18 +119,18 @@ public class PaintPanel extends Canvas implements EventHandler<MouseEvent>, Obse
                     // first corner
                     System.out.println("Started Oval");
                     Point corner1 = new Point(mouseEvent.getX(), mouseEvent.getY());
-                    this.oval = new Oval(corner1, corner1,model.geIsSolid());
+                    this.oval = new Oval(corner1, corner1,model.geIsSolid(), model.getThickness());
                 } else if (mouseEventType.equals(MouseEvent.MOUSE_DRAGGED)) {
                     Point corner2 = new Point(mouseEvent.getX(), mouseEvent.getY());
                     this.oval.setRight_down(corner2);
-                    this.model.addOval(this.oval);
+                    this.model.addShape(this.oval);
                 } else if (mouseEventType.equals(MouseEvent.MOUSE_MOVED)) {
 
                 } else if (mouseEventType.equals(MouseEvent.MOUSE_RELEASED)) {
                     if (this.oval != null) {
                         Point corner2 = new Point(mouseEvent.getX(), mouseEvent.getY());
                         this.oval.setRight_down(corner2);
-                        this.model.addOval(this.oval);
+                        this.model.addShape(this.oval);
                         this.oval = null;
                     }
                 }
@@ -150,7 +151,7 @@ public class PaintPanel extends Canvas implements EventHandler<MouseEvent>, Obse
         double oldy = this.circle.getCentre().y;
         double NewRadius = Math.sqrt(Math.pow(newX - oldx, 2) + Math.pow(newY - oldy, 2));
         this.circle.setRadius(NewRadius);
-        this.model.addCircle(this.circle);
+        this.model.addShape(this.circle);
     }
 
     /**
@@ -168,41 +169,19 @@ public class PaintPanel extends Canvas implements EventHandler<MouseEvent>, Obse
 
     @Override
     public void update(Observable o, Object arg) {
-
+        // graph shape
         GraphicsContext g2d = this.getGraphicsContext2D();
         g2d.clearRect(0, 0, this.getWidth(), this.getHeight());;
+
+        ArrayList<Shape> shapes = this.model.getShapes();
+        for (Shape s:shapes){
+            s.draw(g2d);
+        }
 
         // Draw Lines
         ArrayList<Point> points = this.model.getPoints();
         g2d.setFill(Color.RED);
         paintPoints(g2d, points);
-
-        // Draw Circles
-        ArrayList<Circle> circles = this.model.getCircles();
-        g2d.setFill(Color.GREEN);
-        for (Circle c : this.model.getCircles()) {
-            double x = c.getCentre().x;
-            double y = c.getCentre().y;
-            double radius = c.getRadius();
-            if (c.getIsSolid()) {
-                g2d.fillOval(x - radius, y - radius, 2 * radius, 2 * radius);
-            } else {
-                g2d.strokeOval(x - radius, y - radius, 2 * radius, 2 * radius);
-            }
-        }
-
-        // Draw Rectangle
-        ArrayList<Rectangle> rectangles = this.model.getRectangles();
-        g2d.setFill(Color.BLUE);
-        for (Rectangle r : this.model.getRectangles()) {
-            if(r.getIsSolid()){
-            g2d.fillRect(r.getLeft_up().x, r.getLeft_up().y,
-                    -(r.getLeft_up().x - r.getRight_down().x), -(r.getLeft_up().y - r.getRight_down().y));
-        }   else{
-                g2d.strokeRect(r.getLeft_up().x, r.getLeft_up().y,
-                        -(r.getLeft_up().x - r.getRight_down().x), -(r.getLeft_up().y - r.getRight_down().y));
-            }
-        }
 
         // Draw Squiggles
         ArrayList<Squiggle> squiggles = this.model.getSquiggles();
@@ -212,18 +191,7 @@ public class PaintPanel extends Canvas implements EventHandler<MouseEvent>, Obse
             paintPoints(g2d, squigglePoints);
         }
 
-        // Draw Oval
-        ArrayList<Oval> ovals = this.model.getOvals();
-        g2d.setFill(Color.PURPLE);
-        for (Oval ov : this.model.getOvals()){
-            if (ov.getIsSolid()){
-                g2d.fillOval(ov.getLeft_up().x, ov.getLeft_up().y,ov.getWidth(), ov.getHeight());
-            }else{
-                g2d.strokeOval(ov.getLeft_up().x, ov.getLeft_up().y,ov.getWidth(), ov.getHeight());
-            }
-
-//            System.out.println(ov.getLeft_up().x+" "+ ov.getLeft_up().y+" "+ov.getWidth()+" "+ ov.getHeight());
         }
     }
 
-}
+

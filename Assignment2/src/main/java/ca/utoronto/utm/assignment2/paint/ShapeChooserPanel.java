@@ -14,6 +14,11 @@ public class ShapeChooserPanel extends GridPane implements EventHandler<ActionEv
 
         private View view;
         private ArrayList<Button> buttons = new ArrayList<>();
+        //
+        private Button solidButton;
+        //
+        private Button outlineButton;
+
 
         public ShapeChooserPanel(View view) {
 
@@ -35,6 +40,29 @@ public class ShapeChooserPanel extends GridPane implements EventHandler<ActionEv
                                 highlightSelectedButton(button);
                         });
                 }
+
+                //
+                solidButton = new Button("Solid");
+                outlineButton = new Button("Outline");
+                solidButton.setMinWidth(85);
+                outlineButton.setMinWidth(85);
+
+                this.add(solidButton, 0, 8);
+                this.add(outlineButton, 0, 7);
+                //
+                solidButton.setOnAction(actionEvent -> {
+                        view.getPaintModel().setIsSolid(true);
+                        solidButton.setStyle("-fx-background-color: #e6d99b;");
+                        outlineButton.setStyle("");
+                });
+                //
+                outlineButton.setOnAction(actionEvent -> {
+                        view.getPaintModel().setIsSolid(false);
+                        outlineButton.setStyle("-fx-background-color: #e6d99b;");
+                        solidButton.setStyle("");
+                });
+                //
+
 
 
         }

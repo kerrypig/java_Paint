@@ -1,13 +1,32 @@
 package ca.utoronto.utm.assignment2.paint;
 
+import javafx.scene.control.Button;
+
 import java.util.ArrayList;
 import java.util.Observable;
 
 public class PaintModel extends Observable {
+        //
+        private boolean isSolid = true;
+
         private ArrayList<Point> points=new ArrayList<Point>();
         private ArrayList<Circle> circles=new ArrayList<Circle>();
         private ArrayList<Rectangle> rectangles = new ArrayList<Rectangle>();
         private ArrayList<Squiggle> squiggles = new ArrayList<Squiggle>();
+
+
+        //
+        public boolean geIsSolid() {
+                return isSolid;
+        }
+
+        //
+        public void setIsSolid(boolean isSolid){
+                this.isSolid = isSolid;
+                setChanged();
+                notifyObservers();
+
+        }
 
 
         public void addPoint(Point p){
@@ -24,6 +43,7 @@ public class PaintModel extends Observable {
                 this.setChanged();
                 this.notifyObservers();
         }
+
         public ArrayList<Circle> getCircles(){
                 return circles;
         }

@@ -52,7 +52,7 @@ public class PaintPanel extends Canvas implements EventHandler<MouseEvent>, Obse
                 if (mouseEventType.equals(MouseEvent.MOUSE_PRESSED)) {
                     System.out.println("Started Circle");
                     Point centre = new Point(mouseEvent.getX(), mouseEvent.getY());
-                    this.circle = new Circle(centre, 0);
+                    this.circle = new Circle(centre, 0, model.geIsSolid());
                 } else if (mouseEventType.equals(MouseEvent.MOUSE_DRAGGED)) {
                     if (this.circle != null) {
                         findCircle(mouseEvent);
@@ -74,7 +74,7 @@ public class PaintPanel extends Canvas implements EventHandler<MouseEvent>, Obse
                     // first corner
                     System.out.println("Started Rectangle");
                     Point corner1 = new Point(mouseEvent.getX(), mouseEvent.getY());
-                    this.rectangle = new Rectangle(corner1, corner1);
+                    this.rectangle = new Rectangle(corner1, corner1, model.geIsSolid());
                 } else if (mouseEventType.equals(MouseEvent.MOUSE_DRAGGED)) {
                     Point corner2 = new Point(mouseEvent.getX(), mouseEvent.getY());
                     this.rectangle.setRight_down(corner2);
@@ -149,7 +149,7 @@ public class PaintPanel extends Canvas implements EventHandler<MouseEvent>, Obse
     public void update(Observable o, Object arg) {
 
         GraphicsContext g2d = this.getGraphicsContext2D();
-        g2d.clearRect(0, 0, this.getWidth(), this.getHeight());
+        g2d.clearRect(0, 0, this.getWidth(), this.getHeight());;
 
         // Draw Lines
         ArrayList<Point> points = this.model.getPoints();
@@ -163,15 +163,24 @@ public class PaintPanel extends Canvas implements EventHandler<MouseEvent>, Obse
             double x = c.getCentre().x;
             double y = c.getCentre().y;
             double radius = c.getRadius();
-            g2d.fillOval(x - radius, y - radius, 2 * radius, 2 * radius);
+            if (c.getIsSolid()) {
+                g2d.fillOval(x - radius, y - radius, 2 * radius, 2 * radius);
+            } else {
+                g2d.strokeOval(x - radius, y - radius, 2 * radius, 2 * radius);
+            }
         }
 
         // Draw Rectangle
         ArrayList<Rectangle> rectangles = this.model.getRectangles();
         g2d.setFill(Color.BLUE);
         for (Rectangle r : this.model.getRectangles()) {
+            if(r.getIsSolid()){
             g2d.fillRect(r.getLeft_up().x, r.getLeft_up().y,
                     -(r.getLeft_up().x - r.getRight_down().x), -(r.getLeft_up().y - r.getRight_down().y));
+        }   else{
+                g2d.strokeRect(r.getLeft_up().x, r.getLeft_up().y,
+                        -(r.getLeft_up().x - r.getRight_down().x), -(r.getLeft_up().y - r.getRight_down().y));
+            }
         }
 
         // Draw Squiggles

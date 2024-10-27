@@ -2,12 +2,20 @@ package ca.utoronto.utm.assignment2.paint;
 
 public class Rectangle {
     private Point left_up,right_down, constant_corner;
+    private boolean isSolid;
 
-    public Rectangle(Point p1, Point p2) {
+
+    public Rectangle(Point p1, Point p2, boolean isSolid) {
         //p1: corner 1, p2: corner 2
         this.left_up = p1;
         this.right_down = p2;
         this.constant_corner = p1;
+        this.isSolid = isSolid;
+    }
+
+
+    public boolean getIsSolid() {
+        return isSolid;
     }
 
     private Point getMax(Point num1, Point num2) {

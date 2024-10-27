@@ -85,7 +85,7 @@ I WANT   : To be able to select the current drawing color, to be applied
 SO THAT  : 
 --------------------------------------------------------------------------
 --------------------------------------------------------------------------
-TYPE     : USER STORY US?.006 : UTORID : NotStarted 
+TYPE     : USER STORY US?.006 : yinliwen : NotStarted
 NAME     : Fill style selector
 PRIORITY : 3
 ESTIMATE : (1 hour, 2 hours, 4 hours, 1 day, 2 days, 4 days)    ACTUAL :

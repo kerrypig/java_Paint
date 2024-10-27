@@ -31,7 +31,7 @@ I WANT   : As a user is specifying a Circle, during the drag, a 'current'
 SO THAT  : I can see the square I am about to build on release of the mouse button.
 --------------------------------------------------------------------------
 --------------------------------------------------------------------------
-TYPE     : USER STORY US2.005 : shenqi23 : InProgress
+TYPE     : USER STORY US2.005 : chengdu2 : InProgress
 NAME     : Draw Triangle
 PRIORITY : 3
 ESTIMATE : (2 days)    ACTUAL : ?
@@ -42,7 +42,7 @@ SO THAT  : I can see the square I am about to build on release of the mouse
            button.
 --------------------------------------------------------------------------
 --------------------------------------------------------------------------
-TYPE     : USER STORY US2.006 : shenqi23 : InProgress
+TYPE     : USER STORY US2.006 : chengdu2 : InProgress
 NAME     : Draw Triangle Feedback
 PRIORITY : 3
 ESTIMATE : (2 days)    ACTUAL : ?

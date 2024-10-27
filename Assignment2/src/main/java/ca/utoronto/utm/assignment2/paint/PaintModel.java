@@ -13,10 +13,7 @@ public class PaintModel extends Observable {
         private ArrayList<Shape> shapes = new ArrayList<>();
 
         private ArrayList<Point> points=new ArrayList<Point>();
-//        private ArrayList<Circle> circles=new ArrayList<Circle>();
-        private ArrayList<Rectangle> rectangles = new ArrayList<Rectangle>();
         private ArrayList<Squiggle> squiggles = new ArrayList<Squiggle>();
-        private ArrayList<Oval> ovals = new ArrayList<>();
 
 
         //

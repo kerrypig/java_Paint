@@ -15,14 +15,7 @@ import java.util.Observer;
 public class PaintPanel extends Canvas implements EventHandler<MouseEvent>, Observer {
 	private String mode = "Circle";
 	private PaintModel model;
-
-	private Circle circle; // This is VERY UGLY, should somehow fix this!!
-	private Rectangle rectangle;
-	private Squiggle squiggle;
-	private Oval oval;
-
 	private ShapeStrategy currentStrategy;
-
 
 	public PaintPanel(PaintModel model) {
 		super(300, 300);

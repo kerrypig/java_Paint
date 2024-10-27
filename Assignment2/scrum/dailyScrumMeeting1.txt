@@ -67,9 +67,9 @@ Oct 26,2024
 	Obstacles I face: Time is limited
 
 Oct 27,2024
-	What I did yesterday:
-	What I will do today:
-	Obstacles I face:
+	What I did yesterday: Work on US2.005
+	What I will do today: Finish working on US2.005, merge, talk with team
+	Obstacles I face: Improve the structure of the project.
 
 Oct 28,2024
 	What I did yesterday:

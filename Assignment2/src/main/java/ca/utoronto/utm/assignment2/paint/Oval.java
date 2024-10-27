@@ -22,10 +22,11 @@ public class Oval extends Rectangle {
 	 */
 	@Override
 	public void draw(GraphicsContext g2d) {
-		g2d.setFill(Color.PURPLE);
 		if (this.isSolid()) {
+			g2d.setFill(this.getColor());
 			g2d.fillOval(this.getLeft_up().getX(), this.getLeft_up().getY(), this.getWidth(), this.getHeight());
 		} else {
+			g2d.setStroke(this.getColor());
 			g2d.setLineWidth(this.getThickness());
 			g2d.strokeOval(this.getLeft_up().getX(), this.getLeft_up().getY(), this.getWidth(), this.getHeight());
 		}

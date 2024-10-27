@@ -18,6 +18,7 @@ public class PaintPanel extends Canvas implements EventHandler<MouseEvent>, Obse
     public Circle circle; // This is VERY UGLY, should somehow fix this!!
     private Rectangle rectangle;
     private Squiggle squiggle;
+    private Oval oval;
 
     public PaintPanel(PaintModel model) {
         super(300, 300);
@@ -112,6 +113,26 @@ public class PaintPanel extends Canvas implements EventHandler<MouseEvent>, Obse
                 break;
             case "Polyline":
                 break;
+            case "Oval":
+                if (mouseEventType.equals(MouseEvent.MOUSE_PRESSED)) {
+                    // first corner
+                    System.out.println("Started Oval");
+                    Point corner1 = new Point(mouseEvent.getX(), mouseEvent.getY());
+                    this.oval = new Oval(corner1, corner1);
+                } else if (mouseEventType.equals(MouseEvent.MOUSE_DRAGGED)) {
+                    Point corner2 = new Point(mouseEvent.getX(), mouseEvent.getY());
+                    this.oval.setRight_down(corner2);
+                    this.model.addOval(this.oval);
+                } else if (mouseEventType.equals(MouseEvent.MOUSE_MOVED)) {
+
+                } else if (mouseEventType.equals(MouseEvent.MOUSE_RELEASED)) {
+                    if (this.oval != null) {
+                        Point corner2 = new Point(mouseEvent.getX(), mouseEvent.getY());
+                        this.oval.setRight_down(corner2);
+                        this.model.addOval(this.oval);
+                        this.oval = null;
+                    }
+                }
             default:
                 break;
         }
@@ -180,6 +201,14 @@ public class PaintPanel extends Canvas implements EventHandler<MouseEvent>, Obse
         for (Squiggle s : this.model.getSquiggles()) {
             ArrayList<Point> squigglePoints = s.getPoints();
             paintPoints(g2d, squigglePoints);
+        }
+
+        // Draw Oval
+        ArrayList<Oval> ovals = this.model.getOvals();
+        g2d.setFill(Color.PURPLE);
+        for (Oval ov : this.model.getOvals()){
+            g2d.fillOval(ov.getLeft_up().x, ov.getLeft_up().y,ov.getWidth(), ov.getHeight());
+            System.out.println(ov.getLeft_up().x+" "+ ov.getLeft_up().y+" "+ov.getWidth()+" "+ ov.getHeight());
         }
     }
 

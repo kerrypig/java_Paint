@@ -151,6 +151,7 @@ public class ShapeChooserPanel extends GridPane implements EventHandler<ActionEv
 				break;
 
 			case "Squiggle":
+				//1
 				gc.beginPath();
 				gc.moveTo(padding, 40);
 				gc.quadraticCurveTo(padding + 15, 20, padding + 30, 40);

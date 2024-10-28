@@ -5,10 +5,10 @@ import javafx.scene.paint.Color;
 
 import java.util.ArrayList;
 
-public class Squiggle extends Shape {
+public class Polyline extends Shape {
 	private ArrayList<Point> points;
 
-	public Squiggle(boolean isSolid, double thickness, Color color) {
+	public Polyline(boolean isSolid, double thickness, Color color) {
 		super(isSolid, thickness, color);
 		this.points = new ArrayList<>();
 	}
@@ -18,7 +18,11 @@ public class Squiggle extends Shape {
 	}
 
 	public ArrayList<Point> getPoints() {
-		return this.points;
+		return points;
+	}
+
+	public void reset() {
+		this.points = new ArrayList<>();
 	}
 
 	/**
@@ -28,13 +32,14 @@ public class Squiggle extends Shape {
 	 */
 	@Override
 	public void draw(GraphicsContext g2d) {
-		ArrayList<Point> squigglePoints = this.getPoints();
-		for (int i = 0; i < squigglePoints.size() - 1; i++) {
-			Point p1 = squigglePoints.get(i);
-			Point p2 = squigglePoints.get(i + 1);
-			g2d.setStroke(this.getColor());
-			g2d.setLineWidth(this.getThickness());
-			g2d.strokeLine(p1.getX(), p1.getY(), p2.getX(), p2.getY());
+		g2d.setStroke(this.getColor());
+		g2d.setLineWidth(this.getThickness());
+		if (points.size() > 1) {
+			for (int i = 0; i < points.size() - 1; i++) {
+				Point p1 = points.get(i);
+				Point p2 = points.get(i + 1);
+				g2d.strokeLine(p1.getX(), p1.getY(), p2.getX(), p2.getY());
+			}
 		}
 	}
 }

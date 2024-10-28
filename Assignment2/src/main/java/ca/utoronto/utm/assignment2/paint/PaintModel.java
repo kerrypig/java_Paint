@@ -58,11 +58,17 @@ public class PaintModel extends Observable {
 		this.notifyObservers();
 	}
 
+	public void removeShape(Shape s) {
+		this.shapes.remove(s);
+		this.setChanged();
+		this.notifyObservers();
+	}
+
 	public ArrayList<Shape> getShapes() {
 		return shapes;
 	}
 
-	//TODO: DELETE
+	//TODO: DELETE THIS
 	public void addSquiggle(Squiggle squiggle) {
 		this.squiggles.add(squiggle);
 		this.setChanged();

@@ -34,6 +34,7 @@ public class Circle extends Shape {
 
 	/**
 	 * This method draw each shape
+	 *
 	 * @param g2d
 	 */
 	@Override

@@ -2,11 +2,8 @@ package ca.utoronto.utm.assignment2.paint;
 
 import javafx.scene.canvas.Canvas;
 import javafx.event.EventHandler;
-import javafx.event.EventType;
 import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.input.MouseEvent;
-import javafx.scene.layout.Region;
-import javafx.scene.paint.Color;
 
 import java.util.ArrayList;
 import java.util.Observable;
@@ -18,7 +15,7 @@ public class PaintPanel extends Canvas implements EventHandler<MouseEvent>, Obse
 	private ShapeStrategy currentStrategy;
 
 	public PaintPanel(PaintModel model) {
-		super(300, 300);
+		super(300, 600);
 		this.model = model;
 		this.model.addObserver(this);
 
@@ -41,9 +38,15 @@ public class PaintPanel extends Canvas implements EventHandler<MouseEvent>, Obse
 			case "Oval":
 				currentStrategy = new OvalStrategy();
 				break;
-				case "Squiggle":
-					currentStrategy = new SquiggleStrategy();
-					break;
+			case "Squiggle":
+				currentStrategy = new SquiggleStrategy();
+				break;
+			case "Triangle":
+				currentStrategy = new TriangleStrategy();
+				break;
+			case "Polyline":
+				currentStrategy = new PolylineStrategy();
+				break;
 		}
 	}
 
@@ -59,6 +62,12 @@ public class PaintPanel extends Canvas implements EventHandler<MouseEvent>, Obse
 					break;
 				case "MOUSE_RELEASED":
 					currentStrategy.mouseReleased(model, mouseEvent);
+					break;
+				case "MOUSE_MOVED":
+					currentStrategy.mouseMoved(model, mouseEvent);
+					break;
+				case "MOUSE_CLICKED":
+					currentStrategy.mouseClicked(model, mouseEvent);
 					break;
 			}
 		}

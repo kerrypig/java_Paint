@@ -54,6 +54,7 @@ public class Rectangle extends Shape {
 
 	/**
 	 * This method draw each shape
+	 *
 	 * @param g2d
 	 */
 	@Override

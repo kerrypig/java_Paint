@@ -44,10 +44,10 @@ ISSUE    : Having a list of different types of drawable things in the
 
 # COMPLETED USER STORIES/BUGS BELOW ###########################################
 --------------------------------------------------------------------------
-TYPE     : USER STORY US1.005 : shenqi23 : Complete
+TYPE     : USER STORY US2.001 : shenqi23 : Complete
 NAME     : Draw Square
 PRIORITY : 3
-ESTIMATE : (2 days)    ACTUAL : ?
+ESTIMATE : (1 day)    ACTUAL : 1 day
 AS A     : user
 I WANT   : To click on one corner of a square, drag, and release to
            specify two corners of a square to be drawn in the current style.
@@ -55,10 +55,10 @@ SO THAT  : I can see the square I am about to build on release of the mouse
            button.
 --------------------------------------------------------------------------
 --------------------------------------------------------------------------
-TYPE     : USER STORY US1.006 : shenqi23 : Complete
+TYPE     : USER STORY US2.002 : shenqi23 : Complete
 NAME     : Draw Square Feedback
 PRIORITY : 3
-ESTIMATE : (2 days)    ACTUAL : ?
+ESTIMATE : (1 day)    ACTUAL : 1 day
 AS A     : user
 I WANT   : As a user is specifying a Circle, during the drag, a 'current'
            square should be on display. As the user drags, the 'current'
@@ -68,10 +68,10 @@ I WANT   : As a user is specifying a Circle, during the drag, a 'current'
 SO THAT  : I can see the square I am about to build on release of the mouse button.
 --------------------------------------------------------------------------
 --------------------------------------------------------------------------
-TYPE     : USER STORY US1.007 : chengdu2 : Complete
+TYPE     : USER STORY US2.003 : chengdu2 : Complete
 NAME     : Draw polyline
 PRIORITY : 3
-ESTIMATE : (2 days)    ACTUAL : ?
+ESTIMATE : 1 days    ACTUAL : 1 days
 AS A     : user
 I WANT   : Click and drag the mouse to specify the vertices of multiple
 line segments one by one
@@ -79,20 +79,38 @@ SO THAT  : After release the mouse button, I can see a Polyline consisting
 of these vertices drawn in the current style.
 --------------------------------------------------------------------------
 --------------------------------------------------------------------------
-TYPE     : USER STORY US1.008 : chengdu2 : Complete
+TYPE     : USER STORY US2.004 : chengdu2 : Complete
 NAME     : Draw polyline Feedback
 PRIORITY : 3
-ESTIMATE : (2 days)    ACTUAL : ?
+ESTIMATE : (1 day)    ACTUAL : 1 day
 AS A     : user
 I WANT   : Similarly to Draw Circle Feedback, display the polyline in mid construction.
 SO THAT  : I can see the polyline I am about to build on release of the mouse button.
 --------------------------------------------------------------------------
-
 --------------------------------------------------------------------------
-TYPE     : USER STORY US?.005 : chengdu2 : Complete
+TYPE     : USER STORY US2.005 : chengdu2 : Complete
+NAME     : Draw Triangle
+PRIORITY : 3
+ESTIMATE : 1 days    ACTUAL : 1 days
+AS A     : user
+I WANT   : Click and drag the mouse to specify the vertices of a triangle
+SO THAT  : After the third click, I can see a Triangle consisting
+of these vertices drawn in the current style.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+TYPE     : USER STORY US2.006 : chengdu2 : Complete
+NAME     : Draw Triangle Feedback
+PRIORITY : 3
+ESTIMATE : (1 day)    ACTUAL : 1 day
+AS A     : user
+I WANT   : Similarly to Draw Circle Feedback, display the triangle in mid construction.
+SO THAT  : I can see the triangle I am about to build on release of the mouse button.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+TYPE     : USER STORY US2.007 : chengdu2 : Complete
 NAME     : Color selector
 PRIORITY : 3
-ESTIMATE : 4 hours    ACTUAL :
+ESTIMATE : 4 hours    ACTUAL : 1 day
 AS A     : user
 I WANT   : To be able to select the current drawing color, to be applied
            to subsequent shapes. Example:
@@ -112,10 +130,10 @@ I WANT   : To be able to select the current drawing color, to be applied
 SO THAT  : I can draw different shapes with different colors.
 --------------------------------------------------------------------------
 --------------------------------------------------------------------------
-TYPE     : USER STORY US?.006 : zhukai16 : Complete
+TYPE     : USER STORY US2.008 : yinliwen : Complete
 NAME     : Fill style selector
 PRIORITY : 3
-ESTIMATE : 1 hour   ACTUAL : 1 hour
+ESTIMATE : 1 day   ACTUAL : 2 day
 AS A     : user
 I WANT   : To be able to select the current drawing style (filled or outline), to be applied
            to subsequent shapes. Example:
@@ -135,10 +153,10 @@ I WANT   : To be able to select the current drawing style (filled or outline), t
 SO THAT  :
 --------------------------------------------------------------------------
 --------------------------------------------------------------------------
-TYPE     : USER STORY US?.007 : zhukai16 : Complete
+TYPE     : USER STORY US?.009 : zhukai16 : Complete
 NAME     : Line thickness selector
 PRIORITY : 3
-ESTIMATE : (1 hour, 2 hours, 4 hours, 1 day, 2 days, 4 days)    ACTUAL :
+ESTIMATE : 4 hours    ACTUAL : 4 hours
 AS A     : user
 I WANT   : To be able to select the current line thickness, to be applied
            to subsequent shapes. Example:
@@ -159,10 +177,10 @@ I WANT   : To be able to select the current line thickness, to be applied
 SO THAT  :
 --------------------------------------------------------------------------
 --------------------------------------------------------------------------
-TYPE     : BUG BUG?.003 : zhukai16 : complete
+TYPE     : BUG BUG2.003 : zhukai16 : complete
 NAME     : Architecture behind choosing selection mode is poor
 PRIORITY : 3
-ESTIMATE : 1 hour    ACTUAL : 1 hour
+ESTIMATE : 2 hours    ACTUAL : 4 hours
 ISSUE    : Code is not modular and is difficult to expand. Need a better
            architecture behind selecting a drawing mode, and handling
            the drawing events. Consider some design patterns here.

@@ -39,8 +39,8 @@ Oct 20,2024
 	Obstacles I face: no
 
 Oct 21,2024
-	What I did yesterday:complete architecture
-	What I will do today: think further on using design patterns
+	What I did yesterday: complete architecture
+	What I will do today: think further on using design patterns, meeting
 	Obstacles I face: which pattern to use
 
 Oct 22,2024
@@ -50,7 +50,7 @@ Oct 22,2024
 
 Oct 23,2024
 	What I did yesterday: implies command pattern on shapes
-	What I will do today:  think further on using design patterns
+	What I will do today:  think further on using design patterns, meeting
 	Obstacles I face: which pattern to use
 
 Oct 24,2024
@@ -70,7 +70,7 @@ Oct 26,2024
 
 Oct 27,2024
 	What I did yesterday: attend term test for CSC207
-	What I will do today: implement thickness adjustment
+	What I will do today: implement thickness adjustment, meeting
 	Obstacles I face: no
 
 Oct 28,2024

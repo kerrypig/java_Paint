@@ -38,10 +38,33 @@ public class Square extends Shape{
         this.left_up = p1;
     }
 
-    // automatically set left_up and right down
+
     public void setRight_down(Point p1) {
-        this.left_up = getMin(this.constant_corner, p1);
-        this.right_down = getMax(this.constant_corner, p1);
+        double width = Math.abs(p1.getX() - constant_corner.getX());
+        double height = Math.abs(p1.getY() - constant_corner.getY());
+
+        double sideLength = Math.max(width, height);
+
+        // corner is top-left
+        if (constant_corner.getX() <= p1.getX() && constant_corner.getY() <= p1.getY()) {
+            this.left_up = constant_corner;
+            this.right_down = new Point(constant_corner.getX() + sideLength, constant_corner.getY() + sideLength);
+        }
+        // corner is bottom-right
+        else if (constant_corner.getX() >= p1.getX() && constant_corner.getY() >= p1.getY()) {
+            this.right_down = constant_corner;
+            this.left_up = new Point(constant_corner.getX() - sideLength, constant_corner.getY() - sideLength);
+        }
+        // corner is bottom-left
+        else if (constant_corner.getX() <= p1.getX() && constant_corner.getY() >= p1.getY()) {
+            this.left_up = new Point(constant_corner.getX(), constant_corner.getY() - sideLength);
+            this.right_down = new Point(constant_corner.getX() + sideLength, constant_corner.getY());
+        }
+        // corner is top-right
+        else {
+            this.left_up = new Point(constant_corner.getX() - sideLength, constant_corner.getY());
+            this.right_down = new Point(constant_corner.getX(), constant_corner.getY() + sideLength);
+        }
     }
 
     public Point getRight_down() {
@@ -57,6 +80,7 @@ public class Square extends Shape{
      * @param g2d
      */
     @Override
+    //need modify
     public void draw(GraphicsContext g2d) {
         if (this.isSolid()) {
             g2d.setFill(this.getColor());

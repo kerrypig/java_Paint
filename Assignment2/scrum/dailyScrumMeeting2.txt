@@ -37,39 +37,40 @@ Oct 20,2024
 	Obstacles I face: N/A
 
 Oct 21,2024
-	What I did yesterday:
-	What I will do today:
-	Obstacles I face:
+	What I did yesterday: complete Sprint1
+	What I will do today: have scrum meeting with members to discuss about assigning tasks.
+	Obstacles I face: N/A
 
 Oct 22,2024
-	What I did yesterday:
-	What I will do today:
-	Obstacles I face:
+	What I did yesterday: scrum meeting
+	What I will do today: Do user story 005
+	Obstacles I face: N/A
 
 Oct 23,2024
-	What I did yesterday:
-	What I will do today:
-	Obstacles I face:
+	What I did yesterday: Do user story 005
+	What I will do today: have scrum meeting with members to discuss about
+	                      how to improve the architecture.
+	Obstacles I face:  N/A
 
 Oct 24,2024
-	What I did yesterday:
-	What I will do today:
-	Obstacles I face:
+	What I did yesterday:  scrum meeting
+	What I will do today:  Do BUG.003
+	Obstacles I face: try to figure out which strategy to use
 
 Oct 25,2024
-	What I did yesterday:
-	What I will do today:
-	Obstacles I face:
+	What I did yesterday:  try to fix BUG.003
+	What I will do today:  fix BUG.003
+	Obstacles I face:  BUG.003
 
 Oct 26,2024
-	What I did yesterday:
-	What I will do today:
-	Obstacles I face:
+	What I did yesterday: try to fix BUG.003
+	What I will do today: have csc207 midterm
+	Obstacles I face:  try to figure out fix BUG.003
 
 Oct 27,2024
-	What I did yesterday:
-	What I will do today:
-	Obstacles I face:
+	What I did yesterday: midterm
+	What I will do today: have final scrum meeting with team members, merge all the brunches. try to do polyline.
+	Obstacles I face: N/A
 
 Oct 28,2024
 	What I did yesterday:

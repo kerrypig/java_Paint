@@ -38,38 +38,38 @@ Oct 20,2024
 
 Oct 21,2024
 	What I did yesterday: Nothing
-	What I will do today: Nothing
+	What I will do today: Attend scrum meeting, preview for sprint2
 	Obstacles I face: Time is limited
 
 Oct 22,2024
-	What I did yesterday: Nothing
-	What I will do today: Nothing
+	What I did yesterday: Attend scrum meeting, preview for sprint2
+	What I will do today: Work on US2.005
 	Obstacles I face: Time is limited
 
 Oct 23,2024
-	What I did yesterday: Nothing
-	What I will do today: Nothing
+	What I did yesterday: Work on US2.005
+	What I will do today: Attend scrum meeting, help each other out.
 	Obstacles I face: Time is limited
 
 Oct 24,2024
-	What I did yesterday: Check product backlog for priorities
+	What I did yesterday: Attend scrum meeting, help each other out.
 	What I will do today: A math term test
 	Obstacles I face: Time is limited
 
 Oct 25,2024
 	What I did yesterday: A math term test
-	What I will do today: US2.005
+	What I will do today: US2.005 bug fix, work on US2.007 and US2.008
 	Obstacles I face: Set color for each shape drawn is complicated.
 
 Oct 26,2024
-	What I did yesterday: Work on US2.005
-	What I will do today: CSC207 Midterm
-	Obstacles I face: Time is limited
+	What I did yesterday: Work on US2.005 and US2.007 and US2.008
+	What I will do today: CSC207 Midterm, debug.
+	Obstacles I face: Poor structure
 
 Oct 27,2024
-	What I did yesterday:
-	What I will do today:
-	Obstacles I face:
+	What I did yesterday: CSC207 Midterm, worked on US2.005
+	What I will do today: US2.005 and US2.007 and US2.008 final check. Product test for Sprint2
+	Obstacles I face: N/A
 
 Oct 28,2024
 	What I did yesterday:

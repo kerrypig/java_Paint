@@ -38,41 +38,41 @@ Oct 20,2024
 
 Oct 21,2024
 	What I did yesterday: merge branches
-	What I will do today:
-	Obstacles I face:
+	What I will do today: have meeting with teammates / starting sprint2
+	Obstacles I face: N/A
 
 Oct 22,2024
-	What I did yesterday:
-	What I will do today:
-	Obstacles I face:
+	What I did yesterday: have meeting with teammates / starting sprint2
+	What I will do today: start US2.005
+	Obstacles I face: N/A
 
 Oct 23,2024
-	What I did yesterday:
-	What I will do today:
-	Obstacles I face:
+	What I did yesterday: start US2.005
+	What I will do today: having meeting with teammates/ disscuss optimize architecture BUG2.003
+	Obstacles I face: N/A
 
 Oct 24,2024
-	What I did yesterday:
-	What I will do today:
-	Obstacles I face:
+	What I did yesterday: having meeting with teammates/ disscuss optimize architecture BUG2.003
+	What I will do today: reform square class into the new architecture
+	Obstacles I face: limited time
 
 Oct 25,2024
-	What I did yesterday:
-	What I will do today:
-	Obstacles I face:
+	What I did yesterday:reform square class into the new architecture
+	What I will do today: US2.006 and improving the architecture
+	Obstacles I face: solve conflicts when merging with new architecture
 
 Oct 26,2024
-	What I did yesterday:
-	What I will do today:
-	Obstacles I face:
+	What I did yesterday: US2.006 and improving the architecture
+	What I will do today: fixing bugs for US2.005
+	Obstacles I face: limited time
 
 Oct 27,2024
-	What I did yesterday:
-	What I will do today:
-	Obstacles I face:
+	What I did yesterday: fixing bugs for US2.005
+	What I will do today: have meeting with teamates / merge branches
+	Obstacles I face: solve conflicts
 
 Oct 28,2024
-	What I did yesterday:
+	What I did yesterday: have meeting with teamates / merge branches
 	What I will do today:
 	Obstacles I face:
 

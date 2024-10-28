@@ -35,7 +35,10 @@ public class PaintPanel extends Canvas implements EventHandler<MouseEvent>, Obse
 			case "Rectangle":
 				currentStrategy = new RectangleStrategy();
 				break;
-			case "Oval":
+			case "Square":
+				currentStrategy = new SquareStrategy();
+				break;
+            case "Oval":
 				currentStrategy = new OvalStrategy();
 				break;
 			case "Squiggle":

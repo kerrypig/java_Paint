@@ -58,6 +58,7 @@ public class Rectangle extends Shape {
 	 * @param g2d
 	 */
 	@Override
+	//need modify
 	public void draw(GraphicsContext g2d) {
 		if (this.isSolid()) {
 			g2d.setFill(this.getColor());

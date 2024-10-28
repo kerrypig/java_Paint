@@ -34,44 +34,44 @@ Oct 19,2024
 	Obstacles I face:writing mechanics
 
 Oct 20,2024
-	What I did yesterday:
-	What I will do today:
-	Obstacles I face:
+	What I did yesterday: complete architecture
+	What I will do today: complete architecture
+	Obstacles I face: no
 
 Oct 21,2024
-	What I did yesterday:
-	What I will do today:
-	Obstacles I face:
+	What I did yesterday:complete architecture
+	What I will do today: think further on using design patterns
+	Obstacles I face: which pattern to use
 
 Oct 22,2024
-	What I did yesterday:
-	What I will do today:
-	Obstacles I face:
+	What I did yesterday: think further on using design patterns
+	What I will do today: implies command pattern on shapes
+	Obstacles I face: too much to write
 
 Oct 23,2024
-	What I did yesterday:
-	What I will do today:
-	Obstacles I face:
+	What I did yesterday: implies command pattern on shapes
+	What I will do today:  think further on using design patterns
+	Obstacles I face: which pattern to use
 
 Oct 24,2024
-	What I did yesterday:
-	What I will do today:
-	Obstacles I face:
+	What I did yesterday: think further on using design patterns
+	What I will do today: implies Strategy pattern on panel
+	Obstacles I face: too much to change
 
 Oct 25,2024
-	What I did yesterday:
-	What I will do today:
-	Obstacles I face:
+	What I did yesterday: implies Strategy pattern on panel
+	What I will do today: think further on how to adjust thickness
+	Obstacles I face: no
 
 Oct 26,2024
-	What I did yesterday:
-	What I will do today:
-	Obstacles I face:
+	What I did yesterday: think further on how to adjust thickness
+	What I will do today: attend term test for CSC207
+	Obstacles I face: no
 
 Oct 27,2024
-	What I did yesterday:
-	What I will do today:
-	Obstacles I face:
+	What I did yesterday: attend term test for CSC207
+	What I will do today: implement thickness adjustment
+	Obstacles I face: no
 
 Oct 28,2024
 	What I did yesterday:

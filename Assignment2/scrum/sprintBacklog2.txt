@@ -75,10 +75,10 @@ I WANT   : To be able to select the current drawing color, to be applied
 SO THAT  : I can draw different shapes with different colors.
 --------------------------------------------------------------------------
 --------------------------------------------------------------------------
-TYPE     : USER STORY US?.006 : UTORID : NotStarted
+TYPE     : USER STORY US?.006 : zhukai16 : complete
 NAME     : Fill style selector
 PRIORITY : 3
-ESTIMATE : (1 hour, 2 hours, 4 hours, 1 day, 2 days, 4 days)    ACTUAL :
+ESTIMATE : 1 hour   ACTUAL : 1 hour
 AS A     : user
 I WANT   : To be able to select the current drawing style (filled or outline), to be applied
            to subsequent shapes. Example:
@@ -144,10 +144,10 @@ I WANT: To be able to select an existing shape and copy it, then paste the dupli
 SO THAT: I can easily replicate shapes without having to manually redraw them, making the design process faster and more efficient.
 --------------------------------------------------------------------------
 --------------------------------------------------------------------------
-TYPE     : BUG BUG?.003 : UTORID : NotStarted
+TYPE     : BUG BUG?.003 : zhukai16 : complete
 NAME     : Architecture behind choosing selection mode is poor
 PRIORITY : 3
-ESTIMATE : (1 hour, 2 hours, 4 hours, 1 day, 2 days, 4 days)    ACTUAL :
+ESTIMATE : 1 hour    ACTUAL : 1 hour
 ISSUE    : Code is not modular and is difficult to expand. Need a better
            architecture behind selecting a drawing mode, and handling
            the drawing events. Consider some design patterns here.

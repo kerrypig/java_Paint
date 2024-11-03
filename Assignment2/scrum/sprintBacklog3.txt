@@ -5,3 +5,15 @@
 # Sprint 3 Oct 27-Nov 03, 2024
 # Sprint 3 Backlog UserStories go below
 
+--------------------------------------------------------------------------
+TYPE     : BUG BUG?.004 : UTORID : NotStarted
+NAME     : Architecture behind Model is poor
+PRIORITY : 4
+ESTIMATE : (1 hour, 2 hours, 4 hours, 1 day, 2 days, 4 days)    ACTUAL :
+ISSUE    : Having a list of different types of drawable things in the
+           model is cumbersome. In fact, it is currently incorrect, with
+           Squiggle's not drawing properly. Need to re-architect the Model
+           so that it is more flexible, and easier to work with.
+           Consider some design patterns, or change of responsibility
+           here.
+--------------------------------------------------------------------------

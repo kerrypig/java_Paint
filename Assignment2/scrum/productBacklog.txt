@@ -39,6 +39,28 @@ I WANT: To be able to select an existing shape and copy it, then paste the dupli
 SO THAT: I can easily replicate shapes without having to manually redraw them, making the design process faster and more efficient.
 --------------------------------------------------------------------------
 --------------------------------------------------------------------------
+// create a new user story
+TYPE: USER STORY US?.010 : UTORID : NotStarted
+NAME: function of eraser
+PRIORITY: 4
+ESTIMATE: (1 hour, 2 hours, 4 hours, 1 day, 2 days, 4 days)
+ACTUAL:
+AS A: user
+I WANT: To be able to erase a paint on the board
+SO THAT: I can reshape an object
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+// create a new user story
+TYPE: USER STORY US?.010 : UTORID : NotStarted
+NAME: function of undo
+PRIORITY: 4
+ESTIMATE: (1 hour, 2 hours, 4 hours, 1 day, 2 days, 4 days)
+ACTUAL:
+AS A: user
+I WANT: To be able to undo my last drawing
+SO THAT: I can cancel the object I accident created
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
 TYPE     : BUG BUG?.004 : UTORID : NotStarted 
 NAME     : Architecture behind Model is poor
 PRIORITY : 4
@@ -50,6 +72,7 @@ ISSUE    : Having a list of different types of drawable things in the
            Consider some design patterns, or change of responsibility
            here.
 --------------------------------------------------------------------------
+
 
 
 # COMPLETED USER STORIES/BUGS BELOW ###########################################

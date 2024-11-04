@@ -121,6 +121,10 @@ public class View implements EventHandler<ActionEvent> {
 		if (command.equals("Exit")) {
 			Platform.exit();
 		}
+		if (command.equals("Undo")) {
+			this.paintModel.removeLastShape();
+
+		}
 	}
 
 }

@@ -74,39 +74,39 @@ Oct 27,2024
 	Obstacles I face: no
 
 Oct 28,2024
-	What I did yesterday:
-	What I will do today:
-	Obstacles I face:
+	What I did yesterday: implement thickness adjustment, meeting
+	What I will do today: read requirement
+	Obstacles I face: nope
 
 Oct 29,2024
-	What I did yesterday:
-	What I will do today:
-	Obstacles I face:
+	What I did yesterday: read requirement
+	What I will do today: take group meeting
+	Obstacles I face: nope
 
 Oct 30,2024
-	What I did yesterday:
-	What I will do today:
-	Obstacles I face:
+	What I did yesterday: do csc236 HW
+	What I will do today: try to solve bug3.004
+	Obstacles I face: no
 
 Oct 31,2024
-	What I did yesterday:
-	What I will do today:
-	Obstacles I face:
+	What I did yesterday: try to solve bug3.004
+	What I will do today: take group meeting
+	Obstacles I face: no
 
 Nov 1,2024
-	What I did yesterday:
-	What I will do today:
-	Obstacles I face:
+	What I did yesterday: take group meeting
+	What I will do today: try to solve bug3.004
+	Obstacles I face: no
 
 Nov 2,2024
-	What I did yesterday:
-	What I will do today:
-	Obstacles I face:
+	What I did yesterday: solve bug3.004
+	What I will do today: try to make undo success
+	Obstacles I face: no
 
 Nov 3,2024
-	What I did yesterday:
-	What I will do today:
-	Obstacles I face:
+	What I did yesterday: try to make undo success
+	What I will do today: group[ meeting
+	Obstacles I face: for undo. I cannot find the final shape in arraylist
 
 Nov 4,2024
 	What I did yesterday:

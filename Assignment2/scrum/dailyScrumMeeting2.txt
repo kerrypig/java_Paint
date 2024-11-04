@@ -73,39 +73,40 @@ Oct 27,2024
 	Obstacles I face: N/A
 
 Oct 28,2024
-	What I did yesterday:
-	What I will do today:
-	Obstacles I face:
+	What I did yesterday: finish sprint2
+	What I will do today: read requirements for sprint3
+	Obstacles I face: N/A
 
 Oct 29,2024
-	What I did yesterday:
-	What I will do today:
-	Obstacles I face:
+	What I did yesterday: read requirements for sprint3
+	What I will do today: have scrum meeting with members to discuss about assigning tasks.
+	Obstacles I face: N/A
 
 Oct 30,2024
-	What I did yesterday:
-	What I will do today:
-	Obstacles I face:
+	What I did yesterday: scrum meeting
+	What I will do today: complete user story
+	Obstacles I face: N/A
 
 Oct 31,2024
-	What I did yesterday:
-	What I will do today:
-	Obstacles I face:
+	What I did yesterday: do user story
+	What I will do today:have scrum meeting with members to discuss about
+         how to improve the architecture.
+	Obstacles I face: N/A
 
 Nov 1,2024
-	What I did yesterday:
-	What I will do today:
-	Obstacles I face:
+	What I did yesterday: scrum meeting with members
+	What I will do today:  fix bug in sprint3
+	Obstacles I face: N/A
 
 Nov 2,2024
-	What I did yesterday:
-	What I will do today:
-	Obstacles I face:
+	What I did yesterday:  fix bug in sprint3
+	What I will do today: add new user story
+	Obstacles I face: N/AA
 
 Nov 3,2024
-	What I did yesterday:
-	What I will do today:
-	Obstacles I face:
+	What I did yesterday: add new user story
+	What I will do today: have final scrum meeting with team members, merge all the brunches.
+	Obstacles I face: N/A
 
 Nov 4,2024
 	What I did yesterday:

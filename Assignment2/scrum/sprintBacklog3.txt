@@ -19,7 +19,7 @@ ISSUE    : Having a list of different types of drawable things in the
 --------------------------------------------------------------------------
 --------------------------------------------------------------------------
 // create a new user story
-TYPE: USER STORY US?.010 : shenqi23 : Inprogress
+TYPE: USER STORY US3.010 : shenqi23 : Inprogress
 NAME: function of undo
 PRIORITY: 4
 ESTIMATE: (1 hour, 2 hours, 4 hours, 1 day, 2 days, 4 days)

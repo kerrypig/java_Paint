@@ -5,3 +5,14 @@
 # Sprint 4 Nov 10-Nov 10, 2024
 # Sprint 4 Backlog UserStories go below
 
+--------------------------------------------------------------------------
+// create a new user story
+TYPE: USER STORY US3.010 : chengdu2 : Inprogress
+NAME: function of save and open
+PRIORITY: 5
+ESTIMATE: 4 days
+ACTUAL:
+AS A: user
+I WANT: To be able to save and open my project
+SO THAT: I can save and open my project
+--------------------------------------------------------------------------

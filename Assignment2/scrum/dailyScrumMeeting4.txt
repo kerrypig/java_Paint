@@ -73,41 +73,41 @@ Oct 27,2024
 
 Oct 28,2024
 	What I did yesterday: have meeting with teamates / merge branches
-	What I will do today:
-	Obstacles I face:
+	What I will do today: take a look at sprint 3
+	Obstacles I face: figure out what to do
 
 Oct 29,2024
-	What I did yesterday:
-	What I will do today:
-	Obstacles I face:
+	What I did yesterday: take a look at sprint 3
+	What I will do today: have meeting with teamates
+	Obstacles I face: N/A
 
 Oct 30,2024
-	What I did yesterday:
-	What I will do today:
-	Obstacles I face:
+	What I did yesterday: have meeting with teamates
+	What I will do today: start US3.010
+	Obstacles I face: N/A
 
 Oct 31,2024
-	What I did yesterday:
-	What I will do today:
-	Obstacles I face:
+	What I did yesterday: start US3.010
+	What I will do today: have meeting with teamates
+	Obstacles I face: N/A
 
 Nov 1,2024
-	What I did yesterday:
-	What I will do today:
-	Obstacles I face:
+	What I did yesterday: have meeting with teamates
+	What I will do today: check US3.010
+	Obstacles I face: had bugs for US3.010
 
 Nov 2,2024
-	What I did yesterday:
-	What I will do today:
-	Obstacles I face:
+	What I did yesterday: check US3.010
+	What I will do today: fixing bugs for US3.010
+	Obstacles I face: N/A
 
 Nov 3,2024
-	What I did yesterday:
-	What I will do today:
-	Obstacles I face:
+	What I did yesterday: fixing bugs for US3.010
+	What I will do today: have meeting with teamates / merge branches
+	Obstacles I face: N/A
 
 Nov 4,2024
-	What I did yesterday:
+	What I did yesterday: have meeting with teamates / merge branches
 	What I will do today:
 	Obstacles I face:
 

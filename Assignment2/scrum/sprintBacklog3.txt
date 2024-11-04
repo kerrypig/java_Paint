@@ -5,6 +5,16 @@
 # Sprint 3 Oct 27-Nov 03, 2024
 # Sprint 3 Backlog UserStories go below
 
+
+--------------------------------------------------------------------------
+TYPE     : BUG BUG3.005 : shenqi23 : Inprogress
+NAME     : To many shapes in arraylist shape
+PRIORITY : 2
+ESTIMATE : 4 day ACTUAL : ?
+ISSUE    : We found that the draw command for each shape except triangle is
+           keep entering shapes into the arraylist of shape in the model class
+--------------------------------------------------------------------------
+# COMPLETED USER STORIES/BUGS BELOW ###########################################
 --------------------------------------------------------------------------
 TYPE     : BUG BUG3.004 : zhukai16 : Completed
 NAME     : Architecture behind Model is poor
@@ -97,15 +107,4 @@ ACTUAL:
 AS A: user
 I WANT: To be able to undo my last drawing
 SO THAT: I can cancel the object I accident created
---------------------------------------------------------------------------
---------------------------------------------------------------------------
-// create a new user story
-TYPE: USER STORY US3.010 : chengdu2 : Inprogress
-NAME: function of save and open
-PRIORITY: 5
-ESTIMATE: 4 days
-ACTUAL:
-AS A: user
-I WANT: To be able to save and open my project
-SO THAT: I can save and open my project
 --------------------------------------------------------------------------

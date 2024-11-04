@@ -49,17 +49,7 @@ AS A: user
 I WANT: To be able to erase a paint on the board
 SO THAT: I can reshape an object
 --------------------------------------------------------------------------
---------------------------------------------------------------------------
-// create a new user story
-TYPE: USER STORY US?.010 : UTORID : NotStarted
-NAME: function of undo
-PRIORITY: 4
-ESTIMATE: (1 hour, 2 hours, 4 hours, 1 day, 2 days, 4 days)
-ACTUAL:
-AS A: user
-I WANT: To be able to undo my last drawing
-SO THAT: I can cancel the object I accident created
---------------------------------------------------------------------------
+
 --------------------------------------------------------------------------
 TYPE     : BUG BUG?.004 : UTORID : NotStarted 
 NAME     : Architecture behind Model is poor
@@ -263,7 +253,7 @@ I WANT   : To be able to select the current drawing style (filled or outline), t
 SO THAT  :
 --------------------------------------------------------------------------
 --------------------------------------------------------------------------
-TYPE     : USER STORY US?.009 : zhukai16 : Complete
+TYPE     : USER STORY US2.009 : zhukai16 : Complete
 NAME     : Line thickness selector
 PRIORITY : 3
 ESTIMATE : 4 hours    ACTUAL : 4 hours
@@ -287,6 +277,17 @@ I WANT   : To be able to select the current line thickness, to be applied
 SO THAT  :
 --------------------------------------------------------------------------
 --------------------------------------------------------------------------
+// create a new user story
+TYPE: USER STORY US3.010 : UTORID : NotStarted
+NAME: function of undo
+PRIORITY: 4
+ESTIMATE: (1 hour, 2 hours, 4 hours, 1 day, 2 days, 4 days)
+ACTUAL:
+AS A: user
+I WANT: To be able to undo my last drawing
+SO THAT: I can cancel the object I accident created
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
 TYPE     : BUG BUG2.003 : zhukai16 : complete
 NAME     : Architecture behind choosing selection mode is poor
 PRIORITY : 3
@@ -297,7 +298,6 @@ ISSUE    : Code is not modular and is difficult to expand. Need a better
            Refactor ShapeChooserPanel and PaintPanel to get rid of the
            'if' blocks in the PaintPanel mouse event code.
 --------------------------------------------------------------------------
-
 
 # OMITTED USER STORIES/BUGS BELOW   ###########################################
 

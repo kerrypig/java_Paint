@@ -68,43 +68,43 @@ Oct 26,2024
 
 Oct 27,2024
 	What I did yesterday: CSC207 Midterm, worked on US2.005
-	What I will do today: US2.005 and US2.007 and US2.008 final check. Product test for Sprint2
+	What I will do today: Scrum meet, US2.005 and US2.007 and US2.008 final check. Product test for Sprint2
 	Obstacles I face: N/A
 
 Oct 28,2024
-	What I did yesterday:
-	What I will do today:
-	Obstacles I face:
+	What I did yesterday: Scrum meet, US2.005 and US2.007 and US2.008 final check. Product test for Sprint2
+	What I will do today: Check new structure, read for sprint3
+	Obstacles I face: N/A
 
 Oct 29,2024
-	What I did yesterday:
-	What I will do today:
-	Obstacles I face:
+	What I did yesterday: Check new structure, read for sprint3
+	What I will do today: Experience and test the project for feedback, scrum meeting
+	Obstacles I face: N/A
 
 Oct 30,2024
-	What I did yesterday:
-	What I will do today:
-	Obstacles I face:
+	What I did yesterday: Experience and test the project for feedback, scrum meeting
+	What I will do today: Experience and test the project for feedback
+	Obstacles I face: N/A
 
 Oct 31,2024
-	What I did yesterday:
-	What I will do today:
-	Obstacles I face:
+	What I did yesterday: Experience and test the project for feedback
+	What I will do today: Experience and test the project for feedback, scrum meeting
+	Obstacles I face: N/A
 
 Nov 1,2024
-	What I did yesterday:
-	What I will do today:
-	Obstacles I face:
+	What I did yesterday: Experience and test the project for feedback, scrum meeting
+	What I will do today: US2.003 refine
+	Obstacles I face: N/A
 
 Nov 2,2024
-	What I did yesterday:
-	What I will do today:
-	Obstacles I face:
+	What I did yesterday: US2.003 refine
+	What I will do today: Experience and test the project for sprint4
+	Obstacles I face: N/A
 
 Nov 3,2024
-	What I did yesterday:
-	What I will do today:
-	Obstacles I face:
+	What I did yesterday: Experience and test the project for sprint4
+	What I will do today: Scrum meet for sprint4
+	Obstacles I face: N/A
 
 Nov 4,2024
 	What I did yesterday:

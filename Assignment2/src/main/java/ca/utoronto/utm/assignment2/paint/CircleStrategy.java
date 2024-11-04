@@ -15,6 +15,9 @@ public class CircleStrategy implements ShapeStrategy {
 
 	@Override
 	public void mouseDragged(PaintModel model, MouseEvent event) {
+		if (model.getShapes().size() > 0) {
+			model.removeShape(model.getShapes().getLast());
+		}
 		if (this.circle != null) {
 			findCircle(model, event);
 		}

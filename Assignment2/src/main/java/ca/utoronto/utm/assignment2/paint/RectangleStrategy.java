@@ -14,10 +14,12 @@ public class RectangleStrategy implements ShapeStrategy {
 
 	@Override
 	public void mouseDragged(PaintModel model, MouseEvent event) {
+		if (model.getShapes().size() > 0) {
+			model.removeShape(model.getShapes().getLast());
+		}
 		Point corner2 = new Point(event.getX(), event.getY());
 		this.rectangle.setRight_down(corner2);
 		model.addShape(this.rectangle);
-
 	}
 
 	@Override
@@ -28,11 +30,15 @@ public class RectangleStrategy implements ShapeStrategy {
 	@Override
 	public void mouseReleased(PaintModel model, MouseEvent event) {
 		if (this.rectangle != null) {
+
 			Point corner2 = new Point(event.getX(), event.getY());
 			this.rectangle.setRight_down(corner2);
 			model.addShape(this.rectangle);
 			this.rectangle = null;
 		}
+//		if (model.getShapes().size() > 0) {
+//			model.removeShape(model.getShapes().getLast());
+//		}
 	}
 
 	@Override

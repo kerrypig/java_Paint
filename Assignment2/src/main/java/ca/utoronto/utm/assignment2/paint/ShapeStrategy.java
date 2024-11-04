@@ -12,4 +12,6 @@ public interface ShapeStrategy {
 	void mouseReleased(PaintModel model, MouseEvent event);
 
 	void mouseClicked(PaintModel model, MouseEvent event);
+
+
 }

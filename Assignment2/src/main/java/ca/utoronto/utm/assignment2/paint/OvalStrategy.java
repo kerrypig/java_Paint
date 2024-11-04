@@ -17,6 +17,9 @@ public class OvalStrategy implements ShapeStrategy {
 
 	@Override
 	public void mouseDragged(PaintModel model, MouseEvent event) {
+		if (model.getShapes().size() > 0) {
+			model.removeShape(model.getShapes().getLast());
+		}
 		Point corner2 = new Point(event.getX(), event.getY());
 		this.oval.setRight_down(corner2);
 		model.addShape(this.oval);

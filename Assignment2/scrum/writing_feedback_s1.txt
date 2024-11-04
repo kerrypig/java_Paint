@@ -1,0 +1,8 @@
+S&O: 2.5
+WM: 2.5
+AE: 4
+
+Feedback:
+– [S&O] architecture.txt seems incomplete – not many thoughts on how to fix identified architectural problems or much discussion of high level architecture. UML Diagram is present, but not much reference to it or discussion regarding it.
+- [WM] Watch out for grammatical issues when following the format of a user story. An example is US1.007 in productBacklog.txt, where it says "AS A user I WANT click and drag.." rather than "to click and drag.." or "SO THAT after release the mouse button" rather than "SO THAT after I release the mouse button.."
+- [AE] Good job on AE.

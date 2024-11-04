@@ -101,7 +101,7 @@ Nov 1,2024
 Nov 2,2024
 	What I did yesterday:  fix bug in sprint3
 	What I will do today: add new user story
-	Obstacles I face: N/A
+	Obstacles I face: N/AA
 
 Nov 3,2024
 	What I did yesterday: add new user story

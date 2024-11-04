@@ -23,6 +23,9 @@ public class ShapeChooserPanel extends GridPane implements EventHandler<ActionEv
 	private Button solidButton;
 	//
 	private Button outlineButton;
+
+	private Button undoButton;
+
 	private TextField thicknessTextField;
 
 
@@ -57,7 +60,7 @@ public class ShapeChooserPanel extends GridPane implements EventHandler<ActionEv
 			});
 		}
 
-		// Solid/Outline
+		// Solid/Outline button
 		solidButton = new Button("Solid");
 		outlineButton = new Button("Outline");
 		solidButton.setMinWidth(85);
@@ -78,7 +81,7 @@ public class ShapeChooserPanel extends GridPane implements EventHandler<ActionEv
 			solidButton.setStyle("");
 		});
 
-		//Thickness
+		// Thickness text field
 		thicknessTextField = new TextField();
 		thicknessTextField.setMaxWidth(85);
 		thicknessTextField.setMinWidth(85);
@@ -89,22 +92,21 @@ public class ShapeChooserPanel extends GridPane implements EventHandler<ActionEv
 
 			@Override
 			public void changed(ObservableValue<? extends Boolean> observable, Boolean Old, Boolean newValue) {
-//                                System.out.println(thicknessTextField.getText()+" old");
-//                                boolean changed = false;
-//                                if(!newValue){
-//                                        changed = true;
-//                                }
-//                                if (changed&&newValue){
 				try {
-//                                                System.out.println(thicknessTextField.getText()+" new");
 					view.getPaintModel().setThickness(Float.parseFloat(thicknessTextField.getText()));
 				} catch (NumberFormatException e) {
 					thicknessTextField.setText("1.0");
 				}
-//                                }
 			}
 		});
 
+		// undo button
+		undoButton = new Button("undo");
+		undoButton.setMinWidth(85);
+		this.add(undoButton, 0, row++);
+		undoButton.setOnAction(e -> {
+			view.getPaintModel().removeLastShape();
+		});
 
 	}
 

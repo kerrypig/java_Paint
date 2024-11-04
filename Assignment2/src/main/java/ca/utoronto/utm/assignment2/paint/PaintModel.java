@@ -64,6 +64,15 @@ public class PaintModel extends Observable {
 		this.notifyObservers();
 	}
 
+	// method for undo
+	public void removeLastShape() {
+		if (!shapes.isEmpty()) {
+			shapes.remove(shapes.size() - 1);
+			setChanged();
+			notifyObservers();
+		}
+	}
+
 	public ArrayList<Shape> getShapes() {
 		return shapes;
 	}

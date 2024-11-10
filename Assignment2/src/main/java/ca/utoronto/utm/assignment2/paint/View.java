@@ -8,6 +8,7 @@ import javafx.scene.control.Menu;
 import javafx.scene.control.MenuBar;
 import javafx.scene.control.MenuItem;
 import javafx.scene.control.SeparatorMenuItem;
+import javafx.scene.input.KeyCode;
 import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
 
@@ -41,6 +42,15 @@ public class View implements EventHandler<ActionEvent> {
 		stage.heightProperty().addListener((obs, oldVal, newVal) -> {
 			paintPanel.setHeight(newVal.doubleValue());
 		});
+
+		scene.setOnKeyPressed(event -> {
+			if (event.getCode() == KeyCode.Z && event.isControlDown()) {
+				// Ctrl + S 快捷键
+				System.out.println("undo with crtl+z");
+				this.paintModel.removeLastShape();
+			}
+		});
+
 	}
 
 	public PaintModel getPaintModel() {

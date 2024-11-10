@@ -101,12 +101,12 @@ public class ShapeChooserPanel extends GridPane implements EventHandler<ActionEv
 		});
 
 		// undo button
-		undoButton = new Button("undo");
-		undoButton.setMinWidth(85);
-		this.add(undoButton, 0, row++);
-		undoButton.setOnAction(e -> {
-			view.getPaintModel().removeLastShape();
-		});
+//		undoButton = new Button("undo");
+//		undoButton.setMinWidth(85);
+//		this.add(undoButton, 0, row++);
+//		undoButton.setOnAction(e -> {
+//			view.getPaintModel().removeLastShape();
+//		});
 
 	}
 

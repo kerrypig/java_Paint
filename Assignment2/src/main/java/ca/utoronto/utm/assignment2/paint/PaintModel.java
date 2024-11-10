@@ -18,6 +18,7 @@ public class PaintModel extends Observable {
 	private ArrayList<Squiggle> squiggles = new ArrayList<Squiggle>();
 
 	private int finalShapeNum = 0;
+	private ArrayList<Shape> undoShape = new ArrayList<>();
 
 
 	//
@@ -85,8 +86,17 @@ public class PaintModel extends Observable {
 	// method for undo
 	public void removeLastShape() {
 		if (!shapes.isEmpty()) {
-			shapes.remove(shapes.size() - 1);
+			undoShape.add(shapes.remove(shapes.size() - 1));
 			finalShapeNum--;
+			setChanged();
+			notifyObservers();
+		}
+	}
+	//method for redo
+	public void addOneRemovedShape(){
+		if (!undoShape.isEmpty()) {
+			shapes.add(undoShape.remove(undoShape.size() - 1));
+			finalShapeNum++;
 			setChanged();
 			notifyObservers();
 		}

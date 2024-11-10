@@ -9,6 +9,8 @@ import javafx.scene.control.MenuBar;
 import javafx.scene.control.MenuItem;
 import javafx.scene.control.SeparatorMenuItem;
 import javafx.scene.input.KeyCode;
+import javafx.scene.input.KeyCodeCombination;
+import javafx.scene.input.KeyCombination;
 import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
 
@@ -43,13 +45,22 @@ public class View implements EventHandler<ActionEvent> {
 			paintPanel.setHeight(newVal.doubleValue());
 		});
 
-		scene.setOnKeyPressed(event -> {
-			if (event.getCode() == KeyCode.Z && event.isControlDown()) {
-				// Ctrl + S 快捷键
-				System.out.println("undo with crtl+z");
-				this.paintModel.removeLastShape();
-			}
-		});
+
+
+		// Ctrl+Z
+		scene.getAccelerators().put(
+				new KeyCodeCombination(KeyCode.Z, KeyCombination.CONTROL_DOWN),
+				() -> this.paintModel.removeLastShape()
+		);
+
+		// Ctrl+Y
+		scene.getAccelerators().put(
+				new KeyCodeCombination(KeyCode.Y, KeyCombination.CONTROL_DOWN),
+				() -> this.paintModel.addOneRemovedShape()
+		);
+
+
+
 
 	}
 
@@ -134,6 +145,9 @@ public class View implements EventHandler<ActionEvent> {
 		if (command.equals("Undo")) {
 			this.paintModel.removeLastShape();
 
+		}
+		if (command.equals("Redo")) {
+			this.paintModel.addOneRemovedShape();
 		}
 	}
 

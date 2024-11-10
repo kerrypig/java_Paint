@@ -9,9 +9,11 @@ public class TriangleStrategy implements ShapeStrategy {
 	private Triangle triangle;
 	private Polyline polyline;
 	private ArrayList<Point> trianglePoints = new ArrayList<>();
+	private boolean started = false;
 
 	@Override
 	public void mousePressed(PaintModel model, MouseEvent event) {
+
 
 	}
 
@@ -22,28 +24,33 @@ public class TriangleStrategy implements ShapeStrategy {
 
 	@Override
 	public void mouseMoved(PaintModel model, MouseEvent event) {
-		if (trianglePoints.size() == 1) {
-			this.polyline.addPoint(new Point(event.getX(), event.getY()));
-			model.addShape(this.polyline);
-			this.polyline.getPoints().removeLast();
-		}
-		if (trianglePoints.size() == 2) {
-			this.polyline.addPoint(new Point(event.getX(), event.getY()));
-			this.polyline.addPoint(trianglePoints.get(0));
-			model.addShape(this.polyline);
-			this.polyline.getPoints().removeLast();
-			this.polyline.getPoints().removeLast();
+		if (this.started){
+			if (trianglePoints.size() == 1) {
+				this.polyline.addPoint(new Point(event.getX(), event.getY()));
+				model.addShape(this.polyline);
+				this.polyline.getPoints().removeLast();
 
-		}
-		if (trianglePoints.size() == 3) {
+			}
+			if (trianglePoints.size() == 2) {
+				this.polyline.addPoint(new Point(event.getX(), event.getY()));
+				this.polyline.addPoint(trianglePoints.get(0));
+				model.addShape(this.polyline);
+				this.polyline.getPoints().removeLast();
+				this.polyline.getPoints().removeLast();
 
+			}
+			if (trianglePoints.size() == 3) {
+
+			}
 		}
+
 	}
 
 	@Override
 	public void mouseClicked(PaintModel model, MouseEvent event) {
 		if (this.trianglePoints.isEmpty() && (event.getButton() == MouseButton.PRIMARY)) {
 			System.out.println("Started Triangle");
+			this.started = true;
 			Point clickedPoint = new Point(event.getX(), event.getY());
 			this.trianglePoints.add(clickedPoint);
 			this.polyline = new Polyline(model.geIsSolid(), model.getThickness(), model.getCurrentColor());
@@ -68,7 +75,7 @@ public class TriangleStrategy implements ShapeStrategy {
 			this.polyline.reset();
 			this.triangle = new Triangle(trianglePoints.get(0), trianglePoints.get(1), trianglePoints.get(2),
 					model.geIsSolid(), model.getThickness(), model.getCurrentColor());
-			model.addShape(triangle);
+			model.addFinalShape(triangle);
 			System.out.println("Added Triangle");
 			trianglePoints.clear(); // Clear the temporary points list
 		}

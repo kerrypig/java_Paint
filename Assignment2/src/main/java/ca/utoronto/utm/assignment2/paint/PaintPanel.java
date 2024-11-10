@@ -88,6 +88,10 @@ public class PaintPanel extends Canvas implements EventHandler<MouseEvent>, Obse
 		for (Shape s : shapes) {
 			s.draw(g2d);
 		}
+		System.out.println(shapes.size());
+//		for (Shape s : shapes) {
+//			System.out.println(s);
+//		}
 
 	}
 }

@@ -16,7 +16,7 @@ public class CircleStrategy implements ShapeStrategy {
 	@Override
 	public void mouseDragged(PaintModel model, MouseEvent event) {
 		if (this.circle != null) {
-			findCircle(model, event);
+			findCircle(model, event,false);
 		}
 	}
 
@@ -28,7 +28,7 @@ public class CircleStrategy implements ShapeStrategy {
 	@Override
 	public void mouseReleased(PaintModel model, MouseEvent event) {
 		if (this.circle != null) {
-			findCircle(model, event);
+			findCircle(model, event, true);
 			System.out.println("Added Circle");
 			this.circle = null;
 		}
@@ -40,13 +40,16 @@ public class CircleStrategy implements ShapeStrategy {
 
 	}
 
-	private void findCircle(PaintModel model, MouseEvent mouseEvent) {
+	private void findCircle(PaintModel model, MouseEvent mouseEvent, boolean isFinal) {
 		double newX = mouseEvent.getX();
 		double newY = mouseEvent.getY();
 		double oldx = this.circle.getCentre().getX();
 		double oldy = this.circle.getCentre().getY();
 		double NewRadius = Math.sqrt(Math.pow(newX - oldx, 2) + Math.pow(newY - oldy, 2));
 		this.circle.setRadius(NewRadius);
-		model.addShape(this.circle);
+		if (isFinal) {
+			model.addFinalShape(this.circle);
+		}else{
+		model.addShape(this.circle);}
 	}
 }

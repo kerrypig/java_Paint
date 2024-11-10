@@ -17,6 +17,8 @@ public class PaintModel extends Observable {
 	private ArrayList<Point> points = new ArrayList<Point>();
 	private ArrayList<Squiggle> squiggles = new ArrayList<Squiggle>();
 
+	private int finalShapeNum = 0;
+
 
 	//
 	public boolean geIsSolid() {
@@ -58,6 +60,22 @@ public class PaintModel extends Observable {
 		this.notifyObservers();
 	}
 
+	public void addFinalShape(Shape s) {
+		if (finalShapeNum == 0){
+			this.shapes.clear();
+			this.shapes.add(s);
+			finalShapeNum++;
+			this.setChanged();
+			this.notifyObservers();
+		}else{
+			this.shapes= new ArrayList<>(this.shapes.subList(0,this.finalShapeNum));
+			this.shapes.add(s);
+			finalShapeNum++;
+			this.setChanged();
+			this.notifyObservers();
+		}
+	}
+
 	public void removeShape(Shape s) {
 		this.shapes.remove(s);
 		this.setChanged();
@@ -68,6 +86,7 @@ public class PaintModel extends Observable {
 	public void removeLastShape() {
 		if (!shapes.isEmpty()) {
 			shapes.remove(shapes.size() - 1);
+			finalShapeNum--;
 			setChanged();
 			notifyObservers();
 		}

@@ -34,7 +34,7 @@ public class SquareStrategy implements ShapeStrategy {
         if (this.square != null) {
             Point corner2 = new Point(event.getX(), event.getY());
             this.square.setRight_down(corner2);
-            model.addShape(this.square);
+            model.addFinalShape(this.square);
             this.square = null;
         }
     }

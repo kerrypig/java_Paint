@@ -45,7 +45,7 @@ public class PolylineStrategy implements ShapeStrategy {
 				model.removeShape(this.polyline);
 			}
 			if (polyline.getPoints().size() > 1) {
-				model.addShape(this.polyline);// Add the polyline to the model permanently
+				model.addFinalShape(this.polyline);// Add the polyline to the model permanently
 				System.out.println("Added Polyline");
 			}
 			this.polyline = null;

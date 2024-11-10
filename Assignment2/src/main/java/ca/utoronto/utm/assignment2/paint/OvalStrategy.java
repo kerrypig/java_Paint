@@ -32,7 +32,7 @@ public class OvalStrategy implements ShapeStrategy {
 		if (this.oval != null) {
 			Point corner2 = new Point(event.getX(), event.getY());
 			this.oval.setRight_down(corner2);
-			model.addShape(this.oval);
+			model.addFinalShape(this.oval);
 			this.oval = null;
 		}
 	}

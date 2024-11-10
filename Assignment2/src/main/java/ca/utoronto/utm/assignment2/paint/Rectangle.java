@@ -9,7 +9,7 @@ public class Rectangle extends Shape {
 
 	public Rectangle(Point p1, Point p2, boolean isSolid, double thickness, Color color) {
 		//p1: corner 1, p2: corner 2
-		super(isSolid, thickness, color);
+		super(isSolid, thickness, color,new Point(0,0),0,0);
 		this.left_up = p1;
 		this.right_down = p2;
 		this.constant_corner = p1;
@@ -42,6 +42,9 @@ public class Rectangle extends Shape {
 	public void setRight_down(Point p1) {
 		this.left_up = getMin(this.constant_corner, p1);
 		this.right_down = getMax(this.constant_corner, p1);
+		super.setCenter(this.left_up );
+		super.setLength_x((int) -(this.getLeft_up().getX() - this.getRight_down().getX()));
+		super.setLength_y((int) -(this.getLeft_up().getY() - this.getRight_down().getY()));
 	}
 
 	public Point getRight_down() {
@@ -50,6 +53,13 @@ public class Rectangle extends Shape {
 
 	public Point getLeft_up() {
 		return this.left_up;
+	}
+
+	public void move(double x, double y) {
+		this.left_up = new Point(this.left_up.getX() + x, this.left_up.getY() + y);
+		this.right_down = new Point(this.right_down.getX() + x, this.right_down.getY() + y);
+		super.setCenter(this.left_up );
+
 	}
 
 	/**

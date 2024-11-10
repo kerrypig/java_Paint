@@ -9,7 +9,7 @@ public class Polyline extends Shape {
 	private ArrayList<Point> points;
 
 	public Polyline(boolean isSolid, double thickness, Color color) {
-		super(isSolid, thickness, color);
+		super(isSolid, thickness, color,new Point(0,0),0,0);
 		this.points = new ArrayList<>();
 	}
 

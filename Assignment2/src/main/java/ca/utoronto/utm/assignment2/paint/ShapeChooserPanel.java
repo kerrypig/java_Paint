@@ -33,7 +33,7 @@ public class ShapeChooserPanel extends GridPane implements EventHandler<ActionEv
 
 		this.view = view;
 
-		String[] models = {"Circle", "Rectangle", "Square", "Squiggle", "Polyline", "Oval", "Triangle"};
+		String[] models = {"Circle", "Rectangle", "Square", "Squiggle", "Polyline", "Oval", "Triangle","SelectionBox"};
 
 		int row = 0;
 
@@ -99,6 +99,8 @@ public class ShapeChooserPanel extends GridPane implements EventHandler<ActionEv
 				}
 			}
 		});
+
+
 
 		// undo button
 //		undoButton = new Button("undo");
@@ -169,6 +171,12 @@ public class ShapeChooserPanel extends GridPane implements EventHandler<ActionEv
 				y[1] = 50;
 				y[2] = 50;
 				gc.strokePolygon(x, y, 3);
+				break;
+			case "SelectionBox":
+				gc.setLineDashes(5,5);
+				gc.strokeRect(padding, padding, 50, 50);
+				break;
+
 			default:
 				break;
 		}

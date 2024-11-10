@@ -50,6 +50,9 @@ public class PaintPanel extends Canvas implements EventHandler<MouseEvent>, Obse
 			case "Polyline":
 				currentStrategy = new PolylineStrategy();
 				break;
+			case "SelectionBox":
+				currentStrategy = new SelectionBoxStrategy();
+				break;
 
 		}
 	}

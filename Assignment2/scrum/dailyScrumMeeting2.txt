@@ -116,7 +116,7 @@ Nov 4,2024
 Nov 5,2024
 	What I did yesterday:  have final scrum meeting with team members to assign tasks
 	What I will do today:  do US4.001
-	Obstacles I face: N/A
+	Obstacles I face: N/A.
 
 Nov 6,2024
 	What I did yesterday: do US4.001

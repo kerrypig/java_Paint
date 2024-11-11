@@ -109,39 +109,39 @@ Nov 3,2024
 	Obstacles I face: for undo. I cannot find the final shape in arraylist
 
 Nov 4,2024
-	What I did yesterday:
-	What I will do today:
-	Obstacles I face:
+	What I did yesterday: group[ meeting
+	What I will do today: add some new feature
+	Obstacles I face: no
 
 Nov 5,2024
-	What I did yesterday:
-	What I will do today:
-	Obstacles I face:
+	What I did yesterday: add some new feature
+	What I will do today: add undo
+	Obstacles I face: no
 
 Nov 6,2024
-	What I did yesterday:
-	What I will do today:
-	Obstacles I face:
+	What I did yesterday: add undo
+	What I will do today: add redo
+	Obstacles I face: no
 
 Nov 7,2024
-	What I did yesterday:
-	What I will do today:
-	Obstacles I face:
+	What I did yesterday: add redo
+	What I will do today: add choose box
+	Obstacles I face: no
 
 Nov 8,2024
-	What I did yesterday:
-	What I will do today:
-	Obstacles I face:
+	What I did yesterday: add choose box
+	What I will do today: add move
+	Obstacles I face: no
 
 Nov 9,2024
-	What I did yesterday:
-	What I will do today:
-	Obstacles I face:
+	What I did yesterday: add architeture
+	What I will do today: add more
+	Obstacles I face: no
 
 Nov 10,2024
-	What I did yesterday:
-	What I will do today:
-	Obstacles I face:
+	What I did yesterday: add more
+	What I will do today: add more
+	Obstacles I face: no
 
 Nov 11,2024
 	What I did yesterday:

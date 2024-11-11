@@ -19,11 +19,19 @@ public class PaintModel extends Observable {
 
 	private int finalShapeNum = 0;
 	private ArrayList<Shape> undoShape = new ArrayList<>();
+	private PaintPanel thisPanel;
 
 
 	//
 	public boolean geIsSolid() {
 		return isSolid;
+	}
+
+	public PaintPanel getThisPanel() {
+		return thisPanel;
+	}
+	public void setThisPanel(PaintPanel thisPanel) {
+		this.thisPanel = thisPanel;
 	}
 
 	//

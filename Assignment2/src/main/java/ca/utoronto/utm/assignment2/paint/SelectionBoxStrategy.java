@@ -22,6 +22,7 @@ public class SelectionBoxStrategy implements ShapeStrategy{
         }
         this.box = new SelectionBox(this.currShape);
         model.addShape(this.box);
+        model.getThisPanel().setCursor(Cursor.MOVE);
         startX = event.getX();
         startY = event.getY();
 
@@ -34,6 +35,7 @@ public class SelectionBoxStrategy implements ShapeStrategy{
             System.out.println("move shape");
         this.currShape.move(event.getX()-startX,event.getY()-startY);
         model.addShape(this.currShape);
+
         startX = event.getX();
         startY = event.getY();}
     }
@@ -45,6 +47,8 @@ public class SelectionBoxStrategy implements ShapeStrategy{
 
     @Override
     public void mouseReleased(PaintModel model, MouseEvent event) {
+        model.addFinalShape(this.currShape);
+        model.getThisPanel().setCursor(Cursor.DEFAULT);
 
     }
 

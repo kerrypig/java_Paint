@@ -15,6 +15,6 @@ public class SelectionBox extends Shape {
     public void draw(GraphicsContext g2d) {
         g2d.setStroke(this.getColor());
         g2d.setLineWidth(this.getThickness());
-        g2d.strokeRect( this.shape.getCenter().getX()-10, this.shape.getCenter().getY()-10, this.shape.getLength_x()+10, this.shape.getLength_y()+10);
+        g2d.strokeRect( this.shape.getCenter().getX()-10, this.shape.getCenter().getY()-10, this.shape.getLength_x()+20, this.shape.getLength_y()+20);
     }
 }

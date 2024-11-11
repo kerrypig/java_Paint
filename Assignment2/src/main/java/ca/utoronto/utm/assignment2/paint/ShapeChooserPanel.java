@@ -8,6 +8,7 @@ import javafx.scene.canvas.Canvas;
 import javafx.scene.control.Button;
 import javafx.scene.control.ColorPicker;
 import javafx.scene.control.TextField;
+import javafx.scene.image.Image;
 import javafx.scene.layout.GridPane;
 import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.paint.Color;
@@ -173,8 +174,9 @@ public class ShapeChooserPanel extends GridPane implements EventHandler<ActionEv
 				gc.strokePolygon(x, y, 3);
 				break;
 			case "SelectionBox":
-				gc.setLineDashes(5,5);
-				gc.strokeRect(padding, padding, 50, 50);
+				Image icon = new Image("file:src/main/java/ca/utoronto/utm/assignment2/paint/resources/img.png");
+				gc.drawImage(icon, padding + 5, padding + 5, 40, 40); // Adjust position and size as needed
+
 				break;
 
 			default:

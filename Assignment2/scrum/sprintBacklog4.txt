@@ -18,18 +18,7 @@ SO THAT: I can save and open my project, or start a new one
 --------------------------------------------------------------------------
 --------------------------------------------------------------------------
 // create a new user story
-TYPE: USER STORY US4.002 : shenqi23 : Inprogress
-NAME: function of copy&paste
-PRIORITY: 5
-ESTIMATE: 4 days
-ACTUAL:
-AS A: User
-I WANT: To be able to copy and paste an item
-SO THAT: It can be easy for me to do the drawing
---------------------------------------------------------------------------
---------------------------------------------------------------------------
-// create a new user story
-TYPE: USER STORY US4.003 : zhukai16 : Completed
+TYPE: USER STORY US4.002 : zhukai16 : Completed
 NAME: function of redo
 PRIORITY: 4
 ESTIMATE: 1 day
@@ -40,18 +29,29 @@ SO THAT: I can cancel the undo I accident made
 --------------------------------------------------------------------------
 --------------------------------------------------------------------------
 // create a new user story
-TYPE: USER STORY US4.003 : zhukai16 : Completed
-NAME: function of seleciton box
+TYPE: USER STORY US4.003 : shenqi23 : Inprogress
+NAME: function of copy&paste
+PRIORITY: 5
+ESTIMATE: 4 days
+ACTUAL:
+AS A: User
+I WANT: To be able to copy and paste an item
+SO THAT: It can be easy for me to do the drawing
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+// create a new user story
+TYPE: USER STORY US4.004 : zhukai16 : Completed
+NAME: function of selection box
 PRIORITY: 4
 ESTIMATE: 1 day
 ACTUAL: 1day
 AS A: user
-I WANT: showing a selection box when dragging the mouse
+I WANT: showing a selection box when click on a object
 SO THAT: I can know which item I'm choosing
 --------------------------------------------------------------------------
 --------------------------------------------------------------------------
 // create a new user story
-TYPE: USER STORY US4.010 : shenqi23 : Inprogress
+TYPE: USER STORY US4.005 : shenqi23 : Inprogress
 NAME: have different appearance of the mouse pointer
 PRIORITY: 5
 ESTIMATE: 4 days

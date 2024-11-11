@@ -7,14 +7,14 @@
 
 --------------------------------------------------------------------------
 // create a new user story
-TYPE: USER STORY US4.001 : chengdu2 : Inprogress
-NAME: function of new, save and open
+TYPE: USER STORY US4.001 : chengdu2 : Completed
+NAME: function of new
 PRIORITY: 5
 ESTIMATE: 4 days
 ACTUAL:
 AS A: User
-I WANT: To be able to save and open my project
-SO THAT: I can save and open my project, or start a new one
+I WANT: To be able to clear the canvas and start a new one
+SO THAT: I can start a new canvas
 --------------------------------------------------------------------------
 --------------------------------------------------------------------------
 // create a new user story

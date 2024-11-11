@@ -48,6 +48,7 @@ public class SelectionBoxStrategy implements ShapeStrategy{
     @Override
     public void mouseReleased(PaintModel model, MouseEvent event) {
         model.addFinalShape(this.currShape);
+        model.removeShape(this.currShape);
         model.getThisPanel().setCursor(Cursor.DEFAULT);
 
     }

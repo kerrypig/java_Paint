@@ -40,8 +40,9 @@ Classes:
     TriangleStrategy: a strategy class for Triangle
 
 Usage:
-	(Briefly describe why a developer would be playing with this part of
-	the code and how they would use it to achieve that purpose)
+	If a developer needs to introduce a new shape, they can create a new ShapeStrategy implementation
+	and define its specific behaviors without altering existing code. It allows for improvements or changes in shape behavior
+	without disrupting other shapes.
 
 --------------------------------------------------------------------------------
 # High Level Architecture Discussion

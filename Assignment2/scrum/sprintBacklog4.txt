@@ -29,14 +29,15 @@ SO THAT: I can cancel the undo I accident made
 --------------------------------------------------------------------------
 --------------------------------------------------------------------------
 // create a new user story
-TYPE: USER STORY US4.004 : zhukai16 : Completed
-NAME: function of selection box
+TYPE: USER STORY US4.003 : zhukai16 : Completed
+NAME: function of selection box and move
 PRIORITY: 4
 ESTIMATE: 1 day
 ACTUAL: 1day
 AS A: user
-I WANT: showing a selection box when click on an object
-SO THAT: I can know which item I'm choosing
+I WANT: showing a selection box when click on an object and move the object
+        I created
+SO THAT: I can know which item I'm about to move
 --------------------------------------------------------------------------
 --------------------------------------------------------------------------
 // create a new user story

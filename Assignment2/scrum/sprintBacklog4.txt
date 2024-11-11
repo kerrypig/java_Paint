@@ -78,3 +78,11 @@ ACTUAL : 1 day
 ISSUE    : We found that the draw command for each shape except triangle is
            keep entering shapes into the arraylist of shape in the model class
 --------------------------------------------------------------------------
+--------------------------------------------------------------------------
+TYPE     : BUG BUG4.003 : shenqi23 : Inprogress
+NAME     : undo not functioning after moving
+PRIORITY : 2
+ESTIMATE : 4 day
+ACTUAL : 1 day
+ISSUE    : We found that the undo is not functioning after moving an item
+--------------------------------------------------------------------------

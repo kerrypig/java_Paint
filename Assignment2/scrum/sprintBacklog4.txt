@@ -12,7 +12,7 @@ NAME: function of new, save and open
 PRIORITY: 5
 ESTIMATE: 4 days
 ACTUAL:
-AS A: user
+AS A: User
 I WANT: To be able to save and open my project
 SO THAT: I can save and open my project, or start a new one
 --------------------------------------------------------------------------

@@ -5,6 +5,7 @@ import javafx.scene.paint.Color;
 
 public class Rectangle extends Shape {
 	private Point left_up, right_down, constant_corner;
+	private boolean dash = false;
 
 
 	public Rectangle(Point p1, Point p2, boolean isSolid, double thickness, Color color) {
@@ -61,6 +62,9 @@ public class Rectangle extends Shape {
 		super.setCenter(this.left_up );
 
 	}
+	public void setDashed(Boolean dashed) {
+		this.dash = dashed;
+	}
 
 	/**
 	 * This method draw each shape
@@ -70,6 +74,11 @@ public class Rectangle extends Shape {
 	@Override
 	//need modify
 	public void draw(GraphicsContext g2d) {
+		if (this.dash) {
+			g2d.setLineDashes(5,5);
+		}else{
+			g2d.setLineDashes();
+		}
 		if (this.isSolid()) {
 			g2d.setFill(this.getColor());
 			g2d.fillRect(this.getLeft_up().getX(), this.getLeft_up().getY(),

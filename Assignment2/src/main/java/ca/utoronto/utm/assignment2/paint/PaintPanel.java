@@ -18,6 +18,7 @@ public class PaintPanel extends Canvas implements EventHandler<MouseEvent>, Obse
 		super(300, 600);
 		this.model = model;
 		this.model.addObserver(this);
+		this.model.setPaintPanel(this);
 
 		this.addEventHandler(MouseEvent.MOUSE_PRESSED, this);
 		this.addEventHandler(MouseEvent.MOUSE_RELEASED, this);

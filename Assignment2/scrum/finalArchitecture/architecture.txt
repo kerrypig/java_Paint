@@ -23,7 +23,7 @@ Purpose:
 	which make the code easier for maintenance and testing and Improved its extensibility.
 
 UML:
-	UML.png
+	UML.png/assignment2.png
 
 
 Classes:
@@ -47,8 +47,78 @@ Usage:
 --------------------------------------------------------------------------------
 # High Level Architecture Discussion
 
-	(Put all of the above together in a collection of stories which tell the
-	developer how to modify, extend, or understand your code)
+New Drawing Mode:
+Description:
+	(description of what the feature is and how it is tied to the architecture
+	application and the code...)
 
-	(For each story, pull from and modify the highLevelTemplate.txt)
+	A drawing mode enables a user to naturally draw a shape on the screen. The
+	drawing mode consists of an image icon appearing in the left button panel.
+	When the user clicks the image icon, the drawing mode is enabled. This means
+	that a strategy for handling user input for this drawing mode is installed.
+
+	At this point, all mouse events in the corresponding Shape strategy will be recorded.
+
+
+Implementation:
+	(inventory of ideas, required files, how they are tied to the architecture,
+		naming conventions (example: images/ButtonIconSquare.jpg, MHStrategySquare, ShapeSquare...)
+
+
+	To add a new drawing mode named X provide
+		A new drawing mode should inherit from the superclass ‘Shape’
+    	and should contain parameters ‘isSolid’, ‘thickness’, ‘color’, ‘center’, ‘length_x’ and ‘length_y’.
+
+        The drawing mode should override the superclass method ‘draw’ to draw the image on g2d.
+
+        A new drawing mode should contain:
+        1. A class inherited from ‘Shape’, named the name of the new drawing mode, used to
+        save the parameters of the new drawing mode, and override the ‘draw’ method to display
+        the drawing mode on g2d.
+        2. A class that implements ‘ShapeStrategy’, named ‘xxxStrategy’ (xxx is the name of
+        the new drawing mode), implements methods ‘mousePressed’ ‘mouseDragged’ ‘mouseMoved’
+        ‘mouseReleased’ ‘mouseClicked’, and implements the processing of mouse events, for
+        example, a drawing should be initialized when the mouse is pressed, and a real-time
+        preview of the image should be drawn when the mouse is dragged, etc. Here, you can
+        achieve the purpose of drawing by adding and subtracting the shapes Arraylist in PaintModel.
+        It is worth noting that in order to ensure the implementation of the 'undo' and 'redo'
+        functions, the addFinalShape method in PaintModel should be used to add a final image
+        when determining the final image.
+        3. Change the ShapeChooserPanel. This class allows users to select their favorite image
+        on the left side of the UI and draw it. When creating a new drawing mode, this class should
+        be modified to add a new button to let users select a new drawing mode.
+        4. Add a new branch to PaintPanel so that it can call DiamondStrategy to handle mouse events
+
+	(list of aspects of code to touch to implement the new drawing mode)
+
+
+	image icon: Create a jpg image with dimensions 512x512, and place it
+		on display in the Button Panel, placed in resources/ButtonIconX.jpg
+		(any special discussion...)
+
+		Add a new drawing mode to the ArrayList 'model' in the ShapeChooserPanel and
+        add a new image icon in the createShapeButton method.
+
+
+Example:
+	(for example, a list of files involved in the implementation of the Square drawing mode)
+For example, to create a new drawing mode 'diamond', you should first create a
+class 'Diamond' inherited from 'Shape'. It should contain subclass parameters
+'center', 'x_length' 'y_length', and at the same time retain the parameters in
+the superclass Shape (thickness, etc.). In this class, the method 'Draw' should
+be rewritten to display the current drawing. Then, a class 'DiamondStrategy'
+should be created to implement 'ShapeStrategy', in which methods 'mousePressed'
+'mouseDragged' 'mouseMoved' 'mouseReleased' 'mouseClicked' should be implemented.
+Here, you can create a new Diamond instance in 'mousePressed', set parameters,
+and call getthickness and other functions from the model to set parameters.
+Then in 'mouseDragged', update and draw the preview effect for different mouse
+positions at each moment. Finally, in 'mouseReleased', use the addFinalShape
+method to add the final image to the arraylist.
+Finally, you should also add a button to the ShapeChooserPanel, add an item
+'diamond' to the arraylist model and draw a new button style in createShapeButton
+or add a new 512x512 image in the resources folder and render it in createShapeButton
+to achieve the purpose of rendering the button.
+At the same time, a model case called 'Diamond' should be added to PaintPanel, where
+currentStrategy = new DiamondStrategy() can be used to handle mouse events.
+--------------------------------------------------------------------------------
 

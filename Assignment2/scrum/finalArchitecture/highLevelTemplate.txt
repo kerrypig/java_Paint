@@ -9,7 +9,7 @@ Description:
 	When the user clicks the image icon, the drawing mode is enabled. This means
 	that a strategy for handling user input for this drawing mode is installed.
 
-	At this point, all mouse events in ...
+	At this point, all mouse events in the corresponding Shape strategy will be recorded.
 
 
 Implementation:

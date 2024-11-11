@@ -30,7 +30,7 @@ public class RectangleStrategy implements ShapeStrategy {
 		if (this.rectangle != null) {
 			Point corner2 = new Point(event.getX(), event.getY());
 			this.rectangle.setRight_down(corner2);
-			model.addShape(this.rectangle);
+			model.addFinalShape(this.rectangle);
 			this.rectangle = null;
 		}
 	}

@@ -28,10 +28,21 @@ public class PaintModel extends Observable {
 	private ArrayList<Point> points = new ArrayList<Point>();
 	private ArrayList<Squiggle> squiggles = new ArrayList<Squiggle>();
 
+	private int finalShapeNum = 0;
+	private ArrayList<Shape> undoShape = new ArrayList<>();
+	private PaintPanel thisPanel;
+
 
 	//
 	public boolean geIsSolid() {
 		return isSolid;
+	}
+
+	public PaintPanel getThisPanel() {
+		return thisPanel;
+	}
+	public void setThisPanel(PaintPanel thisPanel) {
+		this.thisPanel = thisPanel;
 	}
 
 	//
@@ -69,6 +80,22 @@ public class PaintModel extends Observable {
 		this.notifyObservers();
 	}
 
+	public void addFinalShape(Shape s) {
+		if (finalShapeNum == 0){
+			this.shapes.clear();
+			this.shapes.add(s);
+			finalShapeNum++;
+			this.setChanged();
+			this.notifyObservers();
+		}else{
+			this.shapes= new ArrayList<>(this.shapes.subList(0,this.finalShapeNum));
+			this.shapes.add(s);
+			finalShapeNum++;
+			this.setChanged();
+			this.notifyObservers();
+		}
+	}
+
 	public void removeShape(Shape s) {
 		this.shapes.remove(s);
 		this.setChanged();
@@ -78,7 +105,17 @@ public class PaintModel extends Observable {
 	// method for undo
 	public void removeLastShape() {
 		if (!shapes.isEmpty()) {
-			shapes.remove(shapes.size() - 1);
+			undoShape.add(shapes.remove(shapes.size() - 1));
+			finalShapeNum--;
+			setChanged();
+			notifyObservers();
+		}
+	}
+	//method for redo
+	public void addOneRemovedShape(){
+		if (!undoShape.isEmpty()) {
+			shapes.add(undoShape.remove(undoShape.size() - 1));
+			finalShapeNum++;
 			setChanged();
 			notifyObservers();
 		}

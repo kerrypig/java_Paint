@@ -29,7 +29,7 @@ public class SquiggleStrategy implements ShapeStrategy {
 	@Override
 	public void mouseReleased(PaintModel model, MouseEvent event) {
 		if (this.squiggle != null) {
-			model.addShape(this.squiggle);
+			model.addFinalShape(this.squiggle);
 			System.out.println("Added Squiggle");
 			this.squiggle = null;
 		}

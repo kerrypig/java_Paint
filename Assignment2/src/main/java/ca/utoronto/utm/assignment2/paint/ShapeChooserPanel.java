@@ -8,6 +8,7 @@ import javafx.scene.canvas.Canvas;
 import javafx.scene.control.Button;
 import javafx.scene.control.ColorPicker;
 import javafx.scene.control.TextField;
+import javafx.scene.image.Image;
 import javafx.scene.layout.GridPane;
 import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.paint.Color;
@@ -33,7 +34,7 @@ public class ShapeChooserPanel extends GridPane implements EventHandler<ActionEv
 
 		this.view = view;
 
-		String[] models = {"Circle", "Rectangle", "Square", "Squiggle", "Polyline", "Oval", "Triangle"};
+		String[] models = {"Circle", "Rectangle", "Square", "Squiggle", "Polyline", "Oval", "Triangle","SelectionBox"};
 
 		int row = 0;
 
@@ -100,13 +101,15 @@ public class ShapeChooserPanel extends GridPane implements EventHandler<ActionEv
 			}
 		});
 
+
+
 		// undo button
-		undoButton = new Button("undo");
-		undoButton.setMinWidth(85);
-		this.add(undoButton, 0, row++);
-		undoButton.setOnAction(e -> {
-			view.getPaintModel().removeLastShape();
-		});
+//		undoButton = new Button("undo");
+//		undoButton.setMinWidth(85);
+//		this.add(undoButton, 0, row++);
+//		undoButton.setOnAction(e -> {
+//			view.getPaintModel().removeLastShape();
+//		});
 
 	}
 
@@ -169,6 +172,13 @@ public class ShapeChooserPanel extends GridPane implements EventHandler<ActionEv
 				y[1] = 50;
 				y[2] = 50;
 				gc.strokePolygon(x, y, 3);
+				break;
+			case "SelectionBox":
+				Image icon = new Image("file:src/main/java/ca/utoronto/utm/assignment2/paint/resources/img.png");
+				gc.drawImage(icon, padding + 5, padding + 5, 40, 40); // Adjust position and size as needed
+
+				break;
+
 			default:
 				break;
 		}

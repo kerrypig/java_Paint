@@ -19,6 +19,8 @@ public class PaintPanel extends Canvas implements EventHandler<MouseEvent>, Obse
 		this.model = model;
 		this.model.addObserver(this);
 
+		this.model.setThisPanel(this);
+
 		this.addEventHandler(MouseEvent.MOUSE_PRESSED, this);
 		this.addEventHandler(MouseEvent.MOUSE_RELEASED, this);
 		this.addEventHandler(MouseEvent.MOUSE_MOVED, this);
@@ -49,6 +51,9 @@ public class PaintPanel extends Canvas implements EventHandler<MouseEvent>, Obse
 				break;
 			case "Polyline":
 				currentStrategy = new PolylineStrategy();
+				break;
+			case "SelectionBox":
+				currentStrategy = new SelectionBoxStrategy();
 				break;
 
 		}
@@ -88,6 +93,10 @@ public class PaintPanel extends Canvas implements EventHandler<MouseEvent>, Obse
 		for (Shape s : shapes) {
 			s.draw(g2d);
 		}
+		System.out.println(shapes.size());
+//		for (Shape s : shapes) {
+//			System.out.println(s);
+//		}
 
 	}
 }

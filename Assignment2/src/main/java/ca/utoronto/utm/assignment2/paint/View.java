@@ -8,6 +8,9 @@ import javafx.scene.control.Menu;
 import javafx.scene.control.MenuBar;
 import javafx.scene.control.MenuItem;
 import javafx.scene.control.SeparatorMenuItem;
+import javafx.scene.input.KeyCode;
+import javafx.scene.input.KeyCodeCombination;
+import javafx.scene.input.KeyCombination;
 import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
 
@@ -41,6 +44,24 @@ public class View implements EventHandler<ActionEvent> {
 		stage.heightProperty().addListener((obs, oldVal, newVal) -> {
 			paintPanel.setHeight(newVal.doubleValue());
 		});
+
+
+
+		// Ctrl+Z
+		scene.getAccelerators().put(
+				new KeyCodeCombination(KeyCode.Z, KeyCombination.CONTROL_DOWN),
+				() -> this.paintModel.removeLastShape()
+		);
+
+		// Ctrl+Y
+		scene.getAccelerators().put(
+				new KeyCodeCombination(KeyCode.Y, KeyCombination.CONTROL_DOWN),
+				() -> this.paintModel.addOneRemovedShape()
+		);
+
+
+
+
 	}
 
 	public PaintModel getPaintModel() {
@@ -126,6 +147,9 @@ public class View implements EventHandler<ActionEvent> {
 		}
 		else if (command.equals("New")) {
 			this.paintModel.clearShapes();
+		}
+		if (command.equals("Redo")) {
+			this.paintModel.addOneRemovedShape();
 		}
 	}
 

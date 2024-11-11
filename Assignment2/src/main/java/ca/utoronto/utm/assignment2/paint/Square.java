@@ -9,10 +9,13 @@ public class Square extends Shape{
 
     public Square(Point p1, Point p2, boolean isSolid, double thickness, Color color) {
         //p1: corner 1, p2: corner 2
-        super(isSolid, thickness, color);
+
+        super(isSolid, thickness, color,new Point(0,0),0,0);
+        System.out.println("aaa");
         this.left_up = p1;
         this.right_down = p2;
         this.constant_corner = p1;
+
     }
 
 
@@ -65,6 +68,9 @@ public class Square extends Shape{
             this.left_up = new Point(constant_corner.getX() - sideLength, constant_corner.getY());
             this.right_down = new Point(constant_corner.getX(), constant_corner.getY() + sideLength);
         }
+        super.setCenter(this.left_up );
+        super.setLength_x((int) sideLength);
+        super.setLength_y((int) sideLength);
     }
 
     public Point getRight_down() {
@@ -73,6 +79,13 @@ public class Square extends Shape{
 
     public Point getLeft_up() {
         return this.left_up;
+    }
+
+    public void move(double x, double y) {
+        this.left_up = new Point(this.left_up.getX()+x, this.left_up.getY()+y);
+        this.right_down = new Point(this.right_down.getX()+x, this.right_down.getY()+y);
+        super.setCenter(this.left_up );
+
     }
 
     /**

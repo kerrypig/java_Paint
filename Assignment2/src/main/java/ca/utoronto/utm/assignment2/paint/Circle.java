@@ -11,7 +11,7 @@ public class Circle extends Shape {
 
 
 	public Circle(Point centre, int radius, boolean isSolid, double thickness, Color color) {
-		super(isSolid, thickness, color);
+		super(isSolid, thickness, color,new Point(0,0),0,0);
 		this.centre = centre;
 		this.radius = radius;
 	}
@@ -29,7 +29,16 @@ public class Circle extends Shape {
 	}
 
 	public void setRadius(double radius) {
+
 		this.radius = radius;
+		super.setCenter(new Point(this.centre.getX()-radius, this.centre.getY()-radius));
+		super.setLength_x((int) (2*radius));
+		super.setLength_y((int) (2*radius));
+	}
+	public void move(double x, double y) {
+		this.centre = new Point(this.centre.getX()+x, this.centre.getY()+y);
+		super.setCenter(new Point(this.centre.getX()-radius, this.centre.getY()-radius));
+
 	}
 
 	/**

@@ -39,6 +39,7 @@ Implementation:
         3. Change the ShapeChooserPanel. This class allows users to select their favorite image
         on the left side of the UI and draw it. When creating a new drawing mode, this class should
         be modified to add a new button to let users select a new drawing mode.
+        4. Add a new branch to PaintPanel so that it can call DiamondStrategy to handle mouse events
 
 	(list of aspects of code to touch to implement the new drawing mode)
 
@@ -53,5 +54,22 @@ Implementation:
 
 Example: 
 	(for example, a list of files involved in the implementation of the Square drawing mode)
-	For example, to create a new drawing mode 'diamond', you should first create a class 'Diamond' inherited from 'Shape'. It should contain subclass parameters 'center', 'x_length' 'y_length', and at the same time retain the parameters in the superclass Shape (thickness, etc.). In this class, you should override the method 'Draw'
+For example, to create a new drawing mode 'diamond', you should first create a
+class 'Diamond' inherited from 'Shape'. It should contain subclass parameters
+'center', 'x_length' 'y_length', and at the same time retain the parameters in
+the superclass Shape (thickness, etc.). In this class, the method 'Draw' should
+be rewritten to display the current drawing. Then, a class 'DiamondStrategy'
+should be created to implement 'ShapeStrategy', in which methods 'mousePressed'
+'mouseDragged' 'mouseMoved' 'mouseReleased' 'mouseClicked' should be implemented.
+Here, you can create a new Diamond instance in 'mousePressed', set parameters,
+and call getthickness and other functions from the model to set parameters.
+Then in 'mouseDragged', update and draw the preview effect for different mouse
+positions at each moment. Finally, in 'mouseReleased', use the addFinalShape
+method to add the final image to the arraylist.
+Finally, you should also add a button to the ShapeChooserPanel, add an item
+'diamond' to the arraylist model and draw a new button style in createShapeButton
+or add a new 512x512 image in the resources folder and render it in createShapeButton
+to achieve the purpose of rendering the button.
+At the same time, a model case called 'Diamond' should be added to PaintPanel, where
+currentStrategy = new DiamondStrategy() can be used to handle mouse events.
 --------------------------------------------------------------------------------

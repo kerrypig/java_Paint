@@ -15,10 +15,12 @@
 Name: Strategy Pattern
 Pattern Name: Strategy Pattern
 Reference: (link to a specific version of a DP in https://www.oodesign.com/), for example...
-	https://www.oodesign.com/images/design_patterns/behavioral/iterator_implementation_-_uml_class_diagram.gif
+	https://www.oodesign.com/images/design_patterns/behavioral/strategy_implementation_-_uml_class_diagram.gif
 
 Purpose:
-	(why is this pattern implemented? think SOLID as possible reasons and explain in terms of the application)
+	The Strategy Pattern allows to encapsulate the behavior of different shapes
+	into separate strategy classes that adhere to a common interface (ShapeStrategy). It follows the OCP in SOLID
+	which make the code easier for maintenance and testing and Improved its extensibility.
 
 UML:
 	UML.png

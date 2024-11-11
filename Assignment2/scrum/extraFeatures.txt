@@ -1,21 +1,50 @@
 (replicate sections below for each feature you want to highlight)
 --------------------------------------------------------------------------------
-FeatureName: (name)
+FeatureName: function of new
 
 Description: 
-	(describe the feature)
+	To be able to clear the canvas and start a new one
 
 
 Reference: 
-	(list of the BUG/US involved in creating this feature)
+	USER STORY US4.001
 --------------------------------------------------------------------------------
-FeatureName: (name)
+FeatureName: function of redo
 
 Description: 
-	(describe the feature)
+	To be able to redo last drawing
 
 
 Reference: 
-	(list of the BUG/US involved in creating this feature)
+	USER STORY US4.002
 --------------------------------------------------------------------------------
-...
+--------------------------------------------------------------------------------
+FeatureName: function of undo
+
+Description:
+	To be able to undo my last drawing
+
+
+Reference:
+	USER STORY US3.010
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+FeatureName: function of selection box and move
+
+Description:
+	showing a selection box when click on an object and move the object I created
+
+
+Reference:
+	USER STORY US4.003
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+FeatureName: image in the shape chooser panel representing move
+
+Description:
+	a specific image represents the action move
+
+
+Reference:
+	USER STORY US4.004
+--------------------------------------------------------------------------------

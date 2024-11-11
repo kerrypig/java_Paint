@@ -29,17 +29,6 @@ SO THAT: I can cancel the undo I accident made
 --------------------------------------------------------------------------
 --------------------------------------------------------------------------
 // create a new user story
-TYPE: USER STORY US4.003 : shenqi23 : Inprogress
-NAME: function of copy&paste
-PRIORITY: 5
-ESTIMATE: 4 days
-ACTUAL:
-AS A: User
-I WANT: To be able to copy and paste an item
-SO THAT: It can be easy for me to do the drawing
---------------------------------------------------------------------------
---------------------------------------------------------------------------
-// create a new user story
 TYPE: USER STORY US4.004 : zhukai16 : Completed
 NAME: function of selection box
 PRIORITY: 4
@@ -48,6 +37,17 @@ ACTUAL: 1day
 AS A: user
 I WANT: showing a selection box when click on an object
 SO THAT: I can know which item I'm choosing
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+// create a new user story
+TYPE: USER STORY US4.004 : zhukai16 : Completed
+NAME: image in the shape chooser panel representing move
+PRIORITY: 4
+ESTIMATE: 1 day
+ACTUAL: 1day
+AS A: user
+I WANT: a specific image represents the action move
+SO THAT: I can know which function I'm choosing
 --------------------------------------------------------------------------
 --------------------------------------------------------------------------
 // create a new user story
@@ -63,15 +63,6 @@ SO THAT: I can know what I'm doing with selecting the item
 --------------------------------------------------------------------------
 TYPE     : BUG BUG4.001 : zhukai16 : Completed
 NAME     : To many shapes in arraylist shape
-PRIORITY : 2
-ESTIMATE : 4 day
-ACTUAL : 1 day
-ISSUE    : We found that the draw command for each shape except triangle is
-           keep entering shapes into the arraylist of shape in the model class
---------------------------------------------------------------------------
---------------------------------------------------------------------------
-TYPE     : BUG BUG4.002 : zhukai16 : Completed
-NAME     : The architecture behind the program needs another improve
 PRIORITY : 2
 ESTIMATE : 4 day
 ACTUAL : 1 day

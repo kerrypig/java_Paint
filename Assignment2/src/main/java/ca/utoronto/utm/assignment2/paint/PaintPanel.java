@@ -62,18 +62,15 @@ public class PaintPanel extends Canvas implements EventHandler<MouseEvent>, Obse
 		}
 	}
 
-
 	public void setBackgroundColor(Color color) {
 		this.backgroundColor = color;
-		drawBackground(); // 更新背景颜色
+		drawBackground();
 	}
-
-
 
 	private void drawBackground() {
 		GraphicsContext gc = this.getGraphicsContext2D();
-		gc.setFill(backgroundColor); // 使用背景颜色
-		gc.fillRect(0, 0, this.getWidth(), this.getHeight()); // 填充整个画布
+		gc.setFill(backgroundColor);
+		gc.fillRect(0, 0, this.getWidth(), this.getHeight());
 	}
 
 

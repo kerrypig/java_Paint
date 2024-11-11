@@ -68,8 +68,9 @@ public class ShapeChooserPanel extends GridPane implements EventHandler<ActionEv
 			});
 		}
 
-
+        // background color picker
 		backgroundColorPicker = new ColorPicker(Color.WHITE);
+		// note it is a color picker for background
 		Tooltip backgroundTooltip = new Tooltip("Choose a background color");
 		backgroundColorPicker.setTooltip(backgroundTooltip);
 		backgroundColorPicker.setOnAction(e -> {

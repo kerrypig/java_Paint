@@ -6,3 +6,4 @@ US2.005&US2.007 author: chengdu2 puller: yinliwen status: Complete
 BUG2.003V1 author: zhukai16 puller: shenqi23 status: Complete
 US3.010 author: shenqi2 puller: zhukai16 status: Complete
 US4.010 author: chengdu2 puller: yinliwen status: Complete
+US4.006 author: zhukai16 puller: shenqi23 status: Complete

@@ -1,6 +1,6 @@
 --------------------------------------------------------------------------------
-Name: (name) (so you can refer to it below)
-Pattern Name: (Factory/Command/Strategy/...) 
+Name: Strategy Pattern
+Pattern Name: Strategy Pattern
 Reference: (link to a specific version of a DP in https://www.oodesign.com/), for example...
 	https://www.oodesign.com/images/design_patterns/behavioral/iterator_implementation_-_uml_class_diagram.gif
 
@@ -12,12 +12,19 @@ UML:
 	(make it easy on us, and organize the diagram so that it looks like the
 	reference pattern).
 
+
 Classes: 
 	(list classes involved and their roles based on Reference above)
-	class1: role1
-	class2: role1
-	class3: role1
-	class4: role1
+	ShapeStrategy: An interface for all strategies for the shapes which tells them how to react base on different
+	               action of mouse
+	CircleStrategy: a strategy class for circle
+	OvalStrategy: a strategy class for Oval
+    PolylineStrategy: a strategy class for Polyline
+    RectangleStrategy: a strategy class for Rectangle
+    SelectionBoxStrategy: a strategy class for SelectionBox
+    SquareStrategy: a strategy class for Square
+    SquiggleStrategy: a strategy class for Squiggle
+    TriangleStrategy: a strategy class for Triangle
 
 Usage: 
 	(Briefly describe why a developer would be playing with this part of 

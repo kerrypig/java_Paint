@@ -9,28 +9,49 @@ Description:
 	When the user clicks the image icon, the drawing mode is enabled. This means
 	that a strategy for handling user input for this drawing mode is installed.
 
-	At this point, all mouse events in ... 
+	At this point, all mouse events in ...
+
 
 Implementation:
 	(inventory of ideas, required files, how they are tied to the architecture,
 		naming conventions (example: images/ButtonIconSquare.jpg, MHStrategySquare, ShapeSquare...)
 
-	To add a new drawing mode named X provide...
+
+	To add a new drawing mode named X provide
+		A new drawing mode should inherit from the superclass ‘Shape’
+    	and should contain parameters ‘isSolid’, ‘thickness’, ‘color’, ‘center’, ‘length_x’ and ‘length_y’.
+
+        The drawing mode should override the superclass method ‘draw’ to draw the image on g2d.
+
+        A new drawing mode should contain:
+        1. A class inherited from ‘Shape’, named the name of the new drawing mode, used to
+        save the parameters of the new drawing mode, and override the ‘draw’ method to display
+        the drawing mode on g2d.
+        2. A class that implements ‘ShapeStrategy’, named ‘xxxStrategy’ (xxx is the name of
+        the new drawing mode), implements methods ‘mousePressed’ ‘mouseDragged’ ‘mouseMoved’
+        ‘mouseReleased’ ‘mouseClicked’, and implements the processing of mouse events, for
+        example, a drawing should be initialized when the mouse is pressed, and a real-time
+        preview of the image should be drawn when the mouse is dragged, etc. Here, you can
+        achieve the purpose of drawing by adding and subtracting the shapes Arraylist in PaintModel.
+        It is worth noting that in order to ensure the implementation of the 'undo' and 'redo'
+        functions, the addFinalShape method in PaintModel should be used to add a final image
+        when determining the final image.
+        3. Change the ShapeChooserPanel. This class allows users to select their favorite image
+        on the left side of the UI and draw it. When creating a new drawing mode, this class should
+        be modified to add a new button to let users select a new drawing mode.
 
 	(list of aspects of code to touch to implement the new drawing mode)
 
-	image icon: Create a jpg image with dimensions 128x128, and place it
-		on display in the Button Panel, placed in images/ButtonIconX.jpg
+
+	image icon: Create a jpg image with dimensions 512x512, and place it
+		on display in the Button Panel, placed in resources/ButtonIconX.jpg
 		(any special discussion...)
 
-	MouseHandlerStrategy: 
-		describing how user events are used to build the PaintModel...
-		(any special discussion...)
-		
-	PaintShape:
-		 describing the attributes of the new shape as well as how it is drawn...
-		(any special discussion...)
+		Add a new drawing mode to the ArrayList 'model' in the ShapeChooserPanel and
+        add a new image icon in the createShapeButton method.
+
 
 Example: 
 	(for example, a list of files involved in the implementation of the Square drawing mode)
+	For example, to create a new drawing mode 'diamond', you should first create a class 'Diamond' inherited from 'Shape'. It should contain subclass parameters 'center', 'x_length' 'y_length', and at the same time retain the parameters in the superclass Shape (thickness, etc.). In this class, you should override the method 'Draw'
 --------------------------------------------------------------------------------

@@ -109,39 +109,39 @@ Nov 3,2024
 	Obstacles I face: N/A
 
 Nov 4,2024
-	What I did yesterday:
-	What I will do today:
-	Obstacles I face:
+	What I did yesterday: submit sprint.003
+	What I will do today: have scrum meeting with team members to assign tasks
+	Obstacles I face:  N/A
 
 Nov 5,2024
-	What I did yesterday:
-	What I will do today:
-	Obstacles I face:
+	What I did yesterday:  have final scrum meeting with team members to assign tasks
+	What I will do today:  do US4.001
+	Obstacles I face: N/A.
 
 Nov 6,2024
-	What I did yesterday:
-	What I will do today:
-	Obstacles I face:
+	What I did yesterday: do US4.001
+	What I will do today: do US4.001
+	Obstacles I face: N/A
 
 Nov 7,2024
-	What I did yesterday:
-	What I will do today:
-	Obstacles I face:
+	What I did yesterday:do US4.011
+	What I will do today:do US4.011, have scrum meeting with team members
+	Obstacles I face: N/A
 
 Nov 8,2024
-	What I did yesterday:
-	What I will do today:
-	Obstacles I face:
+	What I did yesterday: do US4.011
+	What I will do today: do US4.011
+	Obstacles I face: N/A
 
 Nov 9,2024
-	What I did yesterday:
-	What I will do today:
-	Obstacles I face:
+	What I did yesterday: do US4.011
+	What I will do today:  do US4.012
+	Obstacles I face: N/A
 
 Nov 10,2024
-	What I did yesterday:
-	What I will do today:
-	Obstacles I face:
+	What I did yesterday: do US4.012
+	What I will do today: have final scrum meeting with team members, merge all the brunches.
+	Obstacles I face:  N/A
 
 Nov 11,2024
 	What I did yesterday:

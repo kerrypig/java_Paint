@@ -7,7 +7,7 @@
 
 --------------------------------------------------------------------------
 // create a new user story
-TYPE: USER STORY US4.010 : chengdu2 : Inprogress
+TYPE: USER STORY US4.001 : chengdu2 : Inprogress
 NAME: function of new, save and open
 PRIORITY: 5
 ESTIMATE: 4 days
@@ -15,4 +15,66 @@ ACTUAL:
 AS A: User
 I WANT: To be able to save and open my project
 SO THAT: I can save and open my project, or start a new one
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+// create a new user story
+TYPE: USER STORY US4.002 : shenqi23 : Inprogress
+NAME: function of copy&paste
+PRIORITY: 5
+ESTIMATE: 4 days
+ACTUAL:
+AS A: User
+I WANT: To be able to copy and paste an item
+SO THAT: It can be easy for me to do the drawing
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+// create a new user story
+TYPE: USER STORY US4.003 : zhukai16 : Completed
+NAME: function of redo
+PRIORITY: 4
+ESTIMATE: 1 day
+ACTUAL: 1day
+AS A: user
+I WANT: To be able to redo my last drawing
+SO THAT: I can cancel the undo I accident made
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+// create a new user story
+TYPE: USER STORY US4.003 : zhukai16 : Completed
+NAME: function of seleciton box
+PRIORITY: 4
+ESTIMATE: 1 day
+ACTUAL: 1day
+AS A: user
+I WANT: showing a selection box when dragging the mouse
+SO THAT: I can know which item I'm choosing
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+// create a new user story
+TYPE: USER STORY US4.010 : shenqi23 : Inprogress
+NAME: have different appearance of the mouse pointer
+PRIORITY: 5
+ESTIMATE: 4 days
+ACTUAL:
+AS A: User
+I WANT: showing different appearance of the mouse pointer when moving to the edge of the selection box
+SO THAT: I can know what I'm doing with selecting the item
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+TYPE     : BUG BUG4.001 : zhukai16 : Completed
+NAME     : To many shapes in arraylist shape
+PRIORITY : 2
+ESTIMATE : 4 day
+ACTUAL : 1 day
+ISSUE    : We found that the draw command for each shape except triangle is
+           keep entering shapes into the arraylist of shape in the model class
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+TYPE     : BUG BUG4.002 : zhukai16 : Completed
+NAME     : The architecture behind the program needs another improve
+PRIORITY : 2
+ESTIMATE : 4 day
+ACTUAL : 1 day
+ISSUE    : We found that the draw command for each shape except triangle is
+           keep entering shapes into the arraylist of shape in the model class
 --------------------------------------------------------------------------

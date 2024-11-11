@@ -288,6 +288,20 @@ I WANT: To be able to undo my last drawing
 SO THAT: I can cancel the object I accident created
 --------------------------------------------------------------------------
 --------------------------------------------------------------------------
+TYPE     : USER STORY US4.011  UTORID : Complete
+US1.004 : rubber Function
+NAME     : Erase Shapes Using Rubber Tool
+PRIORITY : 2
+ESTIMATE : 2 hours
+ACTUAL   : 1.5 hours
+AS A     : user
+I WANT   : As a user, when I select the "Eraser" tool and click on a shape,
+           the selected shape should be erased immediately without being
+           added to the undo/redo stack.
+SO THAT  : I can remove unwanted shapes quickly and efficiently without
+           affecting the undo/redo history.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
 TYPE     : BUG BUG2.003 : zhukai16 : complete
 NAME     : Architecture behind choosing selection mode is poor
 PRIORITY : 3

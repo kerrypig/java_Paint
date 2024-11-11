@@ -11,6 +11,7 @@ public class PaintModel extends Observable {
 	private boolean isSolid = true;
 	private float thickness = 1.0f;
 	private Color currentColor = Color.BLACK;
+	private boolean eraserMode = false;
 
 	private ArrayList<Shape> shapes = new ArrayList<>();
 
@@ -50,6 +51,16 @@ public class PaintModel extends Observable {
 		this.setChanged();
 		this.notifyObservers();
 	}
+
+	public void setEraserMode(boolean eraserMode) {
+		this.eraserMode = eraserMode;
+	}
+
+	public boolean isEraserMode() {
+		return eraserMode;
+	}
+
+
 
 	public ArrayList<Point> getPoints() {
 		return points;

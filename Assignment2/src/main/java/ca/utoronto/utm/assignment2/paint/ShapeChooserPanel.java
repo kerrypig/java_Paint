@@ -28,6 +28,10 @@ public class ShapeChooserPanel extends GridPane implements EventHandler<ActionEv
 
 	private TextField thicknessTextField;
 
+	private Button eraserButton;
+
+	private Button backgroundColorButton;
+
 
 	public ShapeChooserPanel(View view) {
 
@@ -57,6 +61,7 @@ public class ShapeChooserPanel extends GridPane implements EventHandler<ActionEv
 			button.setOnAction(actionEvent -> {
 				view.setMode(mode);
 				highlightSelectedButton(button);
+				view.getPaintModel().setEraserMode(false);
 			});
 		}
 
@@ -65,6 +70,10 @@ public class ShapeChooserPanel extends GridPane implements EventHandler<ActionEv
 		outlineButton = new Button("Outline");
 		solidButton.setMinWidth(85);
 		outlineButton.setMinWidth(85);
+		eraserButton = new Button("Eraser");
+		eraserButton.setMinWidth(85);
+		this.add(eraserButton, 0, row++);
+
 
 		this.add(solidButton, 0, row++);
 		this.add(outlineButton, 0, row++);
@@ -100,6 +109,13 @@ public class ShapeChooserPanel extends GridPane implements EventHandler<ActionEv
 			}
 		});
 
+		eraserButton.setOnAction(actionEvent -> {
+			view.setMode("Eraser");
+			highlightSelectedButton(eraserButton);
+			view.getPaintModel().setEraserMode(true);
+		});
+		buttons.add(eraserButton);
+
 
 
 		// undo button
@@ -112,10 +128,14 @@ public class ShapeChooserPanel extends GridPane implements EventHandler<ActionEv
 
 	}
 
+	private void setCanvasBackground(Color selectedBackgroundColor) {
+		view.getPaintPanel().setBackgroundColor(selectedBackgroundColor);
+	}
+
 	private void highlightSelectedButton(Button selectedButton) {
 		for (Button button : buttons) {
 			if (button == selectedButton) {
-				button.setStyle("-fx-background-color: #7f8ff4;");
+				button.setStyle("-fx-background-color: rgba(11,9,9,0.44);");
 			} else {
 				button.setStyle("");
 			}

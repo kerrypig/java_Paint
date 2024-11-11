@@ -4,6 +4,7 @@ import javafx.scene.canvas.Canvas;
 import javafx.event.EventHandler;
 import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.input.MouseEvent;
+import javafx.scene.paint.Color;
 
 import java.util.ArrayList;
 import java.util.Observable;
@@ -53,6 +54,9 @@ public class PaintPanel extends Canvas implements EventHandler<MouseEvent>, Obse
 			case "SelectionBox":
 				currentStrategy = new SelectionBoxStrategy();
 				break;
+			case "Eraser":
+				currentStrategy = new EraserStrategy();
+				break;
 
 		}
 	}
@@ -79,6 +83,14 @@ public class PaintPanel extends Canvas implements EventHandler<MouseEvent>, Obse
 			}
 		}
 	}
+
+	public void setBackgroundColor(Color color) {
+		GraphicsContext gc = this.getGraphicsContext2D();
+		gc.setFill(color);
+		gc.fillRect(0, 0, this.getWidth(), this.getHeight());
+	}
+
+
 
 	@Override
 	public void update(Observable o, Object arg) {

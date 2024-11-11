@@ -68,6 +68,8 @@ public class View implements EventHandler<ActionEvent> {
 		return this.paintModel;
 	}
 
+	public PaintPanel getPaintPanel() {return this.paintPanel;}
+
 	// ugly way to do this?
 	public void setMode(String mode) {
 		this.paintPanel.setMode(mode);
@@ -106,18 +108,6 @@ public class View implements EventHandler<ActionEvent> {
 		// Another menu for Edit
 
 		menu = new Menu("Edit");
-
-		menuItem = new MenuItem("Cut");
-		menuItem.setOnAction(this);
-		menu.getItems().add(menuItem);
-
-		menuItem = new MenuItem("Copy");
-		menuItem.setOnAction(this);
-		menu.getItems().add(menuItem);
-
-		menuItem = new MenuItem("Paste");
-		menuItem.setOnAction(this);
-		menu.getItems().add(menuItem);
 
 		menu.getItems().add(new SeparatorMenuItem());
 		menuItem = new MenuItem("Undo");

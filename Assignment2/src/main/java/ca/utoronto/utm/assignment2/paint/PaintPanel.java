@@ -14,6 +14,7 @@ public class PaintPanel extends Canvas implements EventHandler<MouseEvent>, Obse
 	private String mode = "Circle";
 	private PaintModel model;
 	private ShapeStrategy currentStrategy;
+	private Color backgroundColor = Color.WHITE;
 
 	public PaintPanel(PaintModel model) {
 		super(300, 600);
@@ -39,7 +40,7 @@ public class PaintPanel extends Canvas implements EventHandler<MouseEvent>, Obse
 			case "Square":
 				currentStrategy = new SquareStrategy();
 				break;
-            case "Oval":
+			case "Oval":
 				currentStrategy = new OvalStrategy();
 				break;
 			case "Squiggle":
@@ -60,6 +61,21 @@ public class PaintPanel extends Canvas implements EventHandler<MouseEvent>, Obse
 
 		}
 	}
+
+
+	public void setBackgroundColor(Color color) {
+		this.backgroundColor = color;
+		drawBackground(); // 更新背景颜色
+	}
+
+
+
+	private void drawBackground() {
+		GraphicsContext gc = this.getGraphicsContext2D();
+		gc.setFill(backgroundColor); // 使用背景颜色
+		gc.fillRect(0, 0, this.getWidth(), this.getHeight()); // 填充整个画布
+	}
+
 
 	@Override
 	public void handle(MouseEvent mouseEvent) {
@@ -84,19 +100,17 @@ public class PaintPanel extends Canvas implements EventHandler<MouseEvent>, Obse
 		}
 	}
 
-	public void setBackgroundColor(Color color) {
-		GraphicsContext gc = this.getGraphicsContext2D();
-		gc.setFill(color);
-		gc.fillRect(0, 0, this.getWidth(), this.getHeight());
-	}
 
 
 
 	@Override
 	public void update(Observable o, Object arg) {
 		// Clear
+
+		///////
+		drawBackground();
 		GraphicsContext g2d = this.getGraphicsContext2D();
-		g2d.clearRect(0, 0, this.getWidth(), this.getHeight());
+
 
 		// Draw shapes
 		ArrayList<Shape> shapes = this.model.getShapes();
@@ -110,5 +124,4 @@ public class PaintPanel extends Canvas implements EventHandler<MouseEvent>, Obse
 
 	}
 }
-
 

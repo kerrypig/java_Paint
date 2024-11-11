@@ -8,6 +8,7 @@ import javafx.scene.canvas.Canvas;
 import javafx.scene.control.Button;
 import javafx.scene.control.ColorPicker;
 import javafx.scene.control.TextField;
+import javafx.scene.control.Tooltip;
 import javafx.scene.layout.GridPane;
 import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.paint.Color;
@@ -31,6 +32,8 @@ public class ShapeChooserPanel extends GridPane implements EventHandler<ActionEv
 	private Button eraserButton;
 
 	private Button backgroundColorButton;
+
+	private ColorPicker backgroundColorPicker;
 
 
 	public ShapeChooserPanel(View view) {
@@ -64,6 +67,16 @@ public class ShapeChooserPanel extends GridPane implements EventHandler<ActionEv
 				view.getPaintModel().setEraserMode(false);
 			});
 		}
+
+
+		backgroundColorPicker = new ColorPicker(Color.WHITE);
+		Tooltip backgroundTooltip = new Tooltip("Choose a background color");
+		backgroundColorPicker.setTooltip(backgroundTooltip);
+		backgroundColorPicker.setOnAction(e -> {
+			Color selectedBackgroundColor = backgroundColorPicker.getValue();
+			setCanvasBackground(selectedBackgroundColor);
+		});
+		this.add(backgroundColorPicker, 0, row++);
 
 		// Solid/Outline button
 		solidButton = new Button("Solid");

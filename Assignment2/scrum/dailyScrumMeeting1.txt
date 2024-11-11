@@ -107,39 +107,39 @@ Nov 3,2024
 	Obstacles I face: N/A
 
 Nov 4,2024
-	What I did yesterday:
-	What I will do today:
-	Obstacles I face:
+	What I did yesterday: Scrum meet for sprint4, Get ready for Sprint4
+	What I will do today: Study about save and load
+	Obstacles I face: N/A
 
 Nov 5,2024
-	What I did yesterday:
-	What I will do today:
-	Obstacles I face:
+	What I did yesterday: Study about save and load
+	What I will do today: Study about save and load
+	Obstacles I face: N/A
 
 Nov 6,2024
-	What I did yesterday:
-	What I will do today:
-	Obstacles I face:
+	What I did yesterday: Study about save and load
+	What I will do today: Get help from group members
+	Obstacles I face: save and load went wrong with squiggles
 
 Nov 7,2024
-	What I did yesterday:
-	What I will do today:
-	Obstacles I face:
+	What I did yesterday: Get help from group members
+	What I will do today: Work on save and load with members
+	Obstacles I face: Squiggle cannot be saved
 
 Nov 8,2024
-	What I did yesterday:
-	What I will do today:
-	Obstacles I face:
+	What I did yesterday: Work on save and load with members
+	What I will do today: Work on save and load with members
+	Obstacles I face: Squiggle cannot be saved
 
 Nov 9,2024
-	What I did yesterday:
-	What I will do today:
-	Obstacles I face:
+	What I did yesterday: Work on save and load with members
+    What I will do today: Work on save and load with members
+    Obstacles I face: Squiggle cannot be saved
 
 Nov 10,2024
-	What I did yesterday:
-	What I will do today:
-	Obstacles I face:
+	What I did yesterday: Gave up on save and load
+	What I will do today: Work on new canvas, scrum meeting, last check for sprint4
+	Obstacles I face: N/A
 
 Nov 11,2024
 	What I did yesterday:

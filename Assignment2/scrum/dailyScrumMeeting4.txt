@@ -108,56 +108,38 @@ Nov 3,2024
 
 Nov 4,2024
 	What I did yesterday: have meeting with teamates / merge branches
-	What I will do today:
-	Obstacles I face:
+	What I will do today: have meeting with teamates to start sprint4
+	Obstacles I face: N/A
 
 Nov 5,2024
-	What I did yesterday:
-	What I will do today:
-	Obstacles I face:
+	What I did yesterday: have meeting with teamates to start sprint4
+	What I will do today: think about new features
+	Obstacles I face: figure out new features
 
 Nov 6,2024
-	What I did yesterday:
-	What I will do today:
-	Obstacles I face:
+	What I did yesterday: think about new features
+	What I will do today: solve bugs for some US
+	Obstacles I face: N/A
 
 Nov 7,2024
-	What I did yesterday:
-	What I will do today:
-	Obstacles I face:
+	What I did yesterday: solve bugs for some US
+	What I will do today: have meeting with teamates about new features
+	Obstacles I face: figure out new features
 
 Nov 8,2024
-	What I did yesterday:
-	What I will do today:
-	Obstacles I face:
+	What I did yesterday: have meeting with teamates about new features
+	What I will do today: start working on new us
+	Obstacles I face: some new us is hard to implement
 
 Nov 9,2024
-	What I did yesterday:
-	What I will do today:
-	Obstacles I face:
+	What I did yesterday: start working on new us
+	What I will do today: working on new us
+	Obstacles I face: had bugs for US4.003
 
 Nov 10,2024
-	What I did yesterday:
-	What I will do today:
-	Obstacles I face:
+	What I did yesterday: working on new us
+	What I will do today: have meeting with teamates /merge branches/ complete final architecture.txt
+	Obstacles I face: time limited
 
-Nov 11,2024
-	What I did yesterday:
-	What I will do today:
-	Obstacles I face:
 
-Nov 12,2024
-	What I did yesterday:
-	What I will do today:
-	Obstacles I face:
-
-Nov 13,2024
-	What I did yesterday:
-	What I will do today:
-	Obstacles I face:
-
-Nov 14,2024
-	What I did yesterday:
-	What I will do today:
-	Obstacles I face:
 

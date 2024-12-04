@@ -1,0 +1,106 @@
+--------------------------------------------------------------------
+ Top Files To Check: large files as well as 
+ ShapeChooserPanel.java PaintModel.java View.java PaintPanel.java 
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+ ls -lS * 
+--------------------------------------------------------------------
+-rw------- 1 csc207ta student 5132 Nov 20 18:17 ShapeChooserPanel.java
+-rw------- 1 csc207ta student 3886 Nov 20 18:17 Square.java
+-rw------- 1 csc207ta student 3675 Nov 20 18:17 View.java
+-rw------- 1 csc207ta student 2984 Nov 20 18:17 PaintModel.java
+-rw------- 1 csc207ta student 2617 Nov 20 18:17 PaintPanel.java
+-rw------- 1 csc207ta student 2430 Nov 20 18:17 Rectangle.java
+-rw------- 1 csc207ta student 2381 Nov 20 18:17 TriangleStrategy.java
+-rw------- 1 csc207ta student 2328 Nov 20 18:17 Triangle.java
+-rw------- 1 csc207ta student 1780 Nov 20 18:17 Squiggle.java
+-rw------- 1 csc207ta student 1758 Nov 20 18:17 PolylineStrategy.java
+-rw------- 1 csc207ta student 1719 Nov 20 18:17 Shape.java
+-rw------- 1 csc207ta student 1708 Nov 20 18:17 SelectionBoxStrategy.java
+-rw------- 1 csc207ta student 1519 Nov 20 18:17 Circle.java
+-rw------- 1 csc207ta student 1432 Nov 20 18:17 CircleStrategy.java
+-rw------- 1 csc207ta student 1208 Nov 20 18:17 SquareStrategy.java
+-rw------- 1 csc207ta student 1122 Nov 20 18:17 RectangleStrategy.java
+-rw------- 1 csc207ta student 1081 Nov 20 18:17 OvalStrategy.java
+-rw------- 1 csc207ta student 1046 Nov 20 18:17 SquiggleStrategy.java
+-rw------- 1 csc207ta student  980 Nov 20 18:17 Polyline.java
+-rw------- 1 csc207ta student  963 Nov 20 18:17 Oval.java
+-rw------- 1 csc207ta student  624 Nov 20 18:17 SelectionBox.java
+-rw------- 1 csc207ta student  441 Nov 20 18:17 Paint.java
+-rw------- 1 csc207ta student  401 Nov 20 18:17 ShapeStrategy.java
+-rw------- 1 csc207ta student  258 Nov 20 18:17 Point.java
+
+resources:
+total 16
+-rw------- 1 csc207ta student 14194 Nov 20 18:17 img.png
+--------------------------------------------------------------------
+ grep -r -ie GraphicsContext 
+--------------------------------------------------------------------
+Rectangle.java:import javafx.scene.canvas.GraphicsContext;
+Rectangle.java:	public void draw(GraphicsContext g2d) {
+Oval.java:import javafx.scene.canvas.GraphicsContext;
+Oval.java:	public void draw(GraphicsContext g2d) {
+Circle.java:import javafx.scene.canvas.GraphicsContext;
+Circle.java:	public void draw(GraphicsContext g2d) {
+SelectionBox.java:import javafx.scene.canvas.GraphicsContext;
+SelectionBox.java:    public void draw(GraphicsContext g2d) {
+Squiggle.java:import javafx.scene.canvas.GraphicsContext;
+Squiggle.java:	public void draw(GraphicsContext g2d) {
+Polyline.java:import javafx.scene.canvas.GraphicsContext;
+Polyline.java:	public void draw(GraphicsContext g2d) {
+Triangle.java:import javafx.scene.canvas.GraphicsContext;
+Triangle.java:	public void draw(GraphicsContext g2d) {
+PaintPanel.java:import javafx.scene.canvas.GraphicsContext;
+PaintPanel.java:		GraphicsContext g2d = this.getGraphicsContext2D();
+Shape.java:import javafx.scene.canvas.GraphicsContext;
+Shape.java:	public void draw(GraphicsContext g2d) {
+Square.java:import javafx.scene.canvas.GraphicsContext;
+Square.java:    public void draw(GraphicsContext g2d) {
+ShapeChooserPanel.java:import javafx.scene.canvas.GraphicsContext;
+ShapeChooserPanel.java:		GraphicsContext gc = canvas.getGraphicsContext2D();
+--------------------------------------------------------------------
+ grep -r -e 'else' 
+--------------------------------------------------------------------
+Rectangle.java:		} else {
+Oval.java:		} else {
+Circle.java:		} else {
+PolylineStrategy.java:		} else if (event.getButton() == MouseButton.PRIMARY) { // Left-click for adding points
+PolylineStrategy.java:		} else if (this.polyline != null && event.getButton() == MouseButton.SECONDARY) { // Right-click to finish polyline
+CircleStrategy.java:		}else{
+View.java:		else if (command.equals("Undo")) {
+View.java:		else if (command.equals("New")) {
+TriangleStrategy.java:		} else {
+Triangle.java:		} else {
+Square.java:        else if (constant_corner.getX() >= p1.getX() && constant_corner.getY() >= p1.getY()) {
+Square.java:        else if (constant_corner.getX() <= p1.getX() && constant_corner.getY() >= p1.getY()) {
+Square.java:        else {
+Square.java:        } else {
+ShapeChooserPanel.java:			} else {
+PaintModel.java:		}else{
+--------------------------------------------------------------------
+ grep -r -e 'case' 
+--------------------------------------------------------------------
+PaintPanel.java:			case "Circle":
+PaintPanel.java:			case "Rectangle":
+PaintPanel.java:			case "Square":
+PaintPanel.java:            case "Oval":
+PaintPanel.java:			case "Squiggle":
+PaintPanel.java:			case "Triangle":
+PaintPanel.java:			case "Polyline":
+PaintPanel.java:			case "SelectionBox":
+PaintPanel.java:				case "MOUSE_PRESSED":
+PaintPanel.java:				case "MOUSE_DRAGGED":
+PaintPanel.java:				case "MOUSE_RELEASED":
+PaintPanel.java:				case "MOUSE_MOVED":
+PaintPanel.java:				case "MOUSE_CLICKED":
+ShapeChooserPanel.java:			case "Circle":
+ShapeChooserPanel.java:			case "Rectangle":
+ShapeChooserPanel.java:			case "Square":
+ShapeChooserPanel.java:			case "Squiggle":
+ShapeChooserPanel.java:			case "Polyline":
+ShapeChooserPanel.java:			case "Oval":
+ShapeChooserPanel.java:			case "Triangle":
+ShapeChooserPanel.java:			case "SelectionBox":
+--------------------------------------------------------------------
+ grep -r -e 'instance' 
+--------------------------------------------------------------------

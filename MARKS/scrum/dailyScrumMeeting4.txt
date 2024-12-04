@@ -1,0 +1,163 @@
+# Fill in, commit and push each day.
+Member name: Qianhe Shen     email: qianhe.shen@mail.utoronto.ca    utorid: shenqi23
+
+Oct 14,2024
+	What I did yesterday:N/A
+	What I will do today: read a2 requirements
+	Obstacles I face: N/A
+
+Oct 15,2024
+	What I did yesterday: read a2 requirements
+	What I will do today: checking environments
+	Obstacles I face: N/A
+
+Oct 16,2024
+	What I did yesterday: checking environments
+	What I will do today: Complete user story
+	Obstacles I face: Understanding the whole Assignment2
+
+Oct 17,2024
+	What I did yesterday: Complete user story writing for lab6
+	What I will do today: discuss architecture with teammates
+	Obstacles I face: N/A
+
+Oct 18,2024
+	What I did yesterday: discuss architecture with teammates
+	What I will do today: Meeting with team members/complete US.003
+	Obstacles I face: No obstacles
+
+Oct 19,2024
+	What I did yesterday: Meeting with team members/ starting US.004
+	What I will do today: complete US.004
+	Obstacles I face: fixing bugs for US.004
+
+Oct 20,2024
+	What I did yesterday: complete US.003
+	What I will do today: merge branches
+	Obstacles I face: solve conflicts when merging
+
+Oct 21,2024
+	What I did yesterday: merge branches
+	What I will do today: have meeting with teammates / starting sprint2
+	Obstacles I face: N/A
+
+Oct 22,2024
+	What I did yesterday: have meeting with teammates / starting sprint2
+	What I will do today: start US2.005
+	Obstacles I face: N/A
+
+Oct 23,2024
+	What I did yesterday: start US2.005
+	What I will do today: having meeting with teammates/ disscuss optimize architecture BUG2.003
+	Obstacles I face: N/A
+
+Oct 24,2024
+	What I did yesterday: having meeting with teammates/ disscuss optimize architecture BUG2.003
+	What I will do today: reform square class into the new architecture
+	Obstacles I face: limited time
+
+Oct 25,2024
+	What I did yesterday:reform square class into the new architecture
+	What I will do today: US2.006 and improving the architecture
+	Obstacles I face: solve conflicts when merging with new architecture
+
+Oct 26,2024
+	What I did yesterday: US2.006 and improving the architecture
+	What I will do today: fixing bugs for US2.005
+	Obstacles I face: limited time
+
+Oct 27,2024
+	What I did yesterday: fixing bugs for US2.005
+	What I will do today: have meeting with teamates / merge branches
+	Obstacles I face: solve conflicts
+
+Oct 28,2024
+	What I did yesterday: have meeting with teamates / merge branches
+	What I will do today: take a look at sprint 3
+	Obstacles I face: figure out what to do
+
+Oct 29,2024
+	What I did yesterday: take a look at sprint 3
+	What I will do today: have meeting with teamates
+	Obstacles I face: N/A
+
+Oct 30,2024
+	What I did yesterday: have meeting with teamates
+	What I will do today: start US3.010
+	Obstacles I face: N/A
+
+Oct 31,2024
+	What I did yesterday: start US3.010
+	What I will do today: have meeting with teamates
+	Obstacles I face: N/A
+
+Nov 1,2024
+	What I did yesterday: have meeting with teamates
+	What I will do today: check US3.010
+	Obstacles I face: had bugs for US3.010
+
+Nov 2,2024
+	What I did yesterday: check US3.010
+	What I will do today: fixing bugs for US3.010
+	Obstacles I face: N/A
+
+Nov 3,2024
+	What I did yesterday: fixing bugs for US3.010
+	What I will do today: have meeting with teamates / merge branches
+	Obstacles I face: N/A
+
+Nov 4,2024
+	What I did yesterday: have meeting with teamates / merge branches
+	What I will do today:
+	Obstacles I face:
+
+Nov 5,2024
+	What I did yesterday:
+	What I will do today:
+	Obstacles I face:
+
+Nov 6,2024
+	What I did yesterday:
+	What I will do today:
+	Obstacles I face:
+
+Nov 7,2024
+	What I did yesterday:
+	What I will do today:
+	Obstacles I face:
+
+Nov 8,2024
+	What I did yesterday:
+	What I will do today:
+	Obstacles I face:
+
+Nov 9,2024
+	What I did yesterday:
+	What I will do today:
+	Obstacles I face:
+
+Nov 10,2024
+	What I did yesterday:
+	What I will do today:
+	Obstacles I face:
+
+Nov 11,2024
+	What I did yesterday:
+	What I will do today:
+	Obstacles I face:
+
+Nov 12,2024
+	What I did yesterday:
+	What I will do today:
+	Obstacles I face:
+
+Nov 13,2024
+	What I did yesterday:
+	What I will do today:
+	Obstacles I face:
+
+Nov 14,2024
+	What I did yesterday:
+	What I will do today:
+	Obstacles I face:
+

@@ -1,0 +1,165 @@
+# Fill in, commit and push each day.
+Member name:  LiwenYin    email: phoenix.yin@mail.utoronto.ca     utorid:   liwenyin
+
+Oct 14,2024
+	What I did yesterday: not start yet
+	What I will do today:
+	Obstacles I face:
+
+Oct 15,2024
+	What I did yesterday:
+	What I will do today: update 2 new userstory, member.txt
+	Obstacles I face: how to use git command
+
+Oct 16,2024
+	What I did yesterday: learn git commands
+	What I will do today:  learn git commands, try to fix BUG001
+	Obstacles I face: BUG001, how to draw graph in JavaFX
+
+Oct 17,2024
+	What I did yesterday: Do BUG001
+	What I will do today: Do BUG002
+	Obstacles I face: N/A
+
+Oct 18,2024
+	What I did yesterday: BUG002
+	What I will do today: BUG006
+	Obstacles I face:N/A
+
+Oct 19,2024
+	What I did yesterday: BUG006
+	What I will do today: meeting with group members to discuss about the progress now.
+	Obstacles I face: how to let the radius increase with the mouse moved
+
+Oct 20,2024
+	What I did yesterday: Fix BUG006
+	What I will do today: Fix BUG006,meeting with group members to discuss about merging all branches.
+	Obstacles I face: N/A
+
+Oct 21,2024
+	What I did yesterday: complete Sprint1
+	What I will do today: have scrum meeting with members to discuss about assigning tasks.
+	Obstacles I face: N/A
+
+Oct 22,2024
+	What I did yesterday: scrum meeting
+	What I will do today: Do user story 005
+	Obstacles I face: N/A
+
+Oct 23,2024
+	What I did yesterday: Do user story 005
+	What I will do today: have scrum meeting with members to discuss about
+	                      how to improve the architecture.
+	Obstacles I face:  N/A
+
+Oct 24,2024
+	What I did yesterday:  scrum meeting
+	What I will do today:  Do BUG.003
+	Obstacles I face: try to figure out which strategy to use
+
+Oct 25,2024
+	What I did yesterday:  try to fix BUG.003
+	What I will do today:  fix BUG.003
+	Obstacles I face:  BUG.003
+
+Oct 26,2024
+	What I did yesterday: try to fix BUG.003
+	What I will do today: have csc207 midterm
+	Obstacles I face:  try to figure out fix BUG.003
+
+Oct 27,2024
+	What I did yesterday: midterm
+	What I will do today: have final scrum meeting with team members, merge all the brunches. try to do polyline.
+	Obstacles I face: N/A
+
+Oct 28,2024
+	What I did yesterday: finish sprint2
+	What I will do today: read requirements for sprint3
+	Obstacles I face: N/A
+
+Oct 29,2024
+	What I did yesterday: read requirements for sprint3
+	What I will do today: have scrum meeting with members to discuss about assigning tasks.
+	Obstacles I face: N/A
+
+Oct 30,2024
+	What I did yesterday: scrum meeting
+	What I will do today: complete user story
+	Obstacles I face: N/A
+
+Oct 31,2024
+	What I did yesterday: do user story
+	What I will do today:have scrum meeting with members to discuss about
+         how to improve the architecture.
+	Obstacles I face: N/A
+
+Nov 1,2024
+	What I did yesterday: scrum meeting with members
+	What I will do today:  fix bug in sprint3
+	Obstacles I face: N/A
+
+Nov 2,2024
+	What I did yesterday:  fix bug in sprint3
+	What I will do today: add new user story
+	Obstacles I face: N/AA
+
+Nov 3,2024
+	What I did yesterday: add new user story
+	What I will do today: have final scrum meeting with team members, merge all the brunches.
+	Obstacles I face: N/A
+
+Nov 4,2024
+	What I did yesterday:
+	What I will do today:
+	Obstacles I face:
+
+Nov 5,2024
+	What I did yesterday:
+	What I will do today:
+	Obstacles I face:
+
+Nov 6,2024
+	What I did yesterday:
+	What I will do today:
+	Obstacles I face:
+
+Nov 7,2024
+	What I did yesterday:
+	What I will do today:
+	Obstacles I face:
+
+Nov 8,2024
+	What I did yesterday:
+	What I will do today:
+	Obstacles I face:
+
+Nov 9,2024
+	What I did yesterday:
+	What I will do today:
+	Obstacles I face:
+
+Nov 10,2024
+	What I did yesterday:
+	What I will do today:
+	Obstacles I face:
+
+Nov 11,2024
+	What I did yesterday:
+	What I will do today:
+	Obstacles I face:
+
+Nov 12,2024
+	What I did yesterday:
+	What I will do today:
+	Obstacles I face:
+
+Nov 13,2024
+	What I did yesterday:
+	What I will do today:
+	Obstacles I face:
+
+Nov 14,2024
+	What I did yesterday:
+	What I will do today:
+	Obstacles I face:
+

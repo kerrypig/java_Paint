@@ -1,0 +1,87 @@
+--------------------------------------------------------------------
+ chengdu2 
+--------------------------------------------------------------------
+CONTRIBUTION TO sprint1 
+TYPE     : BUG BUG1.005 : chengdu2 : Complete
+TYPE     : USER STORY US1.002 : chengdu2 : Complete
+CONTRIBUTION TO sprint2 
+TYPE     : USER STORY US2.003 : chengdu2 : Complete
+TYPE     : USER STORY US2.004 : chengdu2 : Complete
+TYPE     : USER STORY US2.005 : chengdu2 : Complete
+TYPE     : USER STORY US2.006 : chengdu2 : Complete
+TYPE     : USER STORY US2.007 : chengdu2 : Complete
+CONTRIBUTION TO sprint3 
+TYPE     : USER STORY US2.007 : chengdu2 : Complete
+CONTRIBUTION TO sprint4 
+TYPE: USER STORY US4.001 : chengdu2 : Completed
+SPRINT_CONTRIBUTION:chengdu2:(2, 5, 1, 1)
+CONTRIBUTION TO project 
+TYPE     : USER STORY US1.002 : chengdu2 : Complete
+TYPE     : BUG BUG1.005 : chengdu2 : Complete
+TYPE     : USER STORY US2.003 : chengdu2 : Complete
+TYPE     : USER STORY US2.004 : chengdu2 : Complete
+TYPE     : USER STORY US2.005 : chengdu2 : Complete
+TYPE     : USER STORY US2.006 : chengdu2 : Complete
+TYPE     : USER STORY US2.007 : chengdu2 : Complete
+PRODUCT_CONTRIBUTION:chengdu2:7
+--------------------------------------------------------------------
+ shenqi23 
+--------------------------------------------------------------------
+CONTRIBUTION TO sprint1 
+TYPE     : USER STORY US1.004 : shenqi23 : Complete
+CONTRIBUTION TO sprint2 
+TYPE     : USER STORY US2.001 : shenqi23 : Complete
+TYPE     : USER STORY US2.002 : shenqi23 : Complete
+CONTRIBUTION TO sprint3 
+TYPE: USER STORY US3.010 : shenqi23 : Completed
+CONTRIBUTION TO sprint4 
+TYPE: USER STORY US4.005 : shenqi23 : Completed
+SPRINT_CONTRIBUTION:shenqi23:(1, 2, 1, 1)
+CONTRIBUTION TO project 
+TYPE     : USER STORY US1.004 : shenqi23 : Complete
+TYPE     : USER STORY US2.001 : shenqi23 : Complete
+TYPE     : USER STORY US2.002 : shenqi23 : Complete
+PRODUCT_CONTRIBUTION:shenqi23:3
+--------------------------------------------------------------------
+ yinliwen 
+--------------------------------------------------------------------
+CONTRIBUTION TO sprint1 
+CONTRIBUTION TO sprint2 
+TYPE     : USER STORY US2.008 : yinliwen : Complete
+CONTRIBUTION TO sprint3 
+TYPE     : USER STORY US2.008 : yinliwen : Complete
+CONTRIBUTION TO sprint4 
+SPRINT_CONTRIBUTION:yinliwen:(0, 1, 1, 0)
+CONTRIBUTION TO project 
+TYPE     : BUG BUG1.001 : yinliwen : Complete
+TYPE     : BUG BUG1.002 : yinliwen : Complete
+TYPE     : BUG BUG1.006 : yinliwen : Complete
+TYPE     : USER STORY US2.008 : yinliwen : Complete
+PRODUCT_CONTRIBUTION:yinliwen:4
+--------------------------------------------------------------------
+ zhukai16 
+--------------------------------------------------------------------
+CONTRIBUTION TO sprint1 
+TYPE     : USER STORY US1.003 : zhukai16 : Complete
+CONTRIBUTION TO sprint2 
+TYPE     : USER STORY US2.009 : zhukai16 : Complete
+TYPE     : BUG BUG2.003 : zhukai16 : complete
+CONTRIBUTION TO sprint3 
+TYPE     : BUG BUG3.004 : zhukai16 : Completed
+TYPE     : USER STORY US2.009 : zhukai16 : Complete
+CONTRIBUTION TO sprint4 
+TYPE: USER STORY US4.002 : zhukai16 : Completed
+TYPE: USER STORY US4.004 : zhukai16 : Completed
+TYPE: USER STORY US4.004 : zhukai16 : Completed
+TYPE     : BUG BUG4.001 : zhukai16 : Completed
+SPRINT_CONTRIBUTION:zhukai16:(1, 2, 2, 4)
+CONTRIBUTION TO project 
+TYPE     : USER STORY US1.003 : zhukai16 : Complete
+TYPE     : USER STORY US2.009 : zhukai16 : Complete
+TYPE     : BUG BUG2.003 : zhukai16 : complete
+PRODUCT_CONTRIBUTION:zhukai16:3
+--------------------------------------------------------------------
+ TOTALS 
+--------------------------------------------------------------------
+TOTAL_SPRINT:(4, 10, 5, 6)
+TOTAL_WORK:17

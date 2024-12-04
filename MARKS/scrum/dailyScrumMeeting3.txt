@@ -1,0 +1,165 @@
+# Fill in, commit and push each day.
+Member name: Kairui Zhu email: kairui.zhu@mail.utoronto.ca utorid: zhukai16
+
+Oct 14,2024
+	What I did yesterday:
+	What I will do today:
+	Obstacles I face:
+
+Oct 15,2024
+	What I did yesterday:
+	What I will do today:
+	Obstacles I face:
+
+Oct 16,2024
+	What I did yesterday:
+	What I will do today:update user story
+	Obstacles I face: no obstacle
+
+Oct 17,2024
+	What I did yesterday:update user story
+	What I will do today:update user story 2
+	Obstacles I face:reading the code
+
+Oct 18,2024
+	What I did yesterday:update user story 2
+	What I will do today:handling the user story
+	US1.004
+	Obstacles I face:a bug causing shape in dim
+	1,2,3 unable to show
+
+Oct 19,2024
+	What I did yesterday:handling user story
+	What I will do today:complete architecture
+	Obstacles I face:writing mechanics
+
+Oct 20,2024
+	What I did yesterday: complete architecture
+	What I will do today: complete architecture
+	Obstacles I face: no
+
+Oct 21,2024
+	What I did yesterday: complete architecture
+	What I will do today: think further on using design patterns, meeting
+	Obstacles I face: which pattern to use
+
+Oct 22,2024
+	What I did yesterday: think further on using design patterns
+	What I will do today: implies command pattern on shapes
+	Obstacles I face: too much to write
+
+Oct 23,2024
+	What I did yesterday: implies command pattern on shapes
+	What I will do today:  think further on using design patterns, meeting
+	Obstacles I face: which pattern to use
+
+Oct 24,2024
+	What I did yesterday: think further on using design patterns
+	What I will do today: implies Strategy pattern on panel
+	Obstacles I face: too much to change
+
+Oct 25,2024
+	What I did yesterday: implies Strategy pattern on panel
+	What I will do today: think further on how to adjust thickness
+	Obstacles I face: no
+
+Oct 26,2024
+	What I did yesterday: think further on how to adjust thickness
+	What I will do today: attend term test for CSC207
+	Obstacles I face: no
+
+Oct 27,2024
+	What I did yesterday: attend term test for CSC207
+	What I will do today: implement thickness adjustment, meeting
+	Obstacles I face: no
+
+Oct 28,2024
+	What I did yesterday: implement thickness adjustment, meeting
+	What I will do today: read requirement
+	Obstacles I face: nope
+
+Oct 29,2024
+	What I did yesterday: read requirement
+	What I will do today: take group meeting
+	Obstacles I face: nope
+
+Oct 30,2024
+	What I did yesterday: do csc236 HW
+	What I will do today: try to solve bug3.004
+	Obstacles I face: no
+
+Oct 31,2024
+	What I did yesterday: try to solve bug3.004
+	What I will do today: take group meeting
+	Obstacles I face: no
+
+Nov 1,2024
+	What I did yesterday: take group meeting
+	What I will do today: try to solve bug3.004
+	Obstacles I face: no
+
+Nov 2,2024
+	What I did yesterday: solve bug3.004
+	What I will do today: try to make undo success
+	Obstacles I face: no
+
+Nov 3,2024
+	What I did yesterday: try to make undo success
+	What I will do today: group[ meeting
+	Obstacles I face: for undo. I cannot find the final shape in arraylist
+
+Nov 4,2024
+	What I did yesterday:
+	What I will do today:
+	Obstacles I face:
+
+Nov 5,2024
+	What I did yesterday:
+	What I will do today:
+	Obstacles I face:
+
+Nov 6,2024
+	What I did yesterday:
+	What I will do today:
+	Obstacles I face:
+
+Nov 7,2024
+	What I did yesterday:
+	What I will do today:
+	Obstacles I face:
+
+Nov 8,2024
+	What I did yesterday:
+	What I will do today:
+	Obstacles I face:
+
+Nov 9,2024
+	What I did yesterday:
+	What I will do today:
+	Obstacles I face:
+
+Nov 10,2024
+	What I did yesterday:
+	What I will do today:
+	Obstacles I face:
+
+Nov 11,2024
+	What I did yesterday:
+	What I will do today:
+	Obstacles I face:
+
+Nov 12,2024
+	What I did yesterday:
+	What I will do today:
+	Obstacles I face:
+
+Nov 13,2024
+	What I did yesterday:
+	What I will do today:
+	Obstacles I face:
+
+Nov 14,2024
+	What I did yesterday:
+	What I will do today:
+	Obstacles I face:
+

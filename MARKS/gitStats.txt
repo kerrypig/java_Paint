@@ -1,0 +1,795 @@
+--------------------------------------------------------------------
+ git branches 
+--------------------------------------------------------------------
+* a2marks
+  master
+  remotes/origin/BUG.001
+  remotes/origin/BUG.002
+  remotes/origin/BUG.006
+  remotes/origin/BUG1.005
+  remotes/origin/BUG1.005&1.006
+  remotes/origin/BUG2.003v1
+  remotes/origin/HEAD -> origin/master
+  remotes/origin/US1.003
+  remotes/origin/US1.004
+  remotes/origin/US2.003
+  remotes/origin/US2.005
+  remotes/origin/US2.005&2.007
+  remotes/origin/US3.009
+  remotes/origin/US3.010
+  remotes/origin/US4.001
+  remotes/origin/US4.002
+  remotes/origin/US4.005
+  remotes/origin/US4.006
+  remotes/origin/US4.011
+  remotes/origin/US4.012
+  remotes/origin/US_006
+  remotes/origin/US_007
+  remotes/origin/a2marks
+  remotes/origin/master
+--------------------------------------------------------------------
+ git log --graph 
+--------------------------------------------------------------------
+* commit f2038689d02f6a6567cf12e10b9c199829a434d0
+| Author: shenqi23 <qianhe.shen@mail.utoronto.ca>
+| Date:   Sun Nov 10 23:59:34 2024 -0500
+| 
+|     s box updated
+| 
+* commit 4e3395045924a6840b92fd89371635e6f4c1d030
+| Author: shenqi23 <qianhe.shen@mail.utoronto.ca>
+| Date:   Sun Nov 10 23:38:09 2024 -0500
+| 
+|     s box updated
+|   
+*   commit c0cbbc50f2ea6cfed491d79c5ba196364bfc47c3
+|\  Merge: 4c999d2 bd3ec4f
+| | Author: shenqi23 <qianhe.shen@mail.utoronto.ca>
+| | Date:   Sun Nov 10 23:34:36 2024 -0500
+| | 
+| |     Merge remote-tracking branch 'origin/master'
+| | 
+| * commit bd3ec4f098a6c557a9075e824eab06a6144c3371
+| | Author: chengdu2 <duuu.cheng@mail.utoronto.ca>
+| | Date:   Sun Nov 10 23:18:14 2024 -0500
+| | 
+| |     backlog updated
+| | 
+* | commit 4c999d2da53beb38712fde1f36a5b0fddc770189
+| | Author: shenqi23 <qianhe.shen@mail.utoronto.ca>
+| | Date:   Sun Nov 10 23:34:22 2024 -0500
+| | 
+| |     backlog updated
+| |   
+* |   commit c573c0be73e166435482553c93b86668ab404cd9
+|\ \  Merge: 09b2cbd 0729059
+| |/  Author: shenqi23 <qianhe.shen@mail.utoronto.ca>
+|/|   Date:   Sun Nov 10 23:29:50 2024 -0500
+| |   
+| |       Merge remote-tracking branch 'origin/US4.006'
+| | 
+| * commit 072905902636f541f1224707b81f713cdc8cc920
+| | Author: zhukai16 <zhukai16@mail.utoronto.ca>
+| | Date:   Sun Nov 10 21:47:25 2024 -0500
+| | 
+| |     update
+| | 
+| * commit a8a1aa41f90fc3a47324c55ddeaeddb6455802d5
+| | Author: zhukai16 <zhukai16@mail.utoronto.ca>
+| | Date:   Sun Nov 10 16:21:32 2024 -0500
+| | 
+| |     move, selection box complete
+| | 
+| * commit 761019b5e17ab4c4438cc31c39dddc9d27ef354d
+| | Author: zhukai16 <zhukai16@mail.utoronto.ca>
+| | Date:   Sun Nov 10 14:24:18 2024 -0500
+| | 
+| |     redo and undo complete, zrtl+z and crtl+y complete
+| | 
+| * commit 415f1e8231a65ed7468b2ad7196e354f166cfb33
+| | Author: zhukai16 <zhukai16@mail.utoronto.ca>
+| | Date:   Sun Nov 10 14:11:50 2024 -0500
+| | 
+| |     undo with crtl+z complete
+| | 
+| * commit 3bb790d93d046c4b838251667909ba5070a5895b
+| | Author: zhukai16 <zhukai16@mail.utoronto.ca>
+| | Date:   Sun Nov 10 14:07:52 2024 -0500
+| | 
+| |     complete undo
+| | 
+* | commit 09b2cbdece3e1fa3621bc6b7e8a8390ff81c1bc7
+| | Author: shenqi23 <qianhe.shen@mail.utoronto.ca>
+| | Date:   Sun Nov 10 21:56:54 2024 -0500
+| | 
+| |     backlog updated
+| |   
+* |   commit d424a59cc2bf5c2e888d98802b502f1103744e3b
+|\ \  Merge: b1b7cfe 7687e1f
+| | | Author: shenqi23 <qianhe.shen@mail.utoronto.ca>
+| | | Date:   Sun Nov 10 21:54:32 2024 -0500
+| | | 
+| | |     Merge remote-tracking branch 'origin/master'
+| | | 
+| * | commit 7687e1fc3c9f0823ce9d9c35446e88ece8581861
+| | | Author: chengdu2 <duuu.cheng@mail.utoronto.ca>
+| | | Date:   Sun Nov 10 21:36:21 2024 -0500
+| | | 
+| | |     backlog updated
+| | |   
+| * |   commit 9d7d929a13e26e5f1cb257b12c7939f9d8316b92
+| |\ \  Merge: 293a9eb f9c84d9
+| | | | Author: chengdu2 <duuu.cheng@mail.utoronto.ca>
+| | | | Date:   Sun Nov 10 21:07:57 2024 -0500
+| | | | 
+| | | |     Merge branch 'US4.010'
+| | | | 
+| | * | commit f9c84d961071c277602a6ddfd8996279c75fe0b8
+| | | | Author: chengdu2 <duuu.cheng@mail.utoronto.ca>
+| | | | Date:   Sun Nov 10 21:05:17 2024 -0500
+| | | | 
+| | | |     US4.010
+| | | | 
+| * | | commit 293a9eb6d5865b9385eb960f6442670064683f34
+| |/ /  Author: chengdu2 <duuu.cheng@mail.utoronto.ca>
+| | |   Date:   Sun Nov 10 21:07:32 2024 -0500
+| | |   
+| | |       backlog updated
+| | | 
+* | | commit b1b7cfe969d6465ebce6c9b79af84e2cda31393f
+|/ /  Author: shenqi23 <qianhe.shen@mail.utoronto.ca>
+| |   Date:   Sun Nov 10 21:54:20 2024 -0500
+| |   
+| |       backlog updated
+| | 
+* | commit 9865c9074b90ea4b6a4347d3ac15b4c101e86f18
+| | Author: shenqi23 <qianhe.shen@mail.utoronto.ca>
+| | Date:   Sun Nov 10 20:25:22 2024 -0500
+| | 
+| |     backlog updated
+| | 
+* | commit cc2661e69c2f9fc5f8293f1307347aaebb020925
+| | Author: shenqi23 <qianhe.shen@mail.utoronto.ca>
+| | Date:   Sun Nov 10 20:03:17 2024 -0500
+| | 
+| |     backlog updated
+| | 
+* | commit ba4d27b97640eba89addb2691773208c26036e93
+| | Author: chengdu2 <duuu.cheng@mail.utoronto.ca>
+| | Date:   Sun Nov 10 19:25:57 2024 -0500
+| | 
+| |     A little fix
+| | 
+* | commit 7d3a737306ceaf811aed0d6005f592c38e1446d8
+|/  Author: chengdu2 <duuu.cheng@mail.utoronto.ca>
+|   Date:   Sun Nov 10 19:25:23 2024 -0500
+|   
+|       Daily update
+| 
+* commit a683d3c3639593a7e9e4b9fa8fef195542460cbe
+| Author: MCS CSC207H5 <207@dh2010pc10.utm.utoronto.ca>
+| Date:   Mon Nov 4 18:35:13 2024 -0500
+| 
+|     Sprint 1 Writing feedback, extraFeatures.txt and finalArchitecture
+|   
+*   commit b39dd0ec4a52005d4b63b002fc7b455b50144b21
+|\  Merge: 5674bcb 208eab3
+| | Author: shenqi23 <qianhe.shen@mail.utoronto.ca>
+| | Date:   Sun Nov 3 23:59:12 2024 -0500
+| | 
+| |     Merge remote-tracking branch 'origin/master'
+| |   
+| *   commit 208eab31e0a1c4c4d6a012dec642854daf7733ab
+| |\  Merge: 5f74eb8 cc114ee
+| | | Author: yinliwen <phoenix.yin@mail.utoronto.ca>
+| | | Date:   Sun Nov 3 23:55:40 2024 -0500
+| | | 
+| | |     Merge remote-tracking branch 'origin/master'
+| | |   
+| | *   commit cc114ee35c6366b1960a3b62b8f92f17eb124ace
+| | |\  Merge: f7e4474 3adf09d
+| | | | Author: chengdu2 <duuu.cheng@mail.utoronto.ca>
+| | | | Date:   Sun Nov 3 23:52:02 2024 -0500
+| | | | 
+| | | |     Merge remote-tracking branch 'origin/master'
+| | | | 
+| | | * commit 3adf09decf3d47e5be78c4d99fd706294bbfd0ac
+| | | | Author: zhukai16 <zhukai16@mail.utoronto.ca>
+| | | | Date:   Sun Nov 3 23:51:32 2024 -0500
+| | | | 
+| | | |     update
+| | | | 
+| | * | commit f7e4474587dc5d62eed95d396c87a379521d0bbf
+| | |/  Author: chengdu2 <duuu.cheng@mail.utoronto.ca>
+| | |   Date:   Sun Nov 3 23:51:46 2024 -0500
+| | |   
+| | |       Daily update
+| | | 
+| * | commit 5f74eb89fa8b8011fe2a820f0a773100a0453f5d
+| | | Author: yinliwen <phoenix.yin@mail.utoronto.ca>
+| | | Date:   Sun Nov 3 23:55:34 2024 -0500
+| | | 
+| | |     update dailylog
+| | | 
+| * | commit f07b9dadf9d20ec912fbc3097110d45493d4bf8a
+| | | Author: yinliwen <phoenix.yin@mail.utoronto.ca>
+| | | Date:   Sun Nov 3 23:53:14 2024 -0500
+| | | 
+| | |     update dailyScrumMeeting2.txt
+| | | 
+* | | commit 5674bcb7370123e59c688f68ed71dd23348327a5
+| |/  Author: shenqi23 <qianhe.shen@mail.utoronto.ca>
+|/|   Date:   Sun Nov 3 23:59:02 2024 -0500
+| |   
+| |       backlog updated
+| |   
+* |   commit f533619daaebc48833558e413ee938e7c13e3367
+|\ \  Merge: 56538f2 0fce534
+| | | Author: shenqi23 <qianhe.shen@mail.utoronto.ca>
+| | | Date:   Sun Nov 3 23:47:54 2024 -0500
+| | | 
+| | |     Merge remote-tracking branch 'origin/master'
+| | | 
+| * | commit 0fce5345a3ec21bdaa6dbadd2cc646ece1921c4d
+| |/  Author: chengdu2 <duuu.cheng@mail.utoronto.ca>
+| |   Date:   Sun Nov 3 23:34:11 2024 -0500
+| |   
+| |       Daily update
+| | 
+* | commit 56538f20bc7c788b3cdb0be36547d9552314cb4e
+| | Author: shenqi23 <qianhe.shen@mail.utoronto.ca>
+| | Date:   Sun Nov 3 23:47:41 2024 -0500
+| | 
+| |     backlog updated
+| | 
+* | commit 067fc30e7fa64cb0640700228f68131a1a0f87db
+|/  Author: shenqi23 <qianhe.shen@mail.utoronto.ca>
+|   Date:   Sun Nov 3 23:47:25 2024 -0500
+|   
+|       backlog updated
+| 
+* commit b3ac438174a6f3821fde25b574795fd5817ba329
+| Author: shenqi23 <qianhe.shen@mail.utoronto.ca>
+| Date:   Sun Nov 3 23:28:26 2024 -0500
+| 
+|     view updated
+| 
+* commit 59756fb4a1742bcabc9e93a381d1f59ffac7dd04
+| Author: shenqi23 <qianhe.shen@mail.utoronto.ca>
+| Date:   Sun Nov 3 22:46:46 2024 -0500
+| 
+|     ShapeChooserPanel PaintModel updated
+| 
+* commit 54bc7b27db89e48534ded95f95ccd0877fd1ec06
+| Author: shenqi23 <qianhe.shen@mail.utoronto.ca>
+| Date:   Sun Nov 3 22:31:27 2024 -0500
+| 
+|     sprintBacklog3 updated
+| 
+* commit 669c44f6cbdd5289a0f5b05178d8b2196baf7e37
+| Author: shenqi23 <qianhe.shen@mail.utoronto.ca>
+| Date:   Sun Nov 3 22:14:58 2024 -0500
+| 
+|     sprintBacklog3 updated
+|   
+*   commit e7ea2860c5f7c4b2cd27d65c2f4b0da2e15912cc
+|\  Merge: f2daeff 8006137
+| | Author: shenqi23 <qianhe.shen@mail.utoronto.ca>
+| | Date:   Sun Nov 3 22:12:21 2024 -0500
+| | 
+| |     Merge remote-tracking branch 'origin/master'
+| | 
+| * commit 800613736a3b762166d019cd241dc0ec69dfe82a
+| | Author: zhukai16 <zhukai16@mail.utoronto.ca>
+| | Date:   Sun Nov 3 21:44:23 2024 -0500
+| | 
+| |     update
+| | 
+* | commit f2daeffbdbeb786180d5ab5477d12d9884ed53bf
+|/  Author: shenqi23 <qianhe.shen@mail.utoronto.ca>
+|   Date:   Sun Nov 3 22:12:00 2024 -0500
+|   
+|       sprintBacklog3 updated
+| 
+* commit 275ebbb9631d142cb564f25d401b049554902c53
+| Author: zhukai16 <zhukai16@mail.utoronto.ca>
+| Date:   Sun Nov 3 12:29:43 2024 -0500
+| 
+|     update
+| 
+* commit 1ab1bd2381c91dccd9cfca358c6d0eb540943f05
+| Author: shenqi23 <qianhe.shen@mail.utoronto.ca>
+| Date:   Sun Oct 27 23:42:33 2024 -0400
+| 
+|     scrum meeting4 updated
+|   
+*   commit 7ca6286710dfb6de1d0fb7bc39eec489e1e9d081
+|\  Merge: 320f9e4 ce5fcba
+| | Author: yinliwen <phoenix.yin@mail.utoronto.ca>
+| | Date:   Sun Oct 27 23:20:08 2024 -0400
+| | 
+| |     Merge remote-tracking branch 'origin/master'
+| | 
+| * commit ce5fcba560dedd5596402d4599ad4f4c93f45ac8
+| | Author: Kerry ZHU <zhukai16@mail.utoronto.ca>
+| | Date:   Sun Oct 27 23:13:55 2024 -0400
+| | 
+| |     update
+| | 
+* | commit 320f9e4fdba9fb5457ebd3ff58dcfaa6a9a813f2
+|/  Author: yinliwen <phoenix.yin@mail.utoronto.ca>
+|   Date:   Sun Oct 27 23:20:00 2024 -0400
+|   
+|       update dailyScrumMeeting2.txt
+|   
+*   commit 95868d4828d481ac6beb6d742fbe4c67d9c5bc11
+|\  Merge: 05e6eba 560dae4
+| | Author: shenqi23 <qianhe.shen@mail.utoronto.ca>
+| | Date:   Sun Oct 27 23:05:53 2024 -0400
+| | 
+| |     sprint2 completed
+| | 
+| * commit 560dae4ffa1f70513adcd384bb6317cf7d72937e
+| | Author: shenqi23 <qianhe.shen@mail.utoronto.ca>
+| | Date:   Sun Oct 27 22:56:20 2024 -0400
+| | 
+| |     merge US2.005
+| | 
+| * commit 3e4fb83a5379636d6032a76e0feea28fa6268e6e
+| | Author: chengdu2 <duuu.cheng@mail.utoronto.ca>
+| | Date:   Sun Oct 27 21:59:49 2024 -0400
+| | 
+| |     Polyline and Triangle implemented.
+| | 
+| * commit 6f9e824a8c309bc6d96b49fe4fac0431d13fd29e
+| | Author: shenqi23 <qianhe.shen@mail.utoronto.ca>
+| | Date:   Sun Oct 27 20:50:31 2024 -0400
+| | 
+| |     created
+| |   
+| *   commit 037b28dde4cc5b2d3281fee61d6082b70f4f7af2
+| |\  Merge: 6578f91 cb3b13e
+| | | Author: shenqi23 <qianhe.shen@mail.utoronto.ca>
+| | | Date:   Sun Oct 27 20:47:21 2024 -0400
+| | | 
+| | |     Merge remote-tracking branch 'origin/BUG2.003v1' into BUG2.003v1
+| | | 
+| | * commit cb3b13e113f86ebf1fa19d5cf937e81a250175ea
+| | | Author: Kerry ZHU <zhukai16@mail.utoronto.ca>
+| | | Date:   Sun Oct 27 19:05:38 2024 -0400
+| | | 
+| | |     update
+| | | 
+| | * commit 8aabf13faebe39398d2ef9df0309a7ffa7b3afcd
+| | | Author: Kerry ZHU <zhukai16@mail.utoronto.ca>
+| | | Date:   Sun Oct 27 18:59:53 2024 -0400
+| | | 
+| | |     BUG002 complete
+| | | 
+| * | commit 6578f915ed60a076f548ca8831ee81ed97f117ac
+| |/  Author: shenqi23 <qianhe.shen@mail.utoronto.ca>
+| |   Date:   Sun Oct 27 19:03:43 2024 -0400
+| |   
+| |       reated
+| | 
+| * commit dba6ce94555514497adeb77ce71375ba5b997cc9
+| | Author: Kerry ZHU <zhukai16@mail.utoronto.ca>
+| | Date:   Sun Oct 27 18:41:03 2024 -0400
+| | 
+| |     complete bug003
+| | 
+| * commit 5eee4496748f5f322b8957de1aea6ff92b1abdd4
+| | Author: chengdu2 <duuu.cheng@mail.utoronto.ca>
+| | Date:   Sun Oct 27 17:36:18 2024 -0400
+| | 
+| |     OVAL BUG FIXED
+| | 
+| * commit a7fc41572bf2030e072b4d740a6b3e27be41d8cf
+| | Author: chengdu2 <duuu.cheng@mail.utoronto.ca>
+| | Date:   Sun Oct 27 17:35:00 2024 -0400
+| | 
+| |     Deleted unused awt import
+| | 
+| * commit 241f95931fd3134b14b27e4438b0befe290fe637
+| | Author: chengdu2 <duuu.cheng@mail.utoronto.ca>
+| | Date:   Sun Oct 27 17:32:27 2024 -0400
+| | 
+| |     Rewrite color function base on new structure of US2.007
+| | 
+| * commit 1a04ed8dcc7548cc54054e554e17113d42199744
+| | Author: Kerry ZHU <zhukai16@mail.utoronto.ca>
+| | Date:   Sun Oct 27 15:56:18 2024 -0400
+| | 
+| |     delete unnecessary code
+| | 
+| * commit f9b7b8ab6f65cb5af5726f7c3abb6ea88a966b7f
+| | Author: Kerry ZHU <zhukai16@mail.utoronto.ca>
+| | Date:   Sun Oct 27 15:54:03 2024 -0400
+| | 
+| |     update Dynamically adjust canvas size
+| | 
+| * commit 8cc4e362e0082ee12fd4340187e1fccedd234607
+| | Author: Kerry ZHU <zhukai16@mail.utoronto.ca>
+| | Date:   Sun Oct 27 15:44:34 2024 -0400
+| | 
+| |     US_007 complete
+| | 
+| * commit 16b9a13b90caa8ccc5e2f6173093ae59cfdbcfd2
+| | Author: Kerry ZHU <zhukai16@mail.utoronto.ca>
+| | Date:   Sun Oct 27 15:42:47 2024 -0400
+| | 
+| |     US_007 complete
+| |   
+| *   commit 39d44ba21b83f9783a07c2c538efe77ac96da27f
+| |\  Merge: 20a8c2b 758ec12
+| | | Author: Kerry ZHU <zhukai16@mail.utoronto.ca>
+| | | Date:   Sun Oct 27 14:28:28 2024 -0400
+| | | 
+| | |     merge with oval
+| | | 
+| | * commit 758ec127af2d36874eb4fdef39d3e6594de0d7c1
+| | | Author: Kerry ZHU <zhukai16@mail.utoronto.ca>
+| | | Date:   Sun Oct 27 01:22:04 2024 -0400
+| | | 
+| | |     complete Oval
+| | | 
+| | * commit 0ea90c211e7a9f43a6c10f1a3918ef674f964d50
+| | | Author: Kerry ZHU <zhukai16@mail.utoronto.ca>
+| | | Date:   Sun Oct 27 00:55:52 2024 -0400
+| | | 
+| | |     Oval
+| | | 
+| * | commit 20a8c2bb3d2daab171d404a3b198f0c5afe0c2f0
+| | | Author: yinliwen <phoenix.yin@mail.utoronto.ca>
+| | | Date:   Sun Oct 27 14:12:39 2024 -0400
+| | | 
+| | |     US?.006 Completed
+| | | 
+* | | commit 05e6eba92500ba5f1f61c9ebf21b1a8fdf57137b
+| | | Author: chengdu2 <duuu.cheng@mail.utoronto.ca>
+| | | Date:   Sun Oct 27 22:59:53 2024 -0400
+| | | 
+| | |     Daily update
+| | | 
+* | | commit 3941d4dc223365c6a5508986286bbc7ce6ef9dcc
+| | | Author: chengdu2 <duuu.cheng@mail.utoronto.ca>
+| | | Date:   Sun Oct 27 22:39:52 2024 -0400
+| | | 
+| | |     Daily update
+| | |   
+* | |   commit b0b26d3b064ce68ee23ae149f11951ddac310d82
+|\ \ \  Merge: 4a45903 c12404d
+| | | | Author: Kerry ZHU <zhukai16@mail.utoronto.ca>
+| | | | Date:   Sun Oct 27 21:16:56 2024 -0400
+| | | | 
+| | | |     update
+| | | | 
+| * | | commit c12404dce9033da43de2698d2abc637b0dea619b
+| | | | Author: yinliwen <phoenix.yin@mail.utoronto.ca>
+| | | | Date:   Sun Oct 27 19:38:00 2024 -0400
+| | | | 
+| | | |     update dailyScrumMeeting2.txt
+| | | | 
+| * | | commit 0090a4d7fc95da7fd94ea0f02d7418ee2a965452
+| | | | Author: yinliwen <phoenix.yin@mail.utoronto.ca>
+| | | | Date:   Sun Oct 27 19:37:29 2024 -0400
+| | | | 
+| | | |     update dailyScrumMeeting2.txt
+| | | | 
+| * | | commit bda996777b09e95bd45a0550a57b0e7ca39e03e9
+| | | | Author: shenqi23 <qianhe.shen@mail.utoronto.ca>
+| | | | Date:   Sun Oct 27 18:45:24 2024 -0400
+| | | | 
+| | | |     modify sprintBacklog2.txt
+| | | | 
+| * | | commit 600f8e9eadaa89f87c9fedcca283ff89094198e6
+| | | | Author: shenqi23 <qianhe.shen@mail.utoronto.ca>
+| | | | Date:   Sun Oct 27 18:03:31 2024 -0400
+| | | | 
+| | | |     scurm meeting 10/27
+| | | | 
+| * | | commit 4272d752d08f5f31a959a224c9e17e111daa534f
+| |/ /  Author: chengdu2 <duuu.cheng@mail.utoronto.ca>
+| | |   Date:   Sun Oct 27 16:04:41 2024 -0400
+| | |   
+| | |       Daily update
+| | | 
+* | | commit 4a459034c3bdfd82092cd308373ebf3d917e8303
+|/ /  Author: Kerry ZHU <zhukai16@mail.utoronto.ca>
+| |   Date:   Sun Oct 27 21:15:03 2024 -0400
+| |   
+| |       update
+| | 
+* | commit 775c8e616ff7fc6215922002bd5d08dba51da857
+|/  Author: chengdu2 <duuu.cheng@mail.utoronto.ca>
+|   Date:   Sat Oct 26 23:33:06 2024 -0400
+|   
+|       TXT files update
+| 
+* commit 518fd85a9a04766d23608503744185cec5a666e6
+| Author: SHEN QIANHE local device <qianhe.shen@mail.utoronto.ca>
+| Date:   Sun Oct 20 22:56:13 2024 -0400
+| 
+|     scrum meeting4 modify
+| 
+* commit 9e87aa7e648cf65e642b603e03562d14bf28d14d
+| Author: Kerry ZHU <zhukai16@mail.utoronto.ca>
+| Date:   Sun Oct 20 21:59:48 2024 -0400
+| 
+|     update backlog
+| 
+* commit 36f19bc4fe1326c52f6249c43f6c088a493ed352
+| Author: yinliwen <phoenix.yin@mail.utoronto.ca>
+| Date:   Sun Oct 20 21:43:09 2024 -0400
+| 
+|     update 2 new user stories US008,US009
+| 
+* commit e3464503f0e780657513f4353b59a08c19d06129
+| Author: yinliwen <phoenix.yin@mail.utoronto.ca>
+| Date:   Sun Oct 20 21:33:45 2024 -0400
+| 
+|     update personal log
+| 
+* commit c22c12edf3e7d05866383b355c033ccb2e3c2830
+| Author: yinliwen <phoenix.yin@mail.utoronto.ca>
+| Date:   Sun Oct 20 21:28:22 2024 -0400
+| 
+|     update log
+| 
+* commit 6955428a1395c300fe9d28acb1ad8664a50868b2
+| Author: Du <duuu.cheng@mail.utoronto.ca>
+| Date:   Sun Oct 20 21:19:56 2024 -0400
+| 
+|     Sprint 1 complete. -Du
+|   
+*   commit 629f50242f873e6fa8c3a19772a148c5f82ed89d
+|\  Merge: da99d03 f3f8db0
+| | Author: Du <duuu.cheng@mail.utoronto.ca>
+| | Date:   Sun Oct 20 20:59:57 2024 -0400
+| | 
+| |     Merge remote-tracking branch 'origin/BUG1.005&1.006'
+| |     
+| |     # Conflicts:
+| |     #       Assignment2/src/main/java/ca/utoronto/utm/assignment2/paint/PaintModel.java
+| |     #       Assignment2/src/main/java/ca/utoronto/utm/assignment2/paint/PaintPanel.java
+| | 
+| * commit f3f8db0606e73a73ca149a2871f914e53e357c45
+| | Author: Du <duuu.cheng@mail.utoronto.ca>
+| | Date:   Sun Oct 20 18:44:49 2024 -0400
+| | 
+| |     BUG1.005 & BUG1.006 Fixed and Merged, PaintPanel code reformated. -Du
+| |   
+| *   commit d74670aad2fafa896819735e8131842d8ad292d3
+| |\  Merge: cfacbd0 21fa4de
+| | | Author: Du <duuu.cheng@mail.utoronto.ca>
+| | | Date:   Sun Oct 20 18:19:43 2024 -0400
+| | | 
+| | |     Merge remote-tracking branch 'origin/BUG.006' into BUG1.005
+| | |     
+| | |     # Conflicts:
+| | |     #       Assignment2/src/main/java/ca/utoronto/utm/assignment2/paint/PaintPanel.java
+| | | 
+| | * commit 21fa4dee29d5b48de2093660a92628d8459f9ece
+| | | Author: yinliwen <phoenix.yin@mail.utoronto.ca>
+| | | Date:   Sun Oct 20 18:10:31 2024 -0400
+| | | 
+| | |      final update BUG.006
+| | | 
+| * | commit cfacbd00dd965746a37ad56865027f3882ffe3d7
+| | | Author: Du <duuu.cheng@mail.utoronto.ca>
+| | | Date:   Sun Oct 20 17:47:48 2024 -0400
+| | | 
+| | |     BUG1.005 & BUG1.006 merging. -Du
+| | | 
+| * | commit 1834c8477868c3e300fff3cdd366f0974a29c409
+| |\| Merge: 42d1218 e5ca482
+| | | Author: Du <duuu.cheng@mail.utoronto.ca>
+| | | Date:   Sun Oct 20 17:45:55 2024 -0400
+| | | 
+| | |     Merge remote-tracking branch 'refs/remotes/origin/BUG.006' into BUG1.005
+| | |     
+| | |     # Conflicts:
+| | |     #       Assignment2/src/main/java/ca/utoronto/utm/assignment2/paint/PaintPanel.java
+| | | 
+| | * commit e5ca482cf904362d3cc2960e1d82b8b902cbe545
+| | | Author: yinliwen <phoenix.yin@mail.utoronto.ca>
+| | | Date:   Sun Oct 20 13:56:30 2024 -0400
+| | | 
+| | |     Completed BUG.006
+| | | 
+| * | commit 42d1218ebbae89bc28500932b8d0d2d0ab72b905
+| | | Author: Du <duuu.cheng@mail.utoronto.ca>
+| | | Date:   Fri Oct 18 18:15:28 2024 -0400
+| | | 
+| | |     Bug1.005 seemingly done.
+| | | 
+| * | commit 59829189117c19ae6cb081dbafdbeb914db3c5b8
+| | | Author: Du <duuu.cheng@mail.utoronto.ca>
+| | | Date:   Fri Oct 18 18:09:52 2024 -0400
+| | | 
+| | |     Bug1.005 almost done
+| | | 
+| * | commit 8798557c9f08d7011b9fb8bc9b76b0f5fe03743a
+| | | Author: Du <duuu.cheng@mail.utoronto.ca>
+| | | Date:   Fri Oct 18 17:49:34 2024 -0400
+| | | 
+| | |     Bug1.005
+| | | 
+* | | commit da99d039c7adb168cad3eb89b398c3fe7e4bc306
+| | | Author: SHEN QIANHE local device <qianhe.shen@mail.utoronto.ca>
+| | | Date:   Sun Oct 20 20:40:57 2024 -0400
+| | | 
+| | |     scrum meeting 10/20 v1.0
+| | |   
+* | |   commit a1d01941d1043581a2aae2ed8c0832d2e93837d6
+|\ \ \  Merge: 9ee5869 eace2ca
+| | | | Author: SHEN QIANHE local device <qianhe.shen@mail.utoronto.ca>
+| | | | Date:   Sun Oct 20 20:30:55 2024 -0400
+| | | | 
+| | | |     merge US1.004
+| | | | 
+| * | | commit eace2cab03a8e55703a4092dce904b324e50f5f5
+| | | | Author: SHEN QIANHE local device <qianhe.shen@mail.utoronto.ca>
+| | | | Date:   Fri Oct 18 19:02:12 2024 -0400
+| | | | 
+| | | |     US1.004 completed
+| | | | 
+| * | | commit a867fef818eb72388dc0d26f3c003ccb684e9c24
+| | | | Author: SHEN QIANHE local device <qianhe.shen@mail.utoronto.ca>
+| | | | Date:   Fri Oct 18 18:32:45 2024 -0400
+| | | | 
+| | | |     init
+| | | | 
+| * | | commit 9842bc8b7397234b3e188f9d8dac732b3f3cbb63
+| | | | Author: Kerry ZHU <zhukai16@mail.utoronto.ca>
+| | | | Date:   Fri Oct 18 18:20:21 2024 -0400
+| | | | 
+| | | |     complete rectangle.java
+| | | | 
+| * | | commit cc68cb59d3b8b668eaa8154fb7d2559ab75a6c29
+| | |/  Author: Kerry ZHU <zhukai16@mail.utoronto.ca>
+| |/|   Date:   Fri Oct 18 17:42:45 2024 -0400
+| | |   
+| | |       create Rectangle
+| | | 
+| * | commit d24a7a6bc9af640d4d1b17dad438e7c5185bce48
+| | | Author: yinliwen <phoenix.yin@mail.utoronto.ca>
+| | | Date:   Thu Oct 17 22:21:38 2024 -0400
+| | | 
+| | |     Tentative fix for BUG.006
+| | | 
+| * | commit efa0118803900018710363afa1483f7dc21f359a
+| | | Author: yinliwen <phoenix.yin@mail.utoronto.ca>
+| | | Date:   Thu Oct 17 21:15:00 2024 -0400
+| | | 
+| | |     BUG.002 completed
+| | | 
+| * | commit 753a285684725243d5bd2b1c988ed32f2b5cfc1a
+| | | Author: yinliwen <phoenix.yin@mail.utoronto.ca>
+| | | Date:   Thu Oct 17 19:24:12 2024 -0400
+| | | 
+| | |     Fix BUG001: Replaced text with icons for drawing mode selection
+| | |   
+| * |   commit 88f5b66df851860e766725cd54faa51e4cf2f281
+| |\ \  Merge: 7c6f40b fd30f7b
+| | | | Author: Liwen Yin <liwenyin@liwendeair.home>
+| | | | Date:   Wed Oct 16 23:59:32 2024 -0400
+| | | | 
+| | | |     update userstory
+| | | | 
+| * | | commit 7c6f40b2174d1414377effea2b335d4fa775d355
+| | | | Author: Liwen Yin <liwenyin@liwendeair.home>
+| | | | Date:   Wed Oct 16 23:48:32 2024 -0400
+| | | | 
+| | | |     update user story
+| | | | 
+* | | | commit 9ee5869dfaa95a0a11d65ce73849831006f6ab96
+| | | | Author: Du <duuu.cheng@mail.utoronto.ca>
+| | | | Date:   Sun Oct 20 17:37:10 2024 -0400
+| | | | 
+| | | |     architecture.txt error fixed. -Du
+| | | | 
+* | | | commit b6fe37b42836e8947d3f37dc4528d1e8fd6b1a11
+| | | | Author: yinliwen <phoenix.yin@mail.utoronto.ca>
+| | | | Date:   Sun Oct 20 12:30:16 2024 -0400
+| | | | 
+| | | |     Update dailyScrumMeeting2.txt
+| | | |   
+* | | |   commit 0e9138c4ef4b41b58d8b9036dd0d79aae3c69dc8
+|\ \ \ \  Merge: 0d8b906 20980aa
+| | | | | Author: yinliwen <phoenix.yin@mail.utoronto.ca>
+| | | | | Date:   Sun Oct 20 12:21:14 2024 -0400
+| | | | | 
+| | | | |     Update productBacklog.txt
+| | | | | 
+| * | | | commit 20980aaf142ec7c640f84c48a5efcdfd1a63a094
+| | | | | Author: Kerry ZHU <zhukai16@mail.utoronto.ca>
+| | | | | Date:   Sun Oct 20 02:21:52 2024 -0400
+| | | | | 
+| | | | |     update architecture.txt
+| | | | | 
+* | | | | commit 0d8b9067853202a19b6762c458ed136928892c92
+|/ / / /  Author: yinliwen <phoenix.yin@mail.utoronto.ca>
+| | | |   Date:   Sun Oct 20 12:15:18 2024 -0400
+| | | |   
+| | | |       add 2 more new users stories
+| | | | 
+* | | | commit 8e13eb4127588aac76c5090f5650e196f13d9569
+| | | | Author: SHEN QIANHE local device <qianhe.shen@mail.utoronto.ca>
+| | | | Date:   Fri Oct 18 19:09:14 2024 -0400
+| | | | 
+| | | |     scrum meeting 10/18 v1.2
+| | | | 
+* | | | commit 29aa534726f94b8f3bf5d2d2fab2978afdcd0bc9
+| | | | Author: Du <duuu.cheng@mail.utoronto.ca>
+| | | | Date:   Fri Oct 18 18:28:20 2024 -0400
+| | | | 
+| | | |     dailyScrumMeeting1.txt & productBacklog.txt updated. -Du 10/18 18:28
+| | | | 
+* | | | commit c5188458c654af19f1e8770ef139cbc7775a8fc4
+| | | | Author: SHEN QIANHE local device <qianhe.shen@mail.utoronto.ca>
+| | | | Date:   Fri Oct 18 18:08:44 2024 -0400
+| | | | 
+| | | |     scrum meeting 10/18 v1.1
+| | | | 
+* | | | commit a90b8ff9f1d65a07ce2f726dc04b055cb33b11cb
+| |_|/  Author: SHEN QIANHE local device <qianhe.shen@mail.utoronto.ca>
+|/| |   Date:   Fri Oct 18 18:02:01 2024 -0400
+| | |   
+| | |       scurm meeting 10/18
+| | | 
+* | | commit f4f3aa85b8c0d5c0878e00d0adbeadd013f75d2d
+| |/  Author: Kerry ZHU <zhukai16@mail.utoronto.ca>
+|/|   Date:   Thu Oct 17 21:00:40 2024 -0400
+| |   
+| |       update umlDiagram
+| |   
+* |   commit fd30f7b9038d009f082e41a57a53a2c5b3af8858
+|\ \  Merge: 127b6e3 e2bf4e5
+| | | Author: Kerry ZHU <zhukai16@mail.utoronto.ca>
+| | | Date:   Wed Oct 16 21:49:35 2024 -0400
+| | | 
+| | |     Merge branch 'master' of https://mcsscm.utm.utoronto.ca:9999/git/207/24f/repo_a2_250
+| | |     conflit
+| | | 
+| * | commit e2bf4e541ca1256854d45be56c8cc5e06dab0039
+| | | Author: Kerry ZHU <zhukai16@mail.utoronto.ca>
+| | | Date:   Wed Oct 16 21:48:24 2024 -0400
+| | | 
+| | |     update user story
+| | | 
+* | | commit 127b6e3b9792c735fa9043cb19455480db1e9cd1
+|/ /  Author: Kerry ZHU <zhukai16@mail.utoronto.ca>
+| |   Date:   Wed Oct 16 21:49:12 2024 -0400
+| |   
+| |       update user story
+| | 
+* | commit 05d04610488f2166c39e39c7657ff37b6072d2cd
+| | Author: SHEN QIANHE local device <qianhe.shen@mail.utoronto.ca>
+| | Date:   Wed Oct 16 21:22:53 2024 -0400
+| | 
+| |     first user story added
+| | 
+* | commit 2366e8e48cfa14531e940d1ff3cdeaea79ef8e37
+| | Author: SHEN QIANHE local device <qianhe.shen@mail.utoronto.ca>
+| | Date:   Wed Oct 16 15:31:45 2024 -0400
+| | 
+| |     name
+| | 
+* | commit 970ba4453fe467e9c16e87a2219017efdc945add
+|/  Author: Kerry ZHU <zhukai16@mail.utoronto.ca>
+|   Date:   Wed Oct 16 15:28:51 2024 -0400
+|   
+|       added group member detail
+| 
+* commit e6494c0a9dab9f865221b86ea2d6261f72299e7a
+| Author: Liwen Yin <liwenyin@liwendeair.home>
+| Date:   Wed Oct 16 00:04:13 2024 -0400
+| 
+|     Added group member details to members.txt
+| 
+* commit d3ee2833053552266432cdcdaea1a5485f39a0e3
+  Author: Du <duuu.cheng@mail.utoronto.ca>
+  Date:   Tue Oct 15 23:52:09 2024 -0400
+  
+      members.txt created, starter code unziped at the root of repo. -Du

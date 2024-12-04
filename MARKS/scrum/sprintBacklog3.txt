@@ -1,0 +1,110 @@
+# Move User Stories from the ProductBacklog 
+# to the appropriate sprintBacklogN.txt after the 
+# Sprint Planning Meeting.
+
+# Sprint 3 Oct 27-Nov 03, 2024
+# Sprint 3 Backlog UserStories go below
+
+
+--------------------------------------------------------------------------
+TYPE     : BUG BUG3.005 : shenqi23 : Inprogress
+NAME     : To many shapes in arraylist shape
+PRIORITY : 2
+ESTIMATE : 4 day ACTUAL : ?
+ISSUE    : We found that the draw command for each shape except triangle is
+           keep entering shapes into the arraylist of shape in the model class
+--------------------------------------------------------------------------
+# COMPLETED USER STORIES/BUGS BELOW ###########################################
+--------------------------------------------------------------------------
+TYPE     : BUG BUG3.004 : zhukai16 : Completed
+NAME     : Architecture behind Model is poor
+PRIORITY : 1
+ESTIMATE : 1 day ACTUAL : 1 day
+ISSUE    : Having a list of different types of drawable things in the
+           model is cumbersome. In fact, it is currently incorrect, with
+           Squiggle's not drawing properly. Need to re-architect the Model
+           so that it is more flexible, and easier to work with.
+           Consider some design patterns, or change of responsibility
+           here.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+TYPE     : USER STORY US2.007 : chengdu2 : Complete
+NAME     : Color selector
+PRIORITY : 3
+ESTIMATE : 4 hours    ACTUAL : 1 day
+AS A     : user
+I WANT   : To be able to select the current drawing color, to be applied
+           to subsequent shapes. Example:
+           		selects color red
+           		mode circle
+           		draw a circle
+           		draw a circle
+           		mode rectangle
+           		draw a rectangle
+           		select color green
+           		draw a rectangle
+           		draw a rectangle
+           		select mode squiggle
+           		draw a squiggle
+           	results in two red circles and a red rectangle as well as
+           	two green rectangles and a green squiggle
+SO THAT  : I can draw different shapes with different colors.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+TYPE     : USER STORY US2.008 : yinliwen : Complete
+NAME     : Fill style selector
+PRIORITY : 3
+ESTIMATE : 1 day   ACTUAL : 2 day
+AS A     : user
+I WANT   : To be able to select the current drawing style (filled or outline), to be applied
+           to subsequent shapes. Example:
+           		selects fill style solid
+           		mode circle
+           		draw a circle
+           		draw a circle
+           		mode rectangle
+           		draw a rectangle
+           		select fill style outline
+           		draw a rectangle
+           		draw a rectangle
+           		select mode squiggle
+           		draw a squiggle
+           	results in two solid circles and a solid rectangle as well as
+           	two outlined rectangles and a squiggle
+SO THAT  :
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+TYPE     : USER STORY US2.009 : zhukai16 : Complete
+NAME     : Line thickness selector
+PRIORITY : 3
+ESTIMATE : 4 hours    ACTUAL : 4 hours
+AS A     : user
+I WANT   : To be able to select the current line thickness, to be applied
+           to subsequent shapes. Example:
+           		select fill style outline
+           		selects line thickness 1
+           		mode circle
+           		draw a circle
+           		draw a circle
+           		mode rectangle
+           		draw a rectangle
+           		select line thickness 9
+           		draw a rectangle
+           		draw a rectangle
+           		select mode squiggle
+           		draw a squiggle
+           	results in two thinly outlined circles and a thinly outlined
+           	rectangle as well as two thickly outlined rectangles and a thick squiggle
+SO THAT  :
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+// create a new user story
+TYPE: USER STORY US3.010 : shenqi23 : Completed
+NAME: function of undo
+PRIORITY: 4
+ESTIMATE: (1 hour, 2 hours, 4 hours, 1 day, 2 days, 4 days)
+ACTUAL:
+AS A: user
+I WANT: To be able to undo my last drawing
+SO THAT: I can cancel the object I accident created
+--------------------------------------------------------------------------

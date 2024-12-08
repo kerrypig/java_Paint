@@ -51,7 +51,7 @@ EXTRAFEATURES_START
 		Mark with F for feature error
 		[0F] ERROR: 
 
-		COMMENT: No documentation on the features. Making me do a lot of work here :(
+		COMMENT: No documentation on the extra features. Making me do a lot of work here :(
 
 		Feature: DIFFICULTY:[2] Select
 		[F] ERROR: Once the shape is no longer selected, the selection outline stays.

@@ -18,24 +18,24 @@ Code quality: Individual classes marked according to 5 mark grading scheme, code
 			filenames for Rectangle ICONS
 			classes involving Rectangle
 
-		[YN] Images named according to mode/shape (based on simple convention)
-		[YN] Classes named according to mode/shape
+		[N] Images named according to mode/shape (based on simple convention)
+		[Y] Classes named according to mode/shape
 
 		Check for names of classes that mention which design pattern they are using
 			*Factory*
 			*Strategy*
 			*Command*
 
-		[YN] Classes named according to design pattern
+		[Y] Classes named according to design pattern
 
 	2) 
-		[YN] Code is simple: 
+		[Y] Code is simple: 
 			Example: methods appropriately short and serve a specific purpose
 			Example: classes appropriately short and serve a specific purpose
 			Example: uses correct few concepts effectively
 			Example: captures concepts in methods and classes
 
-		[YN] Code is clear and clean
+		[Y] Code is clear and clean
 			Example: documenting interesting algorithms
 			Example: No deeply nested if
 			Example: Good naming
@@ -49,19 +49,21 @@ Code quality: Individual classes marked according to 5 mark grading scheme, code
 			Example: code is nicely organized and indented for easy reading.
 			Example: Methods that work together appear together
 
-		[YN] Code is concise
+		[Y] Code is concise
 			Example: Minimal repeated code
 
 	3) instanceof OR is instance
 		The following is 3 marks, all or nothing. 
 		MARKER: Look for chained if statements/switch in code. Look for instance of or isinstance
-	
-		[YN] No mention of isInstance/instanceof/switching on some class name
-		[YN] No mention of isInstance/instanceof/switching on some class name
-		[YN] No mention of isInstance/instanceof/switching on some class name
+
+		COMMENT: Two switch-case statements usage (PaintPanel and ShapeChooserPanel) which can be avoided with the right choice of design patterns.
+
+		[Y] No mention of isInstance/instanceof on some class name
+		[N] No mention of isInstance/instanceof/switching on some class name
+		[N] No mention of isInstance/instanceof/switching on some class name
 
 CODEQUALITY_END
-CODEQUALITY: /9
+CODEQUALITY: 6/9
 
 ARCHITECTURE_START
 Architecture: The extent to which you use Design Patterns to create simple, extendable, clear, concise code.
@@ -70,11 +72,11 @@ Architecture: The extent to which you use Design Patterns to create simple, exte
 		CHECK: finalArchitecture/architecture.txt
 
 		BUG?.003 Architecture behind choosing selection mode is poor
-		[YN] Factory: When the ShapeSelector Button is pressed
-		[YN] Strategy: Handling mouse events
+		[N] Factory: When the ShapeSelector Button is pressed
+		[Y] Strategy: Handling mouse events
 
 		BUG3.004 Architecture behind Model is poor
-		[YN] Command: For a stack of shape commands. 
+		[Y] Command: For a stack of shape commands. 
 
 			CHECK: PaintModel, they have a collection of Shape with Shape.paint(GraphicsContext g2d) or similar.
 
@@ -93,22 +95,23 @@ Architecture: The extent to which you use Design Patterns to create simple, exte
 		MARKER NOTE: Please list the design patterns you accepted from their finalArchitecture/architecture.txt
 		MARKER NOTE: Accept a maximum of the best 3
 
-		[YN] Additional DP
-		[YN] Additional DP
-		[YN] Additional DP
+		[N] Additional DP
+		[N] Additional DP
+		[N] Additional DP
 
 ARCHITECTURE_END
-ARCHITECTURE: /6
+ARCHITECTURE: 2/6
 
 GIT_START
 Git: We expect to see simultaneous working branches merging into master, moving the project forward.
 	1) branches on BUG/US
-		[YN] list of branches named according to US/BUG
+		[N] list of branches named according to US/BUG
+		COMMENT: A few of the branches are not following the naming coventions. If it were just one or two we just let it go, but there are more. Please be careful.
 
 	2) quality of git log --graph 
-		[YN] clean git graph (branches and merges)
+		[Y] clean git graph (branches and merges)
 GIT_END
-GIT: /2
+GIT: 1/2
 
 DOCUMENTATION_START
 Documentation: 
@@ -116,8 +119,8 @@ Documentation:
 
 		From repo_a2_XXX/Assignment2/scrum/finalArchitecture/architecture.txt
 
-		[YN] Describes one scenario/story
-		[YN] Clearly describes one scenario/story (all details needed to follow and implement)
+		[Y] Describes one scenario/story
+		[N] Clearly describes one scenario/story (all details needed to follow and implement)
 
 
 	3) Additionally, you will be marked on your architecture documents as submitted in Sprint1 and Sprint4.
@@ -125,4 +128,4 @@ Documentation:
 		Marks from Prof. Zhang
 
 DOCUMENTATION_END
-DOCUMENTATION: /2
+DOCUMENTATION: 1/2

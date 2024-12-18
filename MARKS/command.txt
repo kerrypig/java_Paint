@@ -1,0 +1,31 @@
+--------------------------------------------------------------------
+ grep -r -ie ArrayList 
+--------------------------------------------------------------------
+SelectionBoxStrategy.java:import java.util.ArrayList;
+SelectionBoxStrategy.java:        ArrayList<Shape> shapes = model.getShapes();
+Squiggle.java:import java.util.ArrayList;
+Squiggle.java:	private ArrayList<Point> points;
+Squiggle.java:		this.points = new ArrayList<>();
+Squiggle.java:		ArrayList<Point> newPoints = new ArrayList<>();
+Squiggle.java:	public ArrayList<Point> getPoints() {
+Squiggle.java:		ArrayList<Point> squigglePoints = this.getPoints();
+Polyline.java:import java.util.ArrayList;
+Polyline.java:	private ArrayList<Point> points;
+Polyline.java:		this.points = new ArrayList<>();
+Polyline.java:	public ArrayList<Point> getPoints() {
+Polyline.java:		this.points = new ArrayList<>();
+TriangleStrategy.java:import java.util.ArrayList;
+TriangleStrategy.java:	private ArrayList<Point> trianglePoints = new ArrayList<>();
+PaintPanel.java:import java.util.ArrayList;
+PaintPanel.java:		ArrayList<Shape> shapes = this.model.getShapes();
+ShapeChooserPanel.java:import java.util.ArrayList;
+ShapeChooserPanel.java:	private ArrayList<Button> buttons = new ArrayList<>();
+PaintModel.java:import java.util.ArrayList;
+PaintModel.java:	private ArrayList<Shape> shapes = new ArrayList<>();
+PaintModel.java:	private ArrayList<Point> points = new ArrayList<Point>();
+PaintModel.java:	private ArrayList<Squiggle> squiggles = new ArrayList<Squiggle>();
+PaintModel.java:	private ArrayList<Shape> undoShape = new ArrayList<>();
+PaintModel.java:	public ArrayList<Point> getPoints() {
+PaintModel.java:			this.shapes= new ArrayList<>(this.shapes.subList(0,this.finalShapeNum));
+PaintModel.java:	public ArrayList<Shape> getShapes() {
+PaintModel.java:	public ArrayList<Squiggle> getSquiggles() {

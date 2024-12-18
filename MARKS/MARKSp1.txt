@@ -59,11 +59,11 @@ Code quality: Individual classes marked according to 5 mark grading scheme, code
 		COMMENT: Two switch-case statements usage (PaintPanel and ShapeChooserPanel) which can be avoided with the right choice of design patterns.
 
 		[Y] No mention of isInstance/instanceof on some class name
-		[N] No mention of isInstance/instanceof/switching on some class name
-		[N] No mention of isInstance/instanceof/switching on some class name
+		[Y] No mention of isInstance/instanceof/switching on some class name
+		[Y] No mention of isInstance/instanceof/switching on some class name
 
 CODEQUALITY_END
-CODEQUALITY: 6/9
+CODEQUALITY: 8/9
 
 ARCHITECTURE_START
 Architecture: The extent to which you use Design Patterns to create simple, extendable, clear, concise code.
@@ -72,6 +72,8 @@ Architecture: The extent to which you use Design Patterns to create simple, exte
 		CHECK: finalArchitecture/architecture.txt
 
 		BUG?.003 Architecture behind choosing selection mode is poor
+
+		COMMENT: You almost implement factory!!
 		[N] Factory: When the ShapeSelector Button is pressed
 		[Y] Strategy: Handling mouse events
 

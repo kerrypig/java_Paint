@@ -131,3 +131,11 @@ Documentation:
 
 DOCUMENTATION_END
 DOCUMENTATION: 1/2
+
+MVCSEPARATION_START
+        [YN] MV separation: Check Circle.java for Graphics for example
+        [YN] VC separation: Check PaintPanel.java (Canvas) for MouseEvent for example
+        [YN] MC separation: Check Circle.java for MouseEvent for example
+MVCSEPARATION_END
+MVCSEPARATION: /3
+

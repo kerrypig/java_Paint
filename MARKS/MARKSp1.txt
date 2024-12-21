@@ -35,7 +35,7 @@ Code quality: Individual classes marked according to 5 mark grading scheme, code
 			Example: uses correct few concepts effectively
 			Example: captures concepts in methods and classes
 
-		[Y] Code is clear and clean
+		[N] Code is clear and clean
 			Example: documenting interesting algorithms
 			Example: No deeply nested if
 			Example: Good naming
@@ -133,9 +133,9 @@ DOCUMENTATION_END
 DOCUMENTATION: 1/2
 
 MVCSEPARATION_START
-        [YN] MV separation: Check Circle.java for Graphics for example
-        [YN] VC separation: Check PaintPanel.java (Canvas) for MouseEvent for example
-        [YN] MC separation: Check Circle.java for MouseEvent for example
+        [N] MV separation: Check Circle.java for Graphics for example
+        [Y] VC separation: Check PaintPanel.java (Canvas) for MouseEvent for example
+        [Y] MC separation: Check Circle.java for MouseEvent for example
 MVCSEPARATION_END
-MVCSEPARATION: /3
+MVCSEPARATION: 2/3
 

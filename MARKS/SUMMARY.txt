@@ -28,7 +28,7 @@ For details see:
 
 
  
-CSC207 A3 Summary For A2 repo_a2_250
+CSC207 A2 Summary For repo_a2_250
 WRITING=75.0
 EXTRAFEATURES=44.7
 FUNCTIONALITY=100.0

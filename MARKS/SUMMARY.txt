@@ -18,6 +18,15 @@ Final mark calculated as
     5% repo_a2_000/MARKS/MARKSp1.txt:MVCSEPARATION:/2
     5% repo_a2_000/MARKS/MARKSp1.txt:GIT:/2
     5% repo_a2_000/MARKS/MARKSp1.txt:DOCUMENTATION:/2
+
+For details see:
+	MARKSp1.txt : Code Quality, Architecture and Documentation marks
+	MARKSp2.txt : Functionality and Extra features marks
+	writing_feedback_s1.txt : Writing from sprint1
+	writing_feedback_s4.txt : Writing from sprint4
+
+
+
  
 CSC207 A3 Summary For A2 repo_a2_250
 WRITING=75.0

@@ -1,15 +1,15 @@
 FUNCTIONALITY_START
 Functionality Basics: Tested by running your code.
 	Mark with E for error
-	[0E] ERROR: 
-	
+	[0E] ERROR:
+
 	[Y] Icons for drawing modes
 		BUG1.001 Icons instead of text for drawing mode selection
 
 	[Y] Very easy to see which drawing mode is selected
 		BUG1.002 Drawing selection mode not indicated
 
-	[Y] Can create multiple, disconnected squiggles 
+	[Y] Can create multiple, disconnected squiggles
 		without clicking on the drawing mode again.
 
 		BUG1.005 Squiggle is broken
@@ -17,10 +17,10 @@ Functionality Basics: Tested by running your code.
 
 	[Y] Draw a circle by clicking on center and dragging radius.
 		BUG1.006 Circle drawing is broken
-		
+
 	[Y] Feedback as drag on radius happen
 		US1.002 Draw Circle Feedback
-		Show drag on circle radius. 
+		Show drag on circle radius.
 
 	[Y] Rectangle drawing works, with second corner in any location
 		US1.003 Draw Rectangle
@@ -28,17 +28,17 @@ Functionality Basics: Tested by running your code.
 	[Y] Feedback as dragging second point
 		US1.004 Draw Rectangle Feedback
 
-	[Y] Square 
+	[Y] Square
 	[Y] Triangle
 	[Y] Oval
 
 FUNCTIONALITY_END
-FUNCTIONALITY: 10/10
+FUNCTIONALITY:10/10
 
 
 EXTRAFEATURES_START
-10% of the mark will be competitive, for the collection of interesting features your group comes up with. 
-	This will appear in sprints 2,3,4. 
+10% of the mark will be competitive, for the collection of interesting features your group comes up with.
+	This will appear in sprints 2,3,4.
 
 	See: https://docs.google.com/document/d/1Nffz_hrN4fhQdobX7iOFBK0gVWbhKdwFUOtqgywxi48/edit?tab=t.0
 
@@ -49,7 +49,7 @@ EXTRAFEATURES_START
 		MARKER: Look up in shared google doc and write down its difficulty and name below.
 
 		Mark with F for feature error
-		[0F] ERROR: 
+		[0F] ERROR:
 
 		COMMENT: No documentation on the extra features. Making me do a lot of work here :(
 
@@ -63,18 +63,18 @@ EXTRAFEATURES_START
 		Feature: DIFFICULTY:[3] Polyline
 
 		Feature: DIFFICULTY:[3] ColorXFillXStrokeXThickness
-		
+
 		Feature: DIFFICULTY:[2] UndoRedo
 
 		Feature: DIFFICULTY:[2] WindowResize
-		
-		Feature: DIFFICULTY:[1] KeyboardShortcuts
-		
-		Feature: DIFFICULTY:[1] Exit through button press
-		
 
-		TOTAL FEATURE SCORE: [18] = sum(difficulty)
-		TOTAL FEATURE ERRORS: [1] = sum(errors)
-		FEATURE SCORE: [17] = TOTAL FEATURE SCORE - TOTAL FEATURE ERRORS
+		Feature: DIFFICULTY:[1] KeyboardShortcuts
+
+		Feature: DIFFICULTY:[1] Exit through button press
+
+
+TOTAL FEATURE SCORE:18
+TOTAL FEATURE ERRORS:1
+FEATURE SCORE:17 = TOTAL FEATURE SCORE - TOTAL FEATURE ERRORS
 EXTRAFEATURES_END
-EXTRAFEATURES: 17
+EXTRAFEATURES:17

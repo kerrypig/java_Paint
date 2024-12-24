@@ -1,0 +1,8 @@
+S&O: 3
+WM: 4
+AE: 2
+
+Feedback:
+- [S&O] User stories should be written from the user's perspective. Avoid using third person, like in US2.002 in productBacklog.txt.
+- [AE] A high level discussion of the architecture should avoid technical language like which attributes to use. You want to create a more general discussion to help readers understand how your program works together and how to implement more functionality and features. You can assume they already know how to define classes in Java and the right attributes to include etc., they just may not know how or where to add them specifically into your program. This is what your architectural discussion should address.
+- Good job on writing mechanics.

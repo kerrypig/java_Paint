@@ -1,0 +1,40 @@
+Final mark calculated as 
+    10% WRI Mark calculated as max(P1*1/3+P2*2/3, P2)
+        P1: 
+            repo_a2_000/MARKS/writing_feedback_s1.txt:S&O:
+            repo_a2_000/MARKS/writing_feedback_s1.txt:WM:
+            repo_a2_000/MARKS/writing_feedback_s1.txt:AE:
+        P2: 
+            repo_a2_000/MARKS/writing_feedback_s4.txt:S&O:
+            repo_a2_000/MARKS/writing_feedback_s4.txt:WM:
+            repo_a2_000/MARKS/writing_feedback_s4.txt:AE:
+
+    10% repo_a2_000/MARKS/MARKSp2.txt:EXTRAFEATURES:
+        MAX 38
+    
+    35% repo_a2_000/MARKS/MARKSp2.txt:FUNCTIONALITY:/10
+    15% repo_a2_000/MARKS/MARKSp1.txt:CODEQUALITY:/8
+    15% repo_a2_000/MARKS/MARKSp1.txt:ARCHITECTURE:/3  Expected 3 effective DP
+    5% repo_a2_000/MARKS/MARKSp1.txt:MVCSEPARATION:/2  Expected at least 2 of MV, VC, MC separation
+    5% repo_a2_000/MARKS/MARKSp1.txt:GIT:/2
+    5% repo_a2_000/MARKS/MARKSp1.txt:DOCUMENTATION:/2
+
+For details see:
+	MARKSp1.txt : Code Quality, Architecture and Documentation marks
+	MARKSp2.txt : Functionality and Extra features marks
+	writing_feedback_s1.txt : Writing from sprint1
+	writing_feedback_s4.txt : Writing from sprint4
+
+
+
+ 
+CSC207 A2 Summary For repo_a2_250
+WRITING=75.0
+EXTRAFEATURES=44.7
+FUNCTIONALITY=100.0
+CODEQUALITY=87.5
+ARCHITECTURE=66.7
+MVCSEPARATION=100.0
+GIT=50.0
+DOCUMENTATION=50.0
+MARK=80.1
